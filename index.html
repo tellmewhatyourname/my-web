@@ -28,10 +28,12 @@
         <nav class="sidebar-bg-2 text-light text-uppercase logo-height">
           <div class="d-flex justify-content-center align-items-center pt-3">
             <i class="logo-icon fs-4 pe-1">c</i>
-            <span class="d-flex logo-middle-word">
-              code
-              <small class="logo-last-word">ui</small>
-            </span>
+            <div class="d-min-sidebar">
+              <span class="d-flex logo-middle-word">
+                code
+                <small class="logo-last-word">ui</small>
+              </span>
+            </div>
           </div>
         </nav>
         <!-- sidebar info -->
@@ -42,9 +44,12 @@
               class="nav-item text-capitalize d-flex justify-content-between align-items-center hover"
             >
               <a class="nav-link" href="">
-                <i class="small-icon bi bi-speedometer2 px-3"></i> dashboard
+                <i class="small-icon bi bi-speedometer2 px-3"></i>
+                <span class="d-min-sidebar">dashboard</span>
               </a>
-              <small class="sm-badge float-end bg-primary fw-bold me-3">
+              <small
+                class="sm-badge float-end bg-primary fw-bold me-3 d-min-sidebar"
+              >
                 new
               </small>
             </li>
@@ -52,20 +57,20 @@
             <li class="nav-item text-uppercase text">theme</li>
             <!-- colors -->
             <li
-              class="nav-item text-capitalize d-flex align-items-center hover"
+              class="nav-item text-capitalize d-flex align-items-center justify-content-between hover"
             >
               <a class="nav-link" href="">
                 <i class="small-icon bx bx-droplet px-3"></i>
-                colors
+                <span class="d-min-sidebar">colors</span>
               </a>
             </li>
             <!-- typography -->
             <li
-              class="nav-item text-capitalize d-flex align-items-center hover"
+              class="nav-item text-capitalize d-flex align-items-center justify-content-between hover"
             >
               <a class="nav-link" href="">
                 <i class="small-icon bx bx-pencil px-3"></i>
-                typography
+                <span class="d-min-sidebar">typography</span>
               </a>
             </li>
             <!-- components -->
@@ -81,7 +86,7 @@
             >
               <a class="nav-link">
                 <i class="small-icon bi bi-puzzle px-3"></i>
-                base
+                <span class="d-min-sidebar">base</span>
               </a>
               <i class="bi bi-chevron-down me-3"></i>
             </li>
@@ -233,7 +238,7 @@
             >
               <a class="nav-link" href="">
                 <i class="small-icon bi bi-cursor px-3"></i>
-                buttons
+                <span class="d-min-sidebar">buttons</span>
               </a>
               <i class="bi bi-chevron-down me-3"></i>
             </li>
@@ -277,7 +282,7 @@
             >
               <a class="nav-link" href="">
                 <i class="small-icon bi bi-card-text px-3"></i>
-                forms
+                <span class="d-min-sidebar">forms</span>
               </a>
               <i class="bi bi-chevron-down me-3"></i>
             </li>
@@ -357,11 +362,11 @@
             </ul>
             <!-- charts -->
             <li
-              class="nav-item text-capitalize d-flex align-items-center hover"
+              class="nav-item text-capitalize d-flex align-items-center justify-content-between hover"
             >
               <a class="nav-link" href="">
                 <i class="small-icon bi bi-pie-chart px-3"></i>
-                charts
+                <span class="d-min-sidebar">charts</span>
               </a>
             </li>
             <!-- icons -->
@@ -375,7 +380,7 @@
             >
               <a class="nav-link" href="">
                 <i class="small-icon bi bi-star px-3"></i>
-                icons
+                <span class="d-min-sidebar">icons</span>
               </a>
               <i class="bi bi-chevron-down me-3"></i>
             </li>
@@ -424,7 +429,7 @@
             >
               <a class="nav-link" href="">
                 <i class="small-icon bi bi-bell px-3"></i>
-                notifications
+                <span class="d-min-sidebar">notifications</span>
               </a>
               <i class="bi bi-chevron-down me-3"></i>
             </li>
@@ -470,9 +475,12 @@
               class="nav-item text-capitalize d-flex justify-content-between align-items-center hover"
             >
               <a class="nav-link" href="">
-                <i class="small-icon bi bi-calculator px-3"></i> widgets
+                <i class="small-icon bi bi-calculator px-3"></i>
+                <span class="d-min-sidebar">widgets</span>
               </a>
-              <small class="sm-badge float-end bg-primary fw-bold me-3">
+              <small
+                class="sm-badge float-end bg-primary fw-bold me-3 d-min-sidebar"
+              >
                 new
               </small>
             </li>
@@ -489,7 +497,7 @@
             >
               <a class="nav-link" href="">
                 <i class="small-icon bi bi-star px-3"></i>
-                pages
+                <span class="d-min-sidebar">pages</span>
               </a>
               <i class="bi bi-chevron-down me-3"></i>
             </li>
@@ -533,86 +541,88 @@
             </ul>
             <!-- docs -->
             <li
-              class="nav-item text-capitalize d-flex align-items-center hover"
+              class="nav-item text-capitalize d-flex align-items-center justify-content-between hover"
             >
               <a class="nav-link" href="">
                 <i class="small-icon bi bi-file-earmark-text px-3"></i>
-                docs
+                <span class="d-min-sidebar">docs</span>
               </a>
             </li>
             <!-- try core -->
             <li
-              class="nav-item text-capitalize d-flex align-items-center hover"
+              class="nav-item text-capitalize d-flex align-items-center justify-content-between hover"
             >
               <a class="nav-link" href="">
                 <i class="small-icon bi bi-file-earmark-text px-3"></i>
-                try coreUI<strong>PRO</strong>
+                <span class="d-min-sidebar"
+                  >try coreUI<strong>PRO</strong></span
+                >
               </a>
             </li>
           </ul>
         </nav>
+        <div class="open-sidebar-icon sidebar-bg js-min-sidebar-icon">
+          <i class="bx bx-chevron-left color float-end pe-3 py-2"></i>
+        </div>
       </div>
-
-      <div class="open-sidebar-icon sidebar-bg js-min-sidebar-icon">
-        <i class="bx bx-chevron-left color float-end pe-3 py-2"></i>
-      </div>
-    </section>
-
-    <!-- middle -->
-    <section class="bg-body-secondary middle-navbar">
-      <div class="navbar-things mt-2 bg-white px-0">
-        <div class="container-fluid">
-          <div class="navbar-setting d-flex justify-content-between">
-            <div class="navbar-setting d-flex align-items-center">
-              <div class="text-grey js-close-sidebar">
-                <i class="bi bi-list close-sidebar-icon ms-2 me-4"></i>
+      <!-- middle -->
+      <div class="middle-navbar bg-secondary-subtle">
+        <div class="navbar-things pt-2 bg-white px-0">
+          <div class="container-fluid">
+            <div class="navbar-setting d-flex justify-content-between">
+              <div class="navbar-setting d-flex align-items-center">
+                <div class="text-grey js-close-sidebar">
+                  <i class="bi bi-list close-sidebar-icon ms-2 me-4"></i>
+                </div>
+                <div class="navbar font-size">
+                  <ul class="nav text-capitalize gap-3">
+                    <li class="nav-item">
+                      <a href="" class="underline-none text-grey">
+                        dashboard
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="" class="underline-none text-grey">user</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="" class="underline-none text-grey"> settings </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="navbar font-size">
-                <ul class="nav text-capitalize gap-3">
+              <div class="icons navbar">
+                <ul class="nav gap-3">
                   <li class="nav-item">
-                    <a href="" class="underline-none text-grey"> dashboard </a>
+                    <a href="">
+                      <i class="bi bi-bell text-grey"></i>
+                    </a>
                   </li>
                   <li class="nav-item">
-                    <a href="" class="underline-none text-grey">user</a>
+                    <a href="">
+                      <i class="bi bi-list-task text-grey"></i>
+                    </a>
                   </li>
                   <li class="nav-item">
-                    <a href="" class="underline-none text-grey"> settings </a>
+                    <a href="">
+                      <i class="bi bi-envelope-open text-grey"></i>
+                    </a>
                   </li>
                 </ul>
+                <div class="avatar">
+                  <img
+                    src="image/images.jpeg"
+                    class="rounded-circle profile-img"
+                  />
+                </div>
               </div>
             </div>
-            <div class="icons navbar">
-              <ul class="nav gap-3">
-                <li class="nav-item">
-                  <a href="">
-                    <i class="bi bi-bell text-grey"></i>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="">
-                    <i class="bi bi-list-task text-grey"></i>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="">
-                    <i class="bi bi-envelope-open text-grey"></i>
-                  </a>
-                </li>
+            <div class="navbar-setting-two">
+              <ul class="d-flex gap-2 text-capitalize ps-0 ms-3 font-size">
+                <li class="nav-item">home</li>
+                <p>/</p>
+                <li class="nav-item text-grey">dashboard</li>
               </ul>
-              <div class="avatar">
-                <img
-                  src="image/images.jpeg"
-                  class="rounded-circle profile-img"
-                />
-              </div>
             </div>
-          </div>
-          <div class="navbar-setting-two">
-            <ul class="d-flex gap-2 text-capitalize ps-0 ms-3 font-size">
-              <li class="nav-item">home</li>
-              <p>/</p>
-              <li class="nav-item text-grey">dashboard</li>
-            </ul>
           </div>
         </div>
       </div>
