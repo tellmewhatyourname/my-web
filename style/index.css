@@ -22,6 +22,7 @@ body {
   width: 256px;
   height: 100%;
   top: 0;
+  z-index: 1000;
 }
 
 .sidebar-bg {
@@ -34,13 +35,13 @@ body {
 
 .navbar-nav {
   overflow-y: hidden;
+  overflow-x: hidden;
   margin-right: 0;
   height: calc(100% - (64px + 48px));
 }
 
 .navbar-nav:hover {
   overflow-y: scroll;
-  position: relative;
 }
 
 .navbar-nav::-webkit-scrollbar-track {
@@ -49,7 +50,6 @@ body {
 
 .navbar-nav::-webkit-scrollbar {
   width: 8px;
-  position: absolute;
 }
 
 .navbar-nav::-webkit-scrollbar-thumb {
@@ -82,6 +82,10 @@ body {
   font-size: 10px;
 }
 
+.sidebar-menu .sidebar li i {
+  font-size: 18px;
+}
+
 .text {
   font-size: 12px;
   padding: 26px 0 13px 10px;
@@ -98,7 +102,7 @@ body {
 }
 
 .sidebar nav ul [aria-expanded="true"] {
-  background-color: black;
+  background-color: rgba(0, 0, 21, 0.2);
 }
 
 .sidebar nav ul .hover:hover {
@@ -108,8 +112,7 @@ body {
 
 .open-sidebar-icon {
   background-color: rgba(0, 0, 21, 0.2);
-  position: fixed;
-  width: 256px;
+  position: relative;
   bottom: 0;
   height: 48px;
   cursor: pointer;
@@ -117,15 +120,51 @@ body {
 }
 
 .open-sidebar-icon:hover {
-  background-color: rgba(0, 0, 21, 0.3);;
+  background-color: rgba(0, 0, 21, 0.3);
 }
 
 .open-sidebar-icon:hover .color {
   color: white;
 }
+/* min sidebar */
+.sidebar-menu.minSidebar .sidebar {
+  width: 64px;
+}
 
-.sidebar.min {
-  width: 80px;
+.sidebar-menu.minSidebar .sidebar:hover {
+  width: 256px;
+}
+
+.sidebar-menu.minSidebar .sidebar .d-min-sidebar,
+.sidebar-menu.minSidebar .sidebar .bi-chevron-down,
+.sidebar-menu.minSidebar .sidebar .text,
+.sidebar-menu.minSidebar .sidebar nav ul .collapse.show {
+  display: none;
+}
+
+.sidebar-menu.minSidebar .sidebar:hover nav ul .collapse.show {
+  display: block;
+}
+
+.sidebar-menu.minSidebar .sidebar:hover .d-min-sidebar,
+.sidebar-menu.minSidebar .sidebar:hover .bi-chevron-down,
+.sidebar-menu.minSidebar .sidebar:hover .text {
+  display: inline-flex;
+}
+
+.sidebar-menu.minSidebar .sidebar ~ .middle-navbar {
+  left: 64px;
+  width: calc(100% - 64px);
+}
+
+/* close sidebar */
+.sidebar-menu.close .sidebar {
+  width: 0;
+}
+
+.sidebar-menu.close .sidebar ~ .middle-navbar {
+  left: 0;
+  width: 100%;
 }
 
 /* middle  */
@@ -134,6 +173,11 @@ body {
   position: relative;
   left: 256px;
   width: calc(100% - 256px);
+}
+
+.navbar-things {
+  position: sticky;
+  top: 0;
 }
 
 .close-sidebar-icon {
