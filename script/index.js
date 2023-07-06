@@ -1,23 +1,22 @@
-const sidebar = document.querySelector(".sidebar");
-const minSidebar = document.querySelector(".js-min-sidebar-icon");
-const closeSide = document.querySelector(".js-close-sidebar");
+// sidebar
+let sidebar = document.querySelector(".sidebar-menu");
+let minSidebar = document.querySelector(".js-min-sidebar-icon");
+let chevronLeft = document.querySelector(".bx-chevron-left");
+// middle sidebar
+let closeSide = document.querySelector(".js-close-sidebar");
 
 minSidebar.addEventListener("click", () => {
-  console.log("min");
-  minSizeSide();
+  if (chevronLeft.classList.toggle("bx-chevron-right")) {
+    sidebar.classList.add("minSidebar");
+  } else {
+    sidebar.classList.remove("minSidebar");
+  }
 });
 
-function minSizeSide() {
-  document
-    .querySelector(".bx-chevron-left")
-    .classList.toggle("bx-chevron-right");
-  if (this,container === "bx-chevron-right") {
-    sidebar.classList.add("min");
-  } else {
-    sidebar.classList.remove("min");
-  }
-}
-
 closeSide.addEventListener("click", () => {
-  console.log("close");
+  if (sidebar.classList.toggle("close")) {
+    sidebar.classList.add(".close");
+  } else {
+    sidebar.classList.remove(".close");
+  }
 });
