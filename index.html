@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web</title>
+
+    <link rel="stylesheet" href="bootstrap-5.3.0/style/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="style/index.css" />
+  </head>
+
+  <body>
+    <!-- sidebar -->
+    <section class="sidebar-menu">
+      <div class="sidebar sidebar-bg">
+        <!-- logo -->
+        <nav class="sidebar-bg-2 text-light text-uppercase logo-height">
+          <div class="d-flex justify-content-center align-items-center pt-3">
+            <i class="logo-icon fs-4 pe-1">c</i>
+            <div class="d-min-sidebar">
+              <span class="d-flex logo-middle-word">
+                code
+                <small class="logo-last-word">ui</small>
+              </span>
+            </div>
+          </div>
+        </nav>
+        <!-- sidebar info -->
+        <nav class="navbar-nav">
+          <ul class="flex-column text-white-50 ps-0 mb-0 overflow">
+            <!-- dashboard -->
+            <li
+              class="nav-item text-capitalize d-flex justify-content-between align-items-center hover"
+            >
+              <a class="nav-link" href="">
+                <i class="small-icon bi bi-speedometer2 px-3"></i>
+                <span class="d-min-sidebar">dashboard</span>
+              </a>
+              <small
+                class="sm-badge float-end bg-primary fw-bold me-3 d-min-sidebar"
+              >
+                new
+              </small>
+            </li>
+            <!-- theme -->
+            <li class="nav-item text-uppercase text">theme</li>
+            <!-- colors -->
+            <li
+              class="nav-item text-capitalize d-flex align-items-center justify-content-between hover"
+            >
+              <a class="nav-link" href="">
+                <i class="small-icon bx bx-droplet px-3"></i>
+                <span class="d-min-sidebar">colors</span>
+              </a>
+            </li>
+            <!-- typography -->
+            <li
+              class="nav-item text-capitalize d-flex align-items-center justify-content-between hover"
+            >
+              <a class="nav-link" href="">
+                <i class="small-icon bx bx-pencil px-3"></i>
+                <span class="d-min-sidebar">typography</span>
+              </a>
+            </li>
+            <!-- components -->
+            <li class="nav-item text-uppercase text">components</li>
+            <!-- base -->
+            <li
+              class="nav-item text-capitalize d-flex justify-content-between align-items-center hover"
+              data-bs-toggle="collapse"
+              href="#baseCollapse"
+              role="button"
+              aria-expanded="false"
+              aria-controls="baseCollapse"
+            >
+              <a class="nav-link">
+                <i class="small-icon bi bi-puzzle px-3"></i>
+                <span class="d-min-sidebar">base</span>
+              </a>
+              <i class="bi bi-chevron-down me-3"></i>
+            </li>
+            <!-- base collapse -->
+            <ul class="collapse ps-0 sidebar-bg-2" id="baseCollapse">
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  accordion
+                </a>
+              </li>
+
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  breadcrumbs
+                </a>
+              </li>
+
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  cards
+                </a>
+              </li>
+
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  carousel
+                </a>
+              </li>
+
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  collpase
+                </a>
+              </li>
+
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  list groups
+                </a>
+              </li>
+
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  nabs & tabs
+                </a>
+              </li>
+
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  pagination
+                </a>
+              </li>
+
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  placeholder
+                </a>
+              </li>
+
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  popovers
+                </a>
+              </li>
+
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  progress
+                </a>
+              </li>
+
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  spinners
+                </a>
+              </li>
+
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  tables
+                </a>
+              </li>
+
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  tabs
+                </a>
+              </li>
+
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  tooltips
+                </a>
+              </li>
+            </ul>
+            <!-- buttons -->
+            <li
+              class="nav-item text-capitalize d-flex justify-content-between align-items-center hover"
+              data-bs-toggle="collapse"
+              href="#buttonsCollapse"
+              role="button"
+              aria-expanded="false"
+              aria-controls="buttonsCollapse"
+            >
+              <a class="nav-link" href="">
+                <i class="small-icon bi bi-cursor px-3"></i>
+                <span class="d-min-sidebar">buttons</span>
+              </a>
+              <i class="bi bi-chevron-down me-3"></i>
+            </li>
+            <!-- buttons collapse -->
+            <ul class="collapse ps-0 sidebar-bg-2" id="buttonsCollapse">
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  buttons
+                </a>
+              </li>
+
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  button groups
+                </a>
+              </li>
+
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  drowdowns
+                </a>
+              </li>
+            </ul>
+            <!-- forms -->
+            <li
+              class="nav-item text-capitalize d-flex justify-content-between align-items-center hover"
+              data-bs-toggle="collapse"
+              href="#formsCollapse"
+              role="button"
+              aria-expanded="false"
+              aria-controls="formsCollapse"
+            >
+              <a class="nav-link" href="">
+                <i class="small-icon bi bi-card-text px-3"></i>
+                <span class="d-min-sidebar">forms</span>
+              </a>
+              <i class="bi bi-chevron-down me-3"></i>
+            </li>
+            <!-- forms collapse -->
+            <ul class="collapse ps-0 sidebar-bg-2" id="formsCollapse">
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  form control
+                </a>
+              </li>
+
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  select
+                </a>
+              </li>
+
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  checks and radios
+                </a>
+              </li>
+
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  range
+                </a>
+              </li>
+
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  input group
+                </a>
+              </li>
+
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  floating labels
+                </a>
+              </li>
+
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  layout
+                </a>
+              </li>
+
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  validation
+                </a>
+              </li>
+            </ul>
+            <!-- charts -->
+            <li
+              class="nav-item text-capitalize d-flex align-items-center justify-content-between hover"
+            >
+              <a class="nav-link" href="">
+                <i class="small-icon bi bi-pie-chart px-3"></i>
+                <span class="d-min-sidebar">charts</span>
+              </a>
+            </li>
+            <!-- icons -->
+            <li
+              class="nav-item text-capitalize d-flex justify-content-between gap-5 align-items-center hover"
+              data-bs-toggle="collapse"
+              href="#iconsCollapse"
+              role="button"
+              aria-expanded="false"
+              aria-controls="iconsCollapse"
+            >
+              <a class="nav-link" href="">
+                <i class="small-icon bi bi-star px-3"></i>
+                <span class="d-min-sidebar">icons</span>
+              </a>
+              <i class="bi bi-chevron-down me-3"></i>
+            </li>
+            <!-- icons collapse -->
+            <ul class="collapse ps-0 sidebar-bg-2" id="iconsCollapse">
+              <li
+                class="nav-item text-capitalize d-flex justify-content-between align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  coreUI icons
+                </a>
+                <small
+                  class="sm-badge float-end bg-success fw-bold small-font me-3"
+                >
+                  free
+                </small>
+              </li>
+
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  coreUI icons - brand
+                </a>
+              </li>
+
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  coreUI icons - flag
+                </a>
+              </li>
+            </ul>
+            <!-- notifications -->
+            <li
+              class="nav-item text-capitalize d-flex justify-content-between gap-5 align-items-center hover"
+              data-bs-toggle="collapse"
+              href="#notificationsCollapse"
+              role="button"
+              aria-expanded="false"
+              aria-controls="notificationsCollapse"
+            >
+              <a class="nav-link" href="">
+                <i class="small-icon bi bi-bell px-3"></i>
+                <span class="d-min-sidebar">notifications</span>
+              </a>
+              <i class="bi bi-chevron-down me-3"></i>
+            </li>
+            <!-- notifications collapse -->
+            <ul class="collapse ps-0 sidebar-bg-2" id="notificationsCollapse">
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  alerts
+                </a>
+              </li>
+
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  badges
+                </a>
+              </li>
+
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  model
+                </a>
+              </li>
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  toasts
+                </a>
+              </li>
+            </ul>
+            <!-- widgets -->
+            <li
+              class="nav-item text-capitalize d-flex justify-content-between align-items-center hover"
+            >
+              <a class="nav-link" href="">
+                <i class="small-icon bi bi-calculator px-3"></i>
+                <span class="d-min-sidebar">widgets</span>
+              </a>
+              <small
+                class="sm-badge float-end bg-primary fw-bold me-3 d-min-sidebar"
+              >
+                new
+              </small>
+            </li>
+            <!-- extras -->
+            <li class="nav-item text-uppercase text">extras</li>
+            <!-- pages -->
+            <li
+              class="nav-item text-capitalize d-flex justify-content-between gap-5 align-items-center hover"
+              data-bs-toggle="collapse"
+              href="#pagesCollapse"
+              role="button"
+              aria-expanded="false"
+              aria-controls="pagesCollapse"
+            >
+              <a class="nav-link" href="">
+                <i class="small-icon bi bi-star px-3"></i>
+                <span class="d-min-sidebar">pages</span>
+              </a>
+              <i class="bi bi-chevron-down me-3"></i>
+            </li>
+            <!-- pages collapse -->
+            <ul class="collapse ps-0 sidebar-bg-2" id="pagesCollapse">
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-box-arrow-in-left px-3"></i>
+                  login
+                </a>
+              </li>
+
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-box-arrow-left px-3"></i>
+                  register
+                </a>
+              </li>
+
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-bug px-3"></i>
+                  error 404
+                </a>
+              </li>
+
+              <li
+                class="nav-item text-capitalize d-flex align-items-center hover"
+              >
+                <a class="nav-link" href="">
+                  <i class="small-icon bi bi-bug px-3"></i>
+                  error 500
+                </a>
+              </li>
+            </ul>
+            <!-- docs -->
+            <li
+              class="nav-item text-capitalize d-flex align-items-center justify-content-between hover"
+            >
+              <a class="nav-link" href="">
+                <i class="small-icon bi bi-file-earmark-text px-3"></i>
+                <span class="d-min-sidebar">docs</span>
+              </a>
+            </li>
+            <!-- try core -->
+            <li
+              class="nav-item text-capitalize d-flex align-items-center justify-content-between hover"
+            >
+              <a class="nav-link" href="">
+                <i class="small-icon bi bi-file-earmark-text px-3"></i>
+                <span class="d-min-sidebar"
+                  >try coreUI<strong>PRO</strong></span
+                >
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="open-sidebar-icon sidebar-bg js-min-sidebar-icon">
+          <i class="bx bx-chevron-left color float-end pe-3 py-2"></i>
+        </div>
+      </div>
+      <!-- middle  -->
+      <div class="middle-navbar bg-body-secondary">
+        <div class="navbar-tings pt-2 px-0 bg-white sticky-top">
+          <!-- navbar settings -->
+          <div class="navbar-settings">
+            <!-- navbar setting 1 -->
+            <div class="navbar-setting d-flex justify-content-between">
+              <div class="navbar-setting d-flex align-items-center">
+                <div class="text-gray menu-icon">
+                  <i class="bi bi-list close-sidebar-icon md-sidebar-icon"></i>
+                  <i class="bi bi-list close-sidebar-icon lg-sidebar-icon"></i>
+                </div>
+                <!-- lg show setting -->
+                <div class="navbar font-size">
+                  <ul class="nav text-capitalize gap-3 lg-display">
+                    <li class="nav-item">
+                      <a href="" class="underline-none text-gray">
+                        dashboard
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="" class="underline-none text-gray">user</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="" class="underline-none text-gray"> settings </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- md show logo -->
+                <div class="md-show-logo">
+                  <div class="d-flex align-items-center text-uppercase">
+                    <i class="pe-1 fs-5">c</i>
+                    <span class="d-flex logo-middle-word fw-bold text-gray">
+                      code
+                      <small class="logo-last-word">ui</small>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <!-- icons nav -->
+              <div class="icons navbar">
+                <ul class="nav gap-3">
+                  <li class="nav-item">
+                    <a href="">
+                      <i class="bi bi-bell text-gray"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="">
+                      <i class="bi bi-list-task text-gray"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="">
+                      <i class="bi bi-envelope-open text-gray"></i>
+                    </a>
+                  </li>
+                </ul>
+                <!-- account info -->
+                <div class="avatar">
+                  <a
+                    href=""
+                    class="dropdown"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img
+                      src="image/images.jpeg"
+                      class="rounded-circle profile-img"
+                    />
+                  </a>
+                  <ul
+                    class="dropdown-menu text-capitalize bg-secondary-subtle py-0"
+                  >
+                    <li class="account-info">
+                      <strong
+                        class="dropdown-item-text text-gray account-info-text-size"
+                      >
+                        account
+                      </strong>
+                    </li>
+                    <div class="bg-white hover-two">
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <i class="bi bi-bell"></i>
+                          updates
+                          <span class="badge badge-info bg-info">42</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <i class="bi bi-envelope-open"></i>
+                          messages
+                          <span class="badge badge-info bg-success">42</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <i class="bi bi-check-square"></i>
+                          tasks
+                          <span class="badge badge-info bg-danger">42</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <i class="bx bx-comment"></i>
+                          comments
+                          <span class="badge badge-info bg-warning">42</span>
+                        </a>
+                      </li>
+                    </div>
+                    <li class="setting-bg">
+                      <strong
+                        class="dropdown-item-text text-gray account-info-text-size"
+                      >
+                        settings
+                      </strong>
+                    </li>
+                    <div class="bg-white hover-two">
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <i class="bx bx-user"></i>
+                          profile
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <i class="bi bi-gear"></i>
+                          settings
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <i class="bi bi-credit-card"></i>
+                          payments
+                          <span class="badge badge-info bg-secondary">42</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <i class="bi bi-file-earmark"></i>
+                          project
+                          <span class="badge badge-info bg-primary">42</span>
+                        </a>
+                      </li>
+                      <hr class="mb-2 mt-2" />
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <i class="bi bi-lock"></i>
+                          lock account
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <i class="bi bi-box-arrow-left"></i>
+                          logout
+                        </a>
+                      </li>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="mt-0" />
+            <!-- navbar setting 2 -->
+            <div class="navbar-setting-two">
+              <ul class="d-flex gap-2 text-capitalize font-size">
+                <li class="nav-item">
+                  <a href="" class="nav-link">home</a>
+                </li>
+                <p>/</p>
+                <li class="nav-item text-gray">
+                  <a href="" class="nav-link">dashboard</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="mx-3">
+          <!-- cards -->
+          <div class="container-fluid mt-4">
+            <!-- 4 card -->
+            <div class="row row-cols-4 row-cols-sm-2 row-gap-3">
+              <div class="col">
+                <div class="card text-white">
+                  <div class="card-body bg-primary p-0">
+                    <div class="p-3">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div class="card-body-text">
+                          <span class="fs-4">26K</span>
+                          <span class="small"
+                            >(-12.4% <i class="bi bi-arrow-down"></i>)
+                          </span>
+                        </div>
+                        <i class="bi bi-three-dots-vertical"></i>
+                      </div>
+                      <small>Users</small>
+                    </div>
+                    <div class="chart-place mt-3 mx-3">
+                      <canvas
+                        class="chart-size"
+                        id="card-chart1"
+                        height="70"
+                        width="369"
+                      ></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card text-white">
+                  <div class="card-body bg-info p-0">
+                    <div class="p-3">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div class="card-body-text">
+                          <span class="fs-4">$6.200</span>
+                          <span class="small"
+                            >(40.9% <i class="bi bi-arrow-up"></i>)
+                          </span>
+                        </div>
+                        <i class="bi bi-three-dots-vertical"></i>
+                      </div>
+                      <small>Income</small>
+                    </div>
+                    <div class="chart-place mt-3 mx-3">
+                      <canvas
+                        class="chart-size"
+                        id="card-chart2"
+                        height="87"
+                        width="369"
+                      ></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-white">
+                  <div class="card-body bg-warning p-0">
+                    <div class="p-3">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div class="card-body-text">
+                          <span class="fs-4">2.49%</span>
+                          <span class="small"
+                            >(84.7% <i class="bi bi-arrow-up"></i>)
+                          </span>
+                        </div>
+                        <i class="bi bi-three-dots-vertical"></i>
+                      </div>
+                      <small>Conversion Rate</small>
+                    </div>
+                    <div class="chart-place mt-3">
+                      <canvas
+                        class="chart-size-2"
+                        id="card-chart3"
+                        height="87"
+                        width="409"
+                      ></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-white">
+                  <div class="card-body bg-danger p-0">
+                    <div class="p-3">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div class="card-body-text">
+                          <span class="fs-4">$6.200</span>
+                          <span class="small">
+                            (40.9% <i class="bi bi-arrow-down"></i>)
+                          </span>
+                        </div>
+                        <i class="bi bi-three-dots-vertical"></i>
+                      </div>
+                      <small>Sessions</small>
+                    </div>
+                    <div class="chart-place mt-3">
+                      <canvas
+                        class="chart-size"
+                        id="card-chart4"
+                        height="87"
+                        width="369"
+                      ></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- traffic -->
+          <div class="container-fluid mt-3">
+            <!-- main-card & progress -->
+            <div class="card">
+              <div class="card-body">
+                <div class="text-capitalize pt-1">
+                  <div class="fs-5 fw-bold">traffic</div>
+                  <small class="text-gray">january - july 2022</small>
+                </div>
+                <div class="chart-place-2">
+                  <canvas
+                    class="chart-size"
+                    id="main-chart"
+                    height="87"
+                    width="369"
+                  ></canvas>
+                </div>
+              </div>
+              <!-- card progress -->
+              <div class="card-footer">
+                <!-- progress list -->
+                <div class="progress-list">
+                  <div class="text-capitalize text-center mt-1">
+                    <div class="fw-light">visits</div>
+                    <div class="fw-bold">29.703 users (40%)</div>
+                  </div>
+                  <div
+                    class="progress mt-2"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="40"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="height: 4px"
+                  >
+                    <div
+                      class="progress-bar bg-success"
+                      style="width: 40%"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="progress-list">
+                  <div class="text-capitalize text-center mt-1">
+                    <div class="fw-light">unique</div>
+                    <div class="fw-bold">24.093 users (20%)</div>
+                  </div>
+                  <div
+                    class="progress mt-2"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="20"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="height: 4px"
+                  >
+                    <div class="progress-bar bg-info" style="width: 20%"></div>
+                  </div>
+                </div>
+
+                <div class="progress-list">
+                  <div class="text-capitalize text-center mt-1">
+                    <div class="fw-light">pageviews</div>
+                    <div class="fw-bold">78.706 users (60%)</div>
+                  </div>
+                  <div
+                    class="progress mt-2"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="60"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="height: 4px"
+                  >
+                    <div
+                      class="progress-bar bg-warning"
+                      style="width: 60%"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="progress-list">
+                  <div class="text-capitalize text-center mt-1">
+                    <div class="fw-light">new users</div>
+                    <div class="fw-bold">22.123 users (80%)</div>
+                  </div>
+                  <div
+                    class="progress mt-2"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="height: 4px"
+                  >
+                    <div
+                      class="progress-bar bg-danger"
+                      style="width: 80%"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="progress-list">
+                  <div class="text-capitalize text-center mt-1">
+                    <div class="fw-light">bounce rate</div>
+                    <div class="fw-bold">29.703 (40%)</div>
+                  </div>
+                  <div
+                    class="progress mt-2"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="40"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="height: 4px"
+                  >
+                    <div
+                      class="progress-bar bg-primary"
+                      style="width: 40%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- apps -->
+          <div class="container-fluid mt-3">
+            <!-- 3 app -->
+            <div class="three-app">
+              <!-- card apps -->
+              <div class="row row-cols-2 row-cols-xl-3 row-gap-3 row-gap-xl-0">
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body p-0">
+                      <div class="app-icon text-center bg-primary">
+                        <i class="bx bxl-facebook icon-color"></i>
+                      </div>
+                      <div
+                        class="app-text d-flex justify-content-evenly mt-3 mb-3"
+                      >
+                        <div class="small-box text-center">
+                          <div class="number">89k</div>
+                          <div class="text-uppercase small-text">friend</div>
+                        </div>
+                        <div class="d-flex">
+                          <div class="vr"></div>
+                        </div>
+                        <div class="small-box text-center">
+                          <div class="number">459</div>
+                          <div class="text-uppercase small-text">feeds</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body p-0">
+                      <div class="app-icon text-center bg-info">
+                        <i class="bx bxl-twitter icon-color"></i>
+                      </div>
+                      <div
+                        class="app-text d-flex justify-content-evenly mt-3 mb-3"
+                      >
+                        <div class="small-box text-center">
+                          <div class="number">973k</div>
+                          <div class="text-uppercase small-text">followers</div>
+                        </div>
+                        <div class="d-flex">
+                          <div class="vr"></div>
+                        </div>
+                        <div class="small-box text-center">
+                          <div class="number">1.792</div>
+                          <div class="text-uppercase small-text">tweets</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body p-0">
+                      <div class="app-icon text-center bg-primary">
+                        <i class="bx bxl-linkedin-square icon-color"></i>
+                      </div>
+                      <div
+                        class="app-text d-flex justify-content-evenly mt-3 mb-3"
+                      >
+                        <div class="small-box text-center">
+                          <div class="number">500+</div>
+                          <div class="text-uppercase small-text">contacts</div>
+                        </div>
+                        <div class="d-flex">
+                          <div class="vr"></div>
+                        </div>
+                        <div class="small-box text-center">
+                          <div class="number">292</div>
+                          <div class="text-uppercase small-text">feeds</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- traffic and sales -->
+          <div class="container-fluid mt-3">
+            <div class="card">
+              <div class="card-header">
+                <div class="text-capitalize">traffic & sales</div>
+              </div>
+              <div class="card-body">
+                <div class="row row-cols-1 row-cols-sm-2">
+                  <div class="col">
+                    <div class="row row-cols-2">
+                      <div class="col">
+                        <div
+                          class="progress-text border-start border-4 border-primary text-capitalize ps-3"
+                        >
+                          <small class="text-gray">new clients</small>
+                          <div class="fw-bold">9.123</div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div
+                          class="progress-text border-start border-4 border-danger text-capitalize ps-3"
+                        >
+                          <small class="text-gray">new clients</small>
+                          <div class="fw-bold">22.643</div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr />
+                    <!-- day progress -->
+                    <div>
+                      <div
+                        class="day-progress text-capitalize row align-items-center"
+                      >
+                        <div class="col">
+                          <small class="day text-gray">monday</small>
+                        </div>
+                        <div class="progress-list col-8">
+                          <div
+                            class="progress"
+                            role="progressbar"
+                            aria-label="Success example"
+                            aria-valuenow="40"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            style="height: 4px; margin-bottom: 3px"
+                          >
+                            <div class="progress-bar" style="width: 40%"></div>
+                          </div>
+                          <div
+                            class="progress"
+                            role="progressbar"
+                            aria-label="Success example"
+                            aria-valuenow="70"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            style="height: 4px"
+                          >
+                            <div
+                              class="progress-bar bg-danger"
+                              style="width: 70%"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="day-progress text-capitalize row align-items-center mt-3"
+                      >
+                        <div class="col">
+                          <small class="day text-gray">tuesday</small>
+                        </div>
+                        <div class="progress-list col-8">
+                          <div
+                            class="progress"
+                            role="progressbar"
+                            aria-label="Success example"
+                            aria-valuenow="60"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            style="height: 4px; margin-bottom: 3px"
+                          >
+                            <div class="progress-bar" style="width: 60%"></div>
+                          </div>
+                          <div
+                            class="progress"
+                            role="progressbar"
+                            aria-label="Success example"
+                            aria-valuenow="90"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            style="height: 4px"
+                          >
+                            <div
+                              class="progress-bar bg-danger"
+                              style="width: 90%"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="day-progress text-capitalize row align-items-center mt-3"
+                      >
+                        <div class="col">
+                          <small class="day text-gray">wednesday</small>
+                        </div>
+                        <div class="progress-list col-8">
+                          <div
+                            class="progress"
+                            role="progressbar"
+                            aria-label="Success example"
+                            aria-valuenow="10"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            style="height: 4px; margin-bottom: 3px"
+                          >
+                            <div class="progress-bar" style="width: 10%"></div>
+                          </div>
+                          <div
+                            class="progress"
+                            role="progressbar"
+                            aria-label="Success example"
+                            aria-valuenow="60"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            style="height: 4px"
+                          >
+                            <div
+                              class="progress-bar bg-danger"
+                              style="width: 60%"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="day-progress text-capitalize row align-items-center mt-3"
+                      >
+                        <div class="col">
+                          <small class="day text-gray">thursday</small>
+                        </div>
+                        <div class="progress-list col-8">
+                          <div
+                            class="progress"
+                            role="progressbar"
+                            aria-label="Success example"
+                            aria-valuenow="40"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            style="height: 4px; margin-bottom: 3px"
+                          >
+                            <div class="progress-bar" style="width: 40%"></div>
+                          </div>
+                          <div
+                            class="progress"
+                            role="progressbar"
+                            aria-label="Success example"
+                            aria-valuenow="90"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            style="height: 4px"
+                          >
+                            <div
+                              class="progress-bar bg-danger"
+                              style="width: 90%"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="day-progress text-capitalize row align-items-center mt-3"
+                      >
+                        <div class="col">
+                          <small class="day text-gray">friday</small>
+                        </div>
+                        <div class="progress-list col-8">
+                          <div
+                            class="progress"
+                            role="progressbar"
+                            aria-label="Success example"
+                            aria-valuenow="20"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            style="height: 4px; margin-bottom: 3px"
+                          >
+                            <div class="progress-bar" style="width: 20%"></div>
+                          </div>
+                          <div
+                            class="progress"
+                            role="progressbar"
+                            aria-label="Success example"
+                            aria-valuenow="70"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            style="height: 4px"
+                          >
+                            <div
+                              class="progress-bar bg-danger"
+                              style="width: 70%"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="day-progress text-capitalize row align-items-center mt-3"
+                      >
+                        <div class="col">
+                          <small class="day text-gray">saturday</small>
+                        </div>
+                        <div class="progress-list col-8">
+                          <div
+                            class="progress"
+                            role="progressbar"
+                            aria-label="Success example"
+                            aria-valuenow="60"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            style="height: 4px; margin-bottom: 3px"
+                          >
+                            <div class="progress-bar" style="width: 60%"></div>
+                          </div>
+                          <div
+                            class="progress"
+                            role="progressbar"
+                            aria-label="Success example"
+                            aria-valuenow="80"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            style="height: 4px"
+                          >
+                            <div
+                              class="progress-bar bg-danger"
+                              style="width: 80%"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="day-progress text-capitalize row align-items-center mt-3"
+                      >
+                        <div class="col">
+                          <small class="day text-gray">sunday</small>
+                        </div>
+                        <div class="progress-list col-8">
+                          <div
+                            class="progress"
+                            role="progressbar"
+                            aria-label="Success example"
+                            aria-valuenow="10"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            style="height: 4px; margin-bottom: 3px"
+                          >
+                            <div class="progress-bar" style="width: 10%"></div>
+                          </div>
+                          <div
+                            class="progress"
+                            role="progressbar"
+                            aria-label="Success example"
+                            aria-valuenow="70"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            style="height: 4px"
+                          >
+                            <div
+                              class="progress-bar bg-danger"
+                              style="width: 70%"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="row row-cols-1 row-cols-sm-2">
+                      <div class="col">
+                        <div
+                          class="progress-text border-start border-4 border-warning text-capitalize ps-3"
+                        >
+                          <small class="text-gray">pageviews</small>
+                          <div class="fw-bold">78.623</div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div
+                          class="progress-text border-start border-4 border-success text-capitalize ps-3"
+                        >
+                          <small class="text-gray">organic</small>
+                          <div class="fw-bold">49.123</div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr />
+                    <!-- people icons progress -->
+                    <div>
+                      <div class="icon-progress">
+                        <div class="icon-text d-flex justify-content-between mb-1">
+                          <div class="text-capitalize align-items-center d-flex">
+                            <i class="bx bx-user fs-4 pe-2"></i>
+                            male
+                          </div>
+                          <div class="fw-semibold">43%</div>
+                        </div>
+                        <div
+                          class="progress"
+                          role="progressbar"
+                          aria-label="Success example"
+                          aria-valuenow="43"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          style="height: 4px; margin-bottom: 3px"
+                        >
+                          <div class="progress-bar bg-warning" style="width: 43%"></div>
+                        </div>
+
+                        <div class="icon-progress mt-3">
+                          <div class="icon-text d-flex justify-content-between mb-1">
+                            <div class="text-capitalize align-items-center d-flex">
+                              <i class="bx bx-user fs-4 pe-2"></i>
+                              fermate
+                            </div>
+                            <div class="fw-semibold">37%</div>
+                          </div>
+                          <div
+                            class="progress"
+                            role="progressbar"
+                            aria-label="Success example"
+                            aria-valuenow="37"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            style="height: 4px; margin-bottom: 3px"
+                          >
+                            <div class="progress-bar bg-warning" style="width: 37%"></div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="bootstrap-5.3.0/script/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script/index.js"></script>
+  </body>
+</html>
