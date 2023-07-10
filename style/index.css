@@ -112,7 +112,6 @@ body {
 
 .open-sidebar-icon {
   background-color: rgba(0, 0, 21, 0.2);
-  position: relative;
   bottom: 0;
   height: 48px;
   cursor: pointer;
@@ -133,6 +132,15 @@ body {
 
 .sidebar-menu.minSidebar .sidebar:hover {
   width: 256px;
+}
+
+.sidebar-menu.minSidebar .open-sidebar-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar-menu.minSidebar:hover .open-sidebar-icon {
+  display: block;
 }
 
 .sidebar-menu.minSidebar .sidebar .d-min-sidebar,
@@ -167,12 +175,17 @@ body {
   width: 100%;
 }
 
+.sidebar-menu.close .middle-navbar {
+  z-index: 1000;
+}
+
 /* middle  */
 .middle-navbar {
   height: 100%;
   position: relative;
   left: 256px;
   width: calc(100% - 256px);
+  z-index: 999;
 }
 
 .navbar-things {
@@ -185,12 +198,28 @@ body {
   cursor: pointer;
 }
 
+.menu-icon {
+  padding: 0 20px 0 20px;
+}
+
+.menu-icon i {
+  font-size: 20px;
+}
+
+.md-sidebar-icon {
+  display: none;
+}
+
+.md-show-logo {
+  display: none;
+}
+
 .icons {
-  font-size: 18px;
+  font-size: 20px;
   color: #2c384aae;
 }
 
-.text-grey {
+.text-gray {
   color: #2c384aae;
 }
 
@@ -209,4 +238,111 @@ body {
 .profile-img {
   width: 40px;
   height: 40px;
+  margin-right: 16px;
+  margin-left: 5px;
+}
+
+.badge-info {
+  padding: 5px 5px 2px;
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+.account-info,
+.setting-bg {
+  padding-bottom: 4px;
+  padding-top: 3px;
+}
+
+.account-info-text-size {
+  font-size: 13px;
+}
+
+.dropdown-menu .hover-two li a {
+  color: gray;
+}
+
+.dropdown-menu .hover-two li a:hover {
+  background-color: rgb(216, 216, 216);
+}
+
+.dropdown-menu li i {
+  padding-right: 10px;
+  font-size: 14px;
+}
+
+.card-body {
+  border-radius: 5px;
+}
+
+.chart-place {
+  height: 70px;
+}
+
+.chart-size {
+  height: 70px;
+  width: 295px;
+}
+
+.chart-size-2 {
+  height: 70px;
+  width: 327px;
+}
+
+.chart-place-2 {
+  height: 300px;
+  margin-top: 40px;
+}
+
+.three-app .app-icon .icon-color {
+  color: white;
+  font-size: 60px;
+  height: 112px;
+  width: 332px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.three-app .app-text .number {
+  font-size: 20px;
+}
+
+.three-app .app-text .small-text {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar-menu .sidebar {
+    width: 0;
+  }
+
+  .sidebar-menu .sidebar ~ .middle-navbar {
+    left: 0;
+    width: 100%;
+  }
+
+  .middle-navbar {
+    z-index: 1000;
+  }
+
+  .menu-icon {
+    padding: 0 30px 0 30px;
+  }
+
+  .lg-sidebar-icon {
+    display: none;
+  }
+
+  .md-sidebar-icon {
+    display: block;
+  }
+
+  .lg-display {
+    display: none;
+  }
+
+  .md-show-logo {
+    display: block;
+  }
 }
