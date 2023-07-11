@@ -1,25 +1,32 @@
 // sidebar
-let sidebar = document.querySelector(".sidebar-menu");
+let sidebarMenu = document.querySelector(".sidebar-menu");
+let sidebar = document.querySelector(".sidebar-menu .sidebar");
 let minSidebar = document.querySelector(".js-min-sidebar-icon");
 let chevronLeft = document.querySelector(".bx-chevron-left");
-// middle sidebar
-let closeSide = document.querySelector(".lg-sidebar-icon");
 
 minSidebar.addEventListener("click", () => {
   if (chevronLeft.classList.toggle("bx-chevron-right")) {
-    sidebar.classList.add("minSidebar");
+    sidebarMenu.classList.add("minSidebar");
   } else {
-    sidebar.classList.remove("minSidebar");
+    sidebarMenu.classList.remove("minSidebar");
   }
 });
+// sidebar end
 
-closeSide.addEventListener("click", () => {
-  if (sidebar.classList.toggle("close")) {
-    sidebar.classList.add("close");
+// middle sidebar
+let lgCloseSide = document.querySelector(".lg-sidebar-icon");
+
+lgCloseSide.addEventListener("click", () => {
+  if (sidebarMenu.classList.toggle("close")) {
+    sidebarMenu.classList.add("close");
   } else {
-    sidebar.classList.remove("close");
+    sidebarMenu.classList.remove("close");
   }
 });
+// middle sidebar end
+
+// offcanvas sidebar
+let mdCloseSide = document.querySelector(".md-sidebar-icon");
 
 // charts
 const random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
@@ -260,3 +267,4 @@ const mainChart = new Chart(document.getElementById("main-chart"), {
     },
   },
 });
+// charts end
