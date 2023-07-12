@@ -1,5 +1,5 @@
 * {
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -34,14 +34,16 @@ body {
 }
 
 .sidebar .navbar-nav {
-  overflow-y: hidden;
-  overflow-x: hidden;
+  overflow-y: auto;
+  overflow-x: auto;
   margin-right: 0;
   height: calc(100% - (64px + 48px));
 }
 
-.sidebar .navbar-nav:hover {
-  overflow-y: scroll;
+.sidebar .navbar-nav:active::-webkit-scrollbar-thumb,
+.sidebar .navbar-nav:focus::-webkit-scrollbar-thumb,
+.sidebar .navbar-nav:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
 }
 
 .sidebar .navbar-nav::-webkit-scrollbar-track {
@@ -53,8 +55,9 @@ body {
 }
 
 .sidebar .navbar-nav::-webkit-scrollbar-thumb {
-  background-color: #000000;
+  background-color: #2b2b2b;
   border-radius: 50px;
+  visibility: hidden;
 }
 
 .sidebar .sm-badge {
@@ -315,6 +318,41 @@ body {
 .middle-navbar .three-app .app-text .small-text {
   font-size: 14px;
 }
+
+.middle-navbar .user-title {
+  height: 64.8px;
+  align-items: center;
+  display: flex;
+}
+
+.middle-navbar tr {
+  display: grid;
+  grid-template-columns: 56.4px 146.35px 75.65px 128.75px 107.03px 100.6px 34.03px;
+  align-items: center;
+}
+
+.middle-navbar .user-img {
+  position: relative;
+}
+
+.middle-navbar .user-activity {
+  width: 10px;
+  height: 10px;
+  border: 0.5px solid white;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+}
+
+.middle-navbar .first-word::first-letter {
+  text-transform: uppercase;
+}
+
+.middle-navbar .user-dropdown ul li a:hover {
+  background-color: rgb(216, 216, 216);
+}
+
 /* middle end  */
 
 /* media 768px */
@@ -327,6 +365,12 @@ body {
   .sidebar-menu .sidebar ~ .middle-navbar {
     left: 0;
     width: 100%;
+  }
+
+  /* offcanvas */
+  .sidebar-menu:nth-child(2) .sidebar {
+    width: 256px;
+    z-index: 1100;
   }
   /* sidebar end */
 
