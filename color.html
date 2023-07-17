@@ -1,0 +1,1648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web</title>
+
+    <link rel="stylesheet" href="bootstrap-5.3.0/style/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="style/index.css" />
+  </head>
+
+  <body>
+    <section class="sidebar-menu">
+      <!-- sidebar -->
+      <div class="sidebar sidebar-bg d-sm-none d-md-block">
+        <!-- logo -->
+        <nav
+          class="sidebar-bg-2 text-light text-uppercase logo-height offcanvas-display"
+        >
+          <div class="d-flex justify-content-center align-items-center pt-3">
+            <i class="logo-icon fs-4 pe-1">c</i>
+            <div class="d-min-sidebar">
+              <span class="d-flex logo-middle-word">
+                code
+                <small class="logo-last-word">ui</small>
+              </span>
+            </div>
+          </div>
+        </nav>
+
+        <!-- sidebar info -->
+        <nav class="navbar-nav">
+          <ul class="flex-column text-white-50 ps-0 mb-0 overflow">
+            <!-- dashboard -->
+            <li class="nav-item text-capitalize hover">
+              <a
+                class="nav-link d-flex justify-content-between align-items-center h-100"
+                href="index.html"
+              >
+                <div>
+                  <i class="small-icon bi bi-speedometer2 px-3"></i>
+                  <span class="d-min-sidebar">dashboard</span>
+                </div>
+                <small
+                  class="sm-badge float-end bg-primary fw-bold me-2 d-min-sidebar"
+                >
+                  new
+                </small>
+              </a>
+            </li>
+            <!-- theme -->
+            <li class="nav-item text-uppercase text-title">theme</li>
+            <!-- colors -->
+            <li class="nav-item text-capitalize hover">
+              <a
+                class="nav-link h-100 d-flex align-items-center"
+                href="/color.html"
+              >
+                <div>
+                  <i class="small-icon bx bx-droplet px-3"></i>
+                  <span class="d-min-sidebar">colors</span>
+                </div>
+              </a>
+            </li>
+            <!-- typography -->
+            <li class="nav-item text-capitalize hover">
+              <a
+                class="nav-link h-100 d-flex align-items-center"
+                href="/typography.html"
+              >
+                <div>
+                  <i class="small-icon bx bx-pencil px-3"></i>
+                  <span class="d-min-sidebar">typography</span>
+                </div>
+              </a>
+            </li>
+            <!-- components -->
+            <li class="nav-item text-uppercase text-title">components</li>
+            <!-- base -->
+            <li
+              class="nav-item text-capitalize hover"
+              data-bs-toggle="collapse"
+              href="#baseCollapse"
+              role="button"
+              aria-expanded="false"
+              aria-controls="baseCollapse"
+            >
+              <a
+                class="nav-link d-flex justify-content-between align-items-center h-100"
+              >
+                <div>
+                  <i class="small-icon bi bi-puzzle px-3"></i>
+                  <span class="d-min-sidebar">base</span>
+                </div>
+                <i class="bi bi-chevron-down me-2"></i>
+              </a>
+            </li>
+            <!-- base collapse -->
+            <ul class="collapse ps-0 sidebar-bg-2" id="baseCollapse">
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/accordion.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    accordion
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/breadcrumbs"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    breadcrumbs
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item text-capitalize hover">
+                <a class="nav-link d-flex align-items-center h-100" href="">
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    cards
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/carousel.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    carousel
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/collpase.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    collpase
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/list-groups.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    list groups
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/nabs-tabs"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    nabs & tabs
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/pagination.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    pagination
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/placeholder.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    placeholder
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/popovers.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    popovers
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/progress.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    progress
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/spinners.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    spinners
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/tables.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    tables
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/tabs.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    tabs
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item text-capitalize hover">
+                <a class="nav-link d-flex align-items-center h-100" href="">
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    tooltips
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <!-- buttons -->
+            <li
+              class="nav-item text-capitalize hover"
+              data-bs-toggle="collapse"
+              href="#buttonsCollapse"
+              role="button"
+              aria-expanded="false"
+              aria-controls="buttonsCollapse"
+            >
+              <a
+                class="nav-link d-flex justify-content-between align-items-center h-100"
+              >
+                <div>
+                  <i class="small-icon bi bi-cursor px-3"></i>
+                  <span class="d-min-sidebar">buttons</span>
+                </div>
+                <i class="bi bi-chevron-down me-2"></i>
+              </a>
+            </li>
+            <!-- buttons collapse -->
+            <ul class="collapse ps-0 sidebar-bg-2" id="buttonsCollapse">
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/buttons.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    buttons
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/button-groups.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    button groups
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center"
+                  href="/dropdowns.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    dropdowns
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <!-- forms -->
+            <li
+              class="nav-item text-capitalize hover"
+              data-bs-toggle="collapse"
+              href="#formsCollapse"
+              role="button"
+              aria-expanded="false"
+              aria-controls="formsCollapse"
+            >
+              <a
+                class="nav-link d-flex justify-content-between align-items-center h-100"
+              >
+                <div>
+                  <i class="small-icon bi bi-card-text px-3"></i>
+                  <span class="d-min-sidebar">forms</span>
+                </div>
+                <i class="bi bi-chevron-down me-2"></i>
+              </a>
+            </li>
+            <!-- forms collapse -->
+            <ul class="collapse ps-0 sidebar-bg-2" id="formsCollapse">
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/form-control.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    form control
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/select.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    select
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="checks-radios.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    checks and radios
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/range.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    range
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/input-group.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    input group
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/floating-labels.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    floating labels
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/layout.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    layout
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/validation.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    validation
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <!-- charts -->
+            <li class="nav-item text-capitalize hover">
+              <a
+                class="nav-link d-flex align-items-center h-100"
+                href="/charts.html"
+              >
+                <div>
+                  <i class="small-icon bi bi-pie-chart px-3"></i>
+                  <span class="d-min-sidebar">charts</span>
+                </div>
+              </a>
+            </li>
+            <!-- icons -->
+            <li
+              class="nav-item text-capitalize hover"
+              data-bs-toggle="collapse"
+              href="#iconsCollapse"
+              role="button"
+              aria-expanded="false"
+              aria-controls="iconsCollapse"
+            >
+              <a
+                class="nav-link d-flex align-items-center justify-content-between h-100"
+              >
+                <div>
+                  <i class="small-icon bi bi-star px-3"></i>
+                  <span class="d-min-sidebar">icons</span>
+                </div>
+                <i class="bi bi-chevron-down me-2"></i>
+              </a>
+            </li>
+            <!-- icons collapse -->
+            <ul class="collapse ps-0 sidebar-bg-2" id="iconsCollapse">
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center justify-content-between h-100"
+                  href="/coreUI-icons.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    coreUI icons
+                  </div>
+                  <small
+                    class="sm-badge float-end bg-success fw-bold small-font me-2"
+                  >
+                    free
+                  </small>
+                </a>
+              </li>
+
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/coreUI-icons-brand"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    coreUI icons - brand
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/coreUI-icons-flag"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    coreUI icons - flag
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <!-- notifications -->
+            <li
+              class="nav-item text-capitalize hover"
+              data-bs-toggle="collapse"
+              href="#notificationsCollapse"
+              role="button"
+              aria-expanded="false"
+              aria-controls="notificationsCollapse"
+            >
+              <a
+                class="nav-link d-flex align-items-center justify-content-between h-100"
+              >
+                <div>
+                  <i class="small-icon bi bi-bell px-3"></i>
+                  <span class="d-min-sidebar">notifications</span>
+                </div>
+                <i class="bi bi-chevron-down me-2"></i>
+              </a>
+            </li>
+            <!-- notifications collapse -->
+            <ul class="collapse ps-0 sidebar-bg-2" id="notificationsCollapse">
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/alerts.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    alerts
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/badges.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    badges
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/model.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    model
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/toasts.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    toasts
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <!-- widgets -->
+            <li class="nav-item text-capitalize hover">
+              <a
+                class="nav-link d-flex align-items-center justify-content-between h-100"
+                href="/widgets.html"
+              >
+                <div>
+                  <i class="small-icon bi bi-calculator px-3"></i>
+                  <span class="d-min-sidebar">widgets</span>
+                </div>
+                <small
+                  class="sm-badge float-end bg-primary fw-bold me-2 d-min-sidebar"
+                >
+                  new
+                </small>
+              </a>
+            </li>
+            <!-- extras -->
+            <li class="nav-item text-uppercase text-title">extras</li>
+            <!-- pages -->
+            <li
+              class="nav-item text-capitalize hover"
+              data-bs-toggle="collapse"
+              href="#pagesCollapse"
+              role="button"
+              aria-expanded="false"
+              aria-controls="pagesCollapse"
+            >
+              <a
+                class="nav-link d-flex align-items-center justify-content-between h-100"
+              >
+                <div>
+                  <i class="small-icon bi bi-star px-3"></i>
+                  <span class="d-min-sidebar">pages</span>
+                </div>
+                <i class="bi bi-chevron-down me-2"></i>
+              </a>
+            </li>
+            <!-- pages collapse -->
+            <ul class="collapse ps-0 sidebar-bg-2" id="pagesCollapse">
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/login.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-box-arrow-in-left px-3"></i>
+                    login
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/register.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-box-arrow-left px-3"></i>
+                    register
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/error-404"
+                >
+                  <div>
+                    <i class="small-icon bi bi-bug px-3"></i>
+                    error 404
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/error-500"
+                >
+                  <div>
+                    <i class="small-icon bi bi-bug px-3"></i>
+                    error 500
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <!-- docs -->
+            <li class="nav-item text-capitalize hover">
+              <a
+                class="nav-link d-flex align-items-center h-100"
+                href="/docs.html"
+              >
+                <div>
+                  <i class="small-icon bi bi-file-earmark-text px-3"></i>
+                  <span class="d-min-sidebar">docs</span>
+                </div>
+              </a>
+            </li>
+            <!-- try core -->
+            <li class="nav-item text-capitalize hover">
+              <a
+                class="nav-link d-flex align-items-center h-100"
+                href="/try coreUI-PRO.html"
+              >
+                <div>
+                  <i class="small-icon bi bi-file-earmark-text px-3"></i>
+                  <span class="d-min-sidebar">
+                    try coreUI<strong>PRO</strong>
+                  </span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- open sidebar icon -->
+        <div
+          class="open-sidebar-icon sidebar-bg js-min-sidebar-icon offcanvas-display"
+        >
+          <i class="bx bx-chevron-left color float-end pe-3 py-2"></i>
+        </div>
+      </div>
+
+      <!-- offcanvas -->
+      <div class="sidebar-menu">
+        <div
+          class="sidebar sidebar-bg offcanvas"
+          tabindex="-1"
+          id="offcanvasExample"
+        >
+          <!-- sidebar info -->
+          <nav
+            class="navbar-nav offcanvas-body p-0"
+            data-bs-scroll="true"
+            data-bs-backdrop="false"
+          >
+            <ul class="flex-column text-white-50 ps-0 mb-0 overflow">
+              <!-- dashboard -->
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex justify-content-between align-items-center h-100"
+                  href="index.html"
+                >
+                  <div class>
+                    <i class="small-icon bi bi-speedometer2 px-3"></i>
+                    <span class="d-min-sidebar">dashboard</span>
+                  </div>
+                  <small
+                    class="sm-badge float-end bg-primary fw-bold me-2 d-min-sidebar"
+                  >
+                    new
+                  </small>
+                </a>
+              </li>
+              <!-- theme -->
+              <li class="nav-item text-uppercase text-title">theme</li>
+              <!-- colors -->
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link h-100 d-flex align-items-center"
+                  href="/color.html"
+                >
+                  <div>
+                    <i class="small-icon bx bx-droplet px-3"></i>
+                    <span class="d-min-sidebar">colors</span>
+                  </div>
+                </a>
+              </li>
+              <!-- typography -->
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link h-100 d-flex align-items-center"
+                  href="/typography.html"
+                >
+                  <div>
+                    <i class="small-icon bx bx-pencil px-3"></i>
+                    <span class="d-min-sidebar">typography</span>
+                  </div>
+                </a>
+              </li>
+              <!-- components -->
+              <li class="nav-item text-uppercase text-title">components</li>
+              <!-- base -->
+              <li
+                class="nav-item text-capitalize hover"
+                data-bs-toggle="collapse"
+                href="#baseCollapse"
+                role="button"
+                aria-expanded="false"
+                aria-controls="baseCollapse"
+              >
+                <a
+                  class="nav-link d-flex justify-content-between align-items-center h-100"
+                >
+                  <div>
+                    <i class="small-icon bi bi-puzzle px-3"></i>
+                    <span class="d-min-sidebar">base</span>
+                  </div>
+                  <i class="bi bi-chevron-down me-2"></i>
+                </a>
+              </li>
+              <!-- base collapse -->
+              <ul class="collapse ps-0 sidebar-bg-2" id="baseCollapse">
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/accordion.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      accordion
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/breadcrumbs"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      breadcrumbs
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/cards.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      cards
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/carousel.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      carousel
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/collpase.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      collpase
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/list-groups.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      list groups
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/nabs-tabs"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      nabs & tabs
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/pagination.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      pagination
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/placeholder.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      placeholder
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/popovers.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      popovers
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/progress.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      progress
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/spinners.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      spinners
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/tables.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      tables
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/tabs.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      tabs
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/tooltips.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      tooltips
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <!-- buttons -->
+              <li
+                class="nav-item text-capitalize hover"
+                data-bs-toggle="collapse"
+                href="#buttonsCollapse"
+                role="button"
+                aria-expanded="false"
+                aria-controls="buttonsCollapse"
+              >
+                <a
+                  class="nav-link d-flex justify-content-between align-items-center h-100"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3"></i>
+                    <span class="d-min-sidebar">buttons</span>
+                  </div>
+                  <i class="bi bi-chevron-down me-2"></i>
+                </a>
+              </li>
+              <!-- buttons collapse -->
+              <ul class="collapse ps-0 sidebar-bg-2" id="buttonsCollapse">
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/buttons.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      buttons
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/button-groups.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      button groups
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center"
+                    href="/dropdowns.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      dropdowns
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <!-- forms -->
+              <li
+                class="nav-item text-capitalize hover"
+                data-bs-toggle="collapse"
+                href="#formsCollapse"
+                role="button"
+                aria-expanded="false"
+                aria-controls="formsCollapse"
+              >
+                <a
+                  class="nav-link d-flex justify-content-between align-items-center h-100"
+                >
+                  <div>
+                    <i class="small-icon bi bi-card-text px-3"></i>
+                    <span class="d-min-sidebar">forms</span>
+                  </div>
+                  <i class="bi bi-chevron-down me-2"></i>
+                </a>
+              </li>
+              <!-- forms collapse -->
+              <ul class="collapse ps-0 sidebar-bg-2" id="formsCollapse">
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/form-control.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      form control
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/select.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      select
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="checks-radios.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      checks and radios
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/range.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      range
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/input-group.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      input group
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/floating-labels.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      floating labels
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/layout.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      layout
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/validation.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      validation
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <!-- charts -->
+              <li
+                class="nav-item text-capitalize d-flex align-items-center justify-content-between hover"
+              >
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/charts.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-pie-chart px-3"></i>
+                    <span class="d-min-sidebar">charts</span>
+                  </div>
+                </a>
+              </li>
+              <!-- icons -->
+              <li
+                class="nav-item text-capitalize align-items-center hover"
+                data-bs-toggle="collapse"
+                href="#iconsCollapse"
+                role="button"
+                aria-expanded="false"
+                aria-controls="iconsCollapse"
+              >
+                <a
+                  class="nav-link d-flex align-items-center justify-content-between h-100"
+                >
+                  <div>
+                    <i class="small-icon bi bi-star px-3"></i>
+                    <span class="d-min-sidebar">icons</span>
+                  </div>
+                  <i class="bi bi-chevron-down me-2"></i>
+                </a>
+              </li>
+              <!-- icons collapse -->
+              <ul class="collapse ps-0 sidebar-bg-2" id="iconsCollapse">
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center justify-content-between h-100"
+                    href="/coreUI-icons.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      coreUI icons
+                    </div>
+                    <small
+                      class="sm-badge float-end bg-success fw-bold small-font me-2"
+                    >
+                      free
+                    </small>
+                  </a>
+                </li>
+
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/coreUI-icons-brand"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      coreUI icons - brand
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/coreUI-icons-flag"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      coreUI icons - flag
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <!-- notifications -->
+              <li
+                class="nav-item text-capitalize hover"
+                data-bs-toggle="collapse"
+                href="#notificationsCollapse"
+                role="button"
+                aria-expanded="false"
+                aria-controls="notificationsCollapse"
+              >
+                <a
+                  class="nav-link d-flex align-items-center justify-content-between h-100"
+                >
+                  <div>
+                    <i class="small-icon bi bi-bell px-3"></i>
+                    <span class="d-min-sidebar">notifications</span>
+                  </div>
+                  <i class="bi bi-chevron-down me-2"></i>
+                </a>
+              </li>
+              <!-- notifications collapse -->
+              <ul class="collapse ps-0 sidebar-bg-2" id="notificationsCollapse">
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/alerts.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      alerts
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/badges.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      badges
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/model.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      model
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/toasts.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      toasts
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <!-- widgets -->
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center justify-content-between h-100"
+                  href="/widgets.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-calculator px-3"></i>
+                    <span class="d-min-sidebar">widgets</span>
+                  </div>
+                  <small
+                    class="sm-badge float-end bg-primary fw-bold me-2 d-min-sidebar"
+                  >
+                    new
+                  </small>
+                </a>
+              </li>
+              <!-- extras -->
+              <div class="nav-item text-uppercase text-title">extras</div>
+              <!-- pages -->
+              <li
+                class="nav-item text-capitalize hover"
+                data-bs-toggle="collapse"
+                href="#pagesCollapse"
+                role="button"
+                aria-expanded="false"
+                aria-controls="pagesCollapse"
+              >
+                <a
+                  class="nav-link d-flex align-items-center justify-content-between h-100"
+                >
+                  <div>
+                    <i class="small-icon bi bi-star px-3"></i>
+                    <span class="d-min-sidebar">pages</span>
+                  </div>
+                  <i class="bi bi-chevron-down me-2"></i>
+                </a>
+              </li>
+              <!-- pages collapse -->
+              <ul class="collapse ps-0 sidebar-bg-2" id="pagesCollapse">
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/login.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-box-arrow-in-left px-3"></i>
+                      login
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/register.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-box-arrow-left px-3"></i>
+                      register
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/error-404"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-bug px-3"></i>
+                      error 404
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/error-500"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-bug px-3"></i>
+                      error 500
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <!-- docs -->
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/docs.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-file-earmark-text px-3"></i>
+                    <span class="d-min-sidebar">docs</span>
+                  </div>
+                </a>
+              </li>
+              <!-- try core -->
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/try coreUI-PRO.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-file-earmark-text px-3"></i>
+                    <span class="d-min-sidebar">
+                      try coreUI<strong>PRO</strong>
+                    </span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- sidebar info end -->
+        </div>
+      </div>
+
+      <!-- middle -->
+      <div class="middle-navbar bg-body-secondary">
+        <!-- navbar things -->
+        <div class="navbar-tings pt-2 px-0 bg-white sticky-top">
+          <!-- navbar settings -->
+          <div class="navbar-settings">
+            <!-- navbar setting 1 -->
+            <div class="navbar-setting d-flex justify-content-between">
+              <div class="navbar-setting d-flex align-items-center">
+                <div class="text-gray menu-icon">
+                  <i
+                    class="bi bi-list close-sidebar-icon md-sidebar-icon"
+                    data-bs-toggle="offcanvas"
+                    href="#offcanvasExample"
+                    role="button"
+                    aria-controls="offcanvasExample"
+                  ></i>
+                  <i
+                    class="bi bi-list close-sidebar-icon lg-sidebar-icon"
+                  ></i>
+                </div>
+                <!-- lg show setting -->
+                <div class="navbar font-size">
+                  <ul class="nav text-capitalize gap-3 lg-display">
+                    <li class="nav-item">
+                      <a href="" class="underline-none text-gray">
+                        dashboard
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="" class="underline-none text-gray">user</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="" class="underline-none text-gray"> settings </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- md show logo -->
+                <div class="md-show-logo">
+                  <div class="d-flex align-items-center text-uppercase">
+                    <i class="pe-1 fs-5">c</i>
+                    <span class="d-flex logo-middle-word fw-bold text-gray">
+                      code
+                      <small class="logo-last-word">ui</small>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <!-- icons nav -->
+              <div class="icons navbar">
+                <ul class="nav gap-3">
+                  <li class="nav-item">
+                    <a href="">
+                      <i class="bi bi-bell text-gray"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="">
+                      <i class="bi bi-list-task text-gray"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="">
+                      <i class="bi bi-envelope-open text-gray"></i>
+                    </a>
+                  </li>
+                </ul>
+                <!-- account info -->
+                <div class="avatar">
+                  <a
+                    href=""
+                    class="dropdown"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img
+                      src="image/images.jpeg"
+                      class="rounded-circle profile-img"
+                    />
+                  </a>
+                  <ul
+                    class="dropdown-menu text-capitalize bg-secondary-subtle py-0"
+                  >
+                    <li class="account-info">
+                      <strong
+                        class="dropdown-item-text text-gray account-info-text-size"
+                      >
+                        account
+                      </strong>
+                    </li>
+                    <div class="bg-white hover-two">
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <i class="bi bi-bell"></i>
+                          updates
+                          <span class="badge badge-info bg-info">42</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <i class="bi bi-envelope-open"></i>
+                          messages
+                          <span class="badge badge-info bg-success">42</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <i class="bi bi-check-square"></i>
+                          tasks
+                          <span class="badge badge-info bg-danger">42</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <i class="bx bx-comment"></i>
+                          comments
+                          <span class="badge badge-info bg-warning">42</span>
+                        </a>
+                      </li>
+                    </div>
+                    <li class="setting-bg">
+                      <strong
+                        class="dropdown-item-text text-gray account-info-text-size"
+                      >
+                        settings
+                      </strong>
+                    </li>
+                    <div class="bg-white hover-two">
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <i class="bx bx-user"></i>
+                          profile
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <i class="bi bi-gear"></i>
+                          settings
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <i class="bi bi-credit-card"></i>
+                          payments
+                          <span class="badge badge-info bg-secondary">42</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <i class="bi bi-file-earmark"></i>
+                          project
+                          <span class="badge badge-info bg-primary">42</span>
+                        </a>
+                      </li>
+                      <hr class="mb-2 mt-2" />
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <i class="bi bi-lock"></i>
+                          lock account
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <i class="bi bi-box-arrow-left"></i>
+                          logout
+                        </a>
+                      </li>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <hr class="mt-0" />
+            <!-- navbar setting 2 -->
+            <div class="navbar-setting-two">
+              <ul class="d-flex gap-2 text-capitalize font-size">
+                <li class="nav-item">
+                  <a href="index.html">home</a>
+                </li>
+                <p>/</p>
+                <li class="nav-item text-gray">
+                  <a href="index.html">theme</a>
+                </li>
+                <p>/</p>
+                <div class="text-gray">colors</div>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- middle bg size -->
+        <div class="mx-3">
+          <!-- cards -->
+          <div class="card">
+            <div class="card-header">
+              <div class="text-capitalize">theme colors</div>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+        <!-- footer -->
+        <footer class="container-fluid pb-2">
+          <div class="d-flex flex-wrap font-size">
+            <div>
+              <a class="text-capitalize" href="#"> coreUI </a>
+              <a href="#" class="text-capitalize"> bootstrap admin template </a>
+              &copy; 2023 creativeLabs.
+            </div>
+            <div class="text-capitalize ms-auto text-end">
+              powered by
+              <a href="#">coreUI components </a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </section>
+
+    <script src="bootstrap-5.3.0/script/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script/index.js"></script>
+  </body>
+</html>

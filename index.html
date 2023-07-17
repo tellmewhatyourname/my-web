@@ -21,10 +21,9 @@
   </head>
 
   <body>
-    <!-- web -->
     <section class="sidebar-menu">
       <!-- sidebar -->
-      <div class="sidebar sidebar-bg">
+      <div class="sidebar sidebar-bg d-sm-none d-md-block">
         <!-- logo -->
         <nav
           class="sidebar-bg-2 text-light text-uppercase logo-height offcanvas-display"
@@ -39,534 +38,682 @@
             </div>
           </div>
         </nav>
-        <!-- logo end -->
 
         <!-- sidebar info -->
         <nav class="navbar-nav">
           <ul class="flex-column text-white-50 ps-0 mb-0 overflow">
             <!-- dashboard -->
-            <li
-              class="nav-item text-capitalize d-flex justify-content-between align-items-center hover"
-            >
-              <a class="nav-link" href="">
-                <i class="small-icon bi bi-speedometer2 px-3"></i>
-                <span class="d-min-sidebar">dashboard</span>
-              </a>
-              <small
-                class="sm-badge float-end bg-primary fw-bold me-2 d-min-sidebar"
+            <li class="nav-item text-capitalize hover">
+              <a
+                class="nav-link d-flex justify-content-between align-items-center h-100"
+                href="index.html"
               >
-                new
-              </small>
+                <div>
+                  <i class="small-icon bi bi-speedometer2 px-3"></i>
+                  <span class="d-min-sidebar">dashboard</span>
+                </div>
+                <small
+                  class="sm-badge float-end bg-primary fw-bold me-2 d-min-sidebar"
+                >
+                  new
+                </small>
+              </a>
             </li>
             <!-- theme -->
             <li class="nav-item text-uppercase text-title">theme</li>
             <!-- colors -->
-            <li
-              class="nav-item text-capitalize d-flex align-items-center justify-content-between hover"
-            >
-              <a class="nav-link" href="">
-                <i class="small-icon bx bx-droplet px-3"></i>
-                <span class="d-min-sidebar">colors</span>
+            <li class="nav-item text-capitalize hover">
+              <a
+                class="nav-link h-100 d-flex align-items-center"
+                href="/color.html"
+              >
+                <div>
+                  <i class="small-icon bx bx-droplet px-3"></i>
+                  <span class="d-min-sidebar">colors</span>
+                </div>
               </a>
             </li>
             <!-- typography -->
-            <li
-              class="nav-item text-capitalize d-flex align-items-center justify-content-between hover"
-            >
-              <a class="nav-link" href="">
-                <i class="small-icon bx bx-pencil px-3"></i>
-                <span class="d-min-sidebar">typography</span>
+            <li class="nav-item text-capitalize hover">
+              <a
+                class="nav-link h-100 d-flex align-items-center"
+                href="/typography.html"
+              >
+                <div>
+                  <i class="small-icon bx bx-pencil px-3"></i>
+                  <span class="d-min-sidebar">typography</span>
+                </div>
               </a>
             </li>
             <!-- components -->
             <li class="nav-item text-uppercase text-title">components</li>
             <!-- base -->
             <li
-              class="nav-item text-capitalize d-flex justify-content-between align-items-center hover"
+              class="nav-item text-capitalize hover"
               data-bs-toggle="collapse"
               href="#baseCollapse"
               role="button"
               aria-expanded="false"
               aria-controls="baseCollapse"
             >
-              <a class="nav-link">
-                <i class="small-icon bi bi-puzzle px-3"></i>
-                <span class="d-min-sidebar">base</span>
+              <a
+                class="nav-link d-flex justify-content-between align-items-center h-100"
+              >
+                <div>
+                  <i class="small-icon bi bi-puzzle px-3"></i>
+                  <span class="d-min-sidebar">base</span>
+                </div>
+                <i class="bi bi-chevron-down me-2"></i>
               </a>
-              <i class="bi bi-chevron-down me-2"></i>
             </li>
             <!-- base collapse -->
             <ul class="collapse ps-0 sidebar-bg-2" id="baseCollapse">
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  accordion
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/accordion.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    accordion
+                  </div>
                 </a>
               </li>
 
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  breadcrumbs
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/breadcrumbs"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    breadcrumbs
+                  </div>
                 </a>
               </li>
 
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  cards
+              <li class="nav-item text-capitalize hover">
+                <a class="nav-link d-flex align-items-center h-100" href="">
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    cards
+                  </div>
                 </a>
               </li>
 
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  carousel
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/carousel.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    carousel
+                  </div>
                 </a>
               </li>
 
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  collpase
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/collpase.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    collpase
+                  </div>
                 </a>
               </li>
 
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  list groups
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/list-groups.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    list groups
+                  </div>
                 </a>
               </li>
 
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  nabs & tabs
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/nabs-tabs"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    nabs & tabs
+                  </div>
                 </a>
               </li>
 
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  pagination
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/pagination.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    pagination
+                  </div>
                 </a>
               </li>
 
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  placeholder
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/placeholder.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    placeholder
+                  </div>
                 </a>
               </li>
 
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  popovers
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/popovers.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    popovers
+                  </div>
                 </a>
               </li>
 
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  progress
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/progress.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    progress
+                  </div>
                 </a>
               </li>
 
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  spinners
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/spinners.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    spinners
+                  </div>
                 </a>
               </li>
 
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  tables
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/tables.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    tables
+                  </div>
                 </a>
               </li>
 
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  tabs
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/tabs.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    tabs
+                  </div>
                 </a>
               </li>
 
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  tooltips
+              <li class="nav-item text-capitalize hover">
+                <a class="nav-link d-flex align-items-center h-100" href="">
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    tooltips
+                  </div>
                 </a>
               </li>
             </ul>
             <!-- buttons -->
             <li
-              class="nav-item text-capitalize d-flex justify-content-between align-items-center hover"
+              class="nav-item text-capitalize hover"
               data-bs-toggle="collapse"
               href="#buttonsCollapse"
               role="button"
               aria-expanded="false"
               aria-controls="buttonsCollapse"
             >
-              <a class="nav-link" href="">
-                <i class="small-icon bi bi-cursor px-3"></i>
-                <span class="d-min-sidebar">buttons</span>
+              <a
+                class="nav-link d-flex justify-content-between align-items-center h-100"
+              >
+                <div>
+                  <i class="small-icon bi bi-cursor px-3"></i>
+                  <span class="d-min-sidebar">buttons</span>
+                </div>
+                <i class="bi bi-chevron-down me-2"></i>
               </a>
-              <i class="bi bi-chevron-down me-2"></i>
             </li>
             <!-- buttons collapse -->
             <ul class="collapse ps-0 sidebar-bg-2" id="buttonsCollapse">
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  buttons
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/buttons.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    buttons
+                  </div>
                 </a>
               </li>
 
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  button groups
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/button-groups.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    button groups
+                  </div>
                 </a>
               </li>
 
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  drowdowns
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center"
+                  href="/dropdowns.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    dropdowns
+                  </div>
                 </a>
               </li>
             </ul>
             <!-- forms -->
             <li
-              class="nav-item text-capitalize d-flex justify-content-between align-items-center hover"
+              class="nav-item text-capitalize hover"
               data-bs-toggle="collapse"
               href="#formsCollapse"
               role="button"
               aria-expanded="false"
               aria-controls="formsCollapse"
             >
-              <a class="nav-link" href="">
-                <i class="small-icon bi bi-card-text px-3"></i>
-                <span class="d-min-sidebar">forms</span>
+              <a
+                class="nav-link d-flex justify-content-between align-items-center h-100"
+              >
+                <div>
+                  <i class="small-icon bi bi-card-text px-3"></i>
+                  <span class="d-min-sidebar">forms</span>
+                </div>
+                <i class="bi bi-chevron-down me-2"></i>
               </a>
-              <i class="bi bi-chevron-down me-2"></i>
             </li>
             <!-- forms collapse -->
             <ul class="collapse ps-0 sidebar-bg-2" id="formsCollapse">
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  form control
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/form-control.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    form control
+                  </div>
                 </a>
               </li>
 
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  select
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/select.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    select
+                  </div>
                 </a>
               </li>
 
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  checks and radios
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="checks-radios.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    checks and radios
+                  </div>
                 </a>
               </li>
 
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  range
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/range.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    range
+                  </div>
                 </a>
               </li>
 
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  input group
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/input-group.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    input group
+                  </div>
                 </a>
               </li>
 
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  floating labels
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/floating-labels.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    floating labels
+                  </div>
                 </a>
               </li>
 
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  layout
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/layout.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    layout
+                  </div>
                 </a>
               </li>
 
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  validation
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/validation.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    validation
+                  </div>
                 </a>
               </li>
             </ul>
             <!-- charts -->
-            <li
-              class="nav-item text-capitalize d-flex align-items-center justify-content-between hover"
-            >
-              <a class="nav-link" href="">
-                <i class="small-icon bi bi-pie-chart px-3"></i>
-                <span class="d-min-sidebar">charts</span>
+            <li class="nav-item text-capitalize hover">
+              <a
+                class="nav-link d-flex align-items-center h-100"
+                href="/charts.html"
+              >
+                <div>
+                  <i class="small-icon bi bi-pie-chart px-3"></i>
+                  <span class="d-min-sidebar">charts</span>
+                </div>
               </a>
             </li>
             <!-- icons -->
             <li
-              class="nav-item text-capitalize d-flex justify-content-between gap-5 align-items-center hover"
+              class="nav-item text-capitalize hover"
               data-bs-toggle="collapse"
               href="#iconsCollapse"
               role="button"
               aria-expanded="false"
               aria-controls="iconsCollapse"
             >
-              <a class="nav-link" href="">
-                <i class="small-icon bi bi-star px-3"></i>
-                <span class="d-min-sidebar">icons</span>
+              <a
+                class="nav-link d-flex align-items-center justify-content-between h-100"
+              >
+                <div>
+                  <i class="small-icon bi bi-star px-3"></i>
+                  <span class="d-min-sidebar">icons</span>
+                </div>
+                <i class="bi bi-chevron-down me-2"></i>
               </a>
-              <i class="bi bi-chevron-down me-2"></i>
             </li>
             <!-- icons collapse -->
             <ul class="collapse ps-0 sidebar-bg-2" id="iconsCollapse">
-              <li
-                class="nav-item text-capitalize d-flex justify-content-between align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  coreUI icons
-                </a>
-                <small
-                  class="sm-badge float-end bg-success fw-bold small-font me-2"
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center justify-content-between h-100"
+                  href="/coreUI-icons.html"
                 >
-                  free
-                </small>
-              </li>
-
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  coreUI icons - brand
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    coreUI icons
+                  </div>
+                  <small
+                    class="sm-badge float-end bg-success fw-bold small-font me-2"
+                  >
+                    free
+                  </small>
                 </a>
               </li>
 
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  coreUI icons - flag
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/coreUI-icons-brand"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    coreUI icons - brand
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/coreUI-icons-flag"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    coreUI icons - flag
+                  </div>
                 </a>
               </li>
             </ul>
             <!-- notifications -->
             <li
-              class="nav-item text-capitalize d-flex justify-content-between gap-5 align-items-center hover"
+              class="nav-item text-capitalize hover"
               data-bs-toggle="collapse"
               href="#notificationsCollapse"
               role="button"
               aria-expanded="false"
               aria-controls="notificationsCollapse"
             >
-              <a class="nav-link" href="">
-                <i class="small-icon bi bi-bell px-3"></i>
-                <span class="d-min-sidebar">notifications</span>
+              <a
+                class="nav-link d-flex align-items-center justify-content-between h-100"
+              >
+                <div>
+                  <i class="small-icon bi bi-bell px-3"></i>
+                  <span class="d-min-sidebar">notifications</span>
+                </div>
+                <i class="bi bi-chevron-down me-2"></i>
               </a>
-              <i class="bi bi-chevron-down me-2"></i>
             </li>
             <!-- notifications collapse -->
             <ul class="collapse ps-0 sidebar-bg-2" id="notificationsCollapse">
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  alerts
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/alerts.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    alerts
+                  </div>
                 </a>
               </li>
 
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  badges
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/badges.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    badges
+                  </div>
                 </a>
               </li>
 
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  model
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/model.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    model
+                  </div>
                 </a>
               </li>
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                  toasts
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/toasts.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                    toasts
+                  </div>
                 </a>
               </li>
             </ul>
             <!-- widgets -->
-            <li
-              class="nav-item text-capitalize d-flex justify-content-between align-items-center hover"
-            >
-              <a class="nav-link" href="">
-                <i class="small-icon bi bi-calculator px-3"></i>
-                <span class="d-min-sidebar">widgets</span>
-              </a>
-              <small
-                class="sm-badge float-end bg-primary fw-bold me-2 d-min-sidebar"
+            <li class="nav-item text-capitalize hover">
+              <a
+                class="nav-link d-flex align-items-center justify-content-between h-100"
+                href="/widgets.html"
               >
-                new
-              </small>
+                <div>
+                  <i class="small-icon bi bi-calculator px-3"></i>
+                  <span class="d-min-sidebar">widgets</span>
+                </div>
+                <small
+                  class="sm-badge float-end bg-primary fw-bold me-2 d-min-sidebar"
+                >
+                  new
+                </small>
+              </a>
             </li>
             <!-- extras -->
             <li class="nav-item text-uppercase text-title">extras</li>
             <!-- pages -->
             <li
-              class="nav-item text-capitalize d-flex justify-content-between gap-5 align-items-center hover"
+              class="nav-item text-capitalize hover"
               data-bs-toggle="collapse"
               href="#pagesCollapse"
               role="button"
               aria-expanded="false"
               aria-controls="pagesCollapse"
             >
-              <a class="nav-link" href="">
-                <i class="small-icon bi bi-star px-3"></i>
-                <span class="d-min-sidebar">pages</span>
+              <a
+                class="nav-link d-flex align-items-center justify-content-between h-100"
+              >
+                <div>
+                  <i class="small-icon bi bi-star px-3"></i>
+                  <span class="d-min-sidebar">pages</span>
+                </div>
+                <i class="bi bi-chevron-down me-2"></i>
               </a>
-              <i class="bi bi-chevron-down me-2"></i>
             </li>
             <!-- pages collapse -->
             <ul class="collapse ps-0 sidebar-bg-2" id="pagesCollapse">
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-box-arrow-in-left px-3"></i>
-                  login
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/login.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-box-arrow-in-left px-3"></i>
+                    login
+                  </div>
                 </a>
               </li>
 
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-box-arrow-left px-3"></i>
-                  register
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/register.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-box-arrow-left px-3"></i>
+                    register
+                  </div>
                 </a>
               </li>
 
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-bug px-3"></i>
-                  error 404
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/error-404"
+                >
+                  <div>
+                    <i class="small-icon bi bi-bug px-3"></i>
+                    error 404
+                  </div>
                 </a>
               </li>
 
-              <li
-                class="nav-item text-capitalize d-flex align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-bug px-3"></i>
-                  error 500
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/error-500"
+                >
+                  <div>
+                    <i class="small-icon bi bi-bug px-3"></i>
+                    error 500
+                  </div>
                 </a>
               </li>
             </ul>
             <!-- docs -->
-            <li
-              class="nav-item text-capitalize d-flex align-items-center justify-content-between hover"
-            >
-              <a class="nav-link" href="">
-                <i class="small-icon bi bi-file-earmark-text px-3"></i>
-                <span class="d-min-sidebar">docs</span>
+            <li class="nav-item text-capitalize hover">
+              <a
+                class="nav-link d-flex align-items-center h-100"
+                href="/docs.html"
+              >
+                <div>
+                  <i class="small-icon bi bi-file-earmark-text px-3"></i>
+                  <span class="d-min-sidebar">docs</span>
+                </div>
               </a>
             </li>
             <!-- try core -->
-            <li
-              class="nav-item text-capitalize d-flex align-items-center justify-content-between hover"
-            >
-              <a class="nav-link" href="">
-                <i class="small-icon bi bi-file-earmark-text px-3"></i>
-                <span class="d-min-sidebar"
-                  >try coreUI<strong>PRO</strong></span
-                >
+            <li class="nav-item text-capitalize hover">
+              <a
+                class="nav-link d-flex align-items-center h-100"
+                href="/try coreUI-PRO.html"
+              >
+                <div>
+                  <i class="small-icon bi bi-file-earmark-text px-3"></i>
+                  <span class="d-min-sidebar">
+                    try coreUI<strong>PRO</strong>
+                  </span>
+                </div>
               </a>
             </li>
           </ul>
         </nav>
-        <!-- sidebar info end -->
 
         <!-- open sidebar icon -->
         <div
@@ -574,7 +721,6 @@
         >
           <i class="bx bx-chevron-left color float-end pe-3 py-2"></i>
         </div>
-        <!-- open sidebar icon end -->
       </div>
 
       <!-- offcanvas -->
@@ -592,323 +738,422 @@
           >
             <ul class="flex-column text-white-50 ps-0 mb-0 overflow">
               <!-- dashboard -->
-              <li
-                class="nav-item text-capitalize d-flex justify-content-between align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-speedometer2 px-3"></i>
-                  <span class="d-min-sidebar">dashboard</span>
-                </a>
-                <small
-                  class="sm-badge float-end bg-primary fw-bold me-2 d-min-sidebar"
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex justify-content-between align-items-center h-100"
+                  href="index.html"
                 >
-                  new
-                </small>
+                  <div class>
+                    <i class="small-icon bi bi-speedometer2 px-3"></i>
+                    <span class="d-min-sidebar">dashboard</span>
+                  </div>
+                  <small
+                    class="sm-badge float-end bg-primary fw-bold me-2 d-min-sidebar"
+                  >
+                    new
+                  </small>
+                </a>
               </li>
               <!-- theme -->
               <li class="nav-item text-uppercase text-title">theme</li>
               <!-- colors -->
-              <li
-                class="nav-item text-capitalize d-flex align-items-center justify-content-between hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bx bx-droplet px-3"></i>
-                  <span class="d-min-sidebar">colors</span>
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link h-100 d-flex align-items-center"
+                  href="/color.html"
+                >
+                  <div>
+                    <i class="small-icon bx bx-droplet px-3"></i>
+                    <span class="d-min-sidebar">colors</span>
+                  </div>
                 </a>
               </li>
               <!-- typography -->
-              <li
-                class="nav-item text-capitalize d-flex align-items-center justify-content-between hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bx bx-pencil px-3"></i>
-                  <span class="d-min-sidebar">typography</span>
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link h-100 d-flex align-items-center"
+                  href="/typography.html"
+                >
+                  <div>
+                    <i class="small-icon bx bx-pencil px-3"></i>
+                    <span class="d-min-sidebar">typography</span>
+                  </div>
                 </a>
               </li>
               <!-- components -->
               <li class="nav-item text-uppercase text-title">components</li>
               <!-- base -->
               <li
-                class="nav-item text-capitalize d-flex justify-content-between align-items-center hover"
+                class="nav-item text-capitalize hover"
                 data-bs-toggle="collapse"
                 href="#baseCollapse"
                 role="button"
                 aria-expanded="false"
                 aria-controls="baseCollapse"
               >
-                <a class="nav-link">
-                  <i class="small-icon bi bi-puzzle px-3"></i>
-                  <span class="d-min-sidebar">base</span>
+                <a
+                  class="nav-link d-flex justify-content-between align-items-center h-100"
+                >
+                  <div>
+                    <i class="small-icon bi bi-puzzle px-3"></i>
+                    <span class="d-min-sidebar">base</span>
+                  </div>
+                  <i class="bi bi-chevron-down me-2"></i>
                 </a>
-                <i class="bi bi-chevron-down me-2"></i>
               </li>
               <!-- base collapse -->
               <ul class="collapse ps-0 sidebar-bg-2" id="baseCollapse">
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    accordion
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/accordion.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      accordion
+                    </div>
                   </a>
                 </li>
 
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    breadcrumbs
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/breadcrumbs"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      breadcrumbs
+                    </div>
                   </a>
                 </li>
 
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    cards
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/cards.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      cards
+                    </div>
                   </a>
                 </li>
 
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    carousel
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/carousel.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      carousel
+                    </div>
                   </a>
                 </li>
 
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    collpase
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/collpase.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      collpase
+                    </div>
                   </a>
                 </li>
 
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    list groups
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/list-groups.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      list groups
+                    </div>
                   </a>
                 </li>
 
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    nabs & tabs
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/nabs-tabs"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      nabs & tabs
+                    </div>
                   </a>
                 </li>
 
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    pagination
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/pagination.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      pagination
+                    </div>
                   </a>
                 </li>
 
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    placeholder
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/placeholder.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      placeholder
+                    </div>
                   </a>
                 </li>
 
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    popovers
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/popovers.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      popovers
+                    </div>
                   </a>
                 </li>
 
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    progress
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/progress.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      progress
+                    </div>
                   </a>
                 </li>
 
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    spinners
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/spinners.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      spinners
+                    </div>
                   </a>
                 </li>
 
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    tables
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/tables.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      tables
+                    </div>
                   </a>
                 </li>
 
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    tabs
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/tabs.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      tabs
+                    </div>
                   </a>
                 </li>
 
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    tooltips
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/tooltips.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      tooltips
+                    </div>
                   </a>
                 </li>
               </ul>
               <!-- buttons -->
               <li
-                class="nav-item text-capitalize d-flex justify-content-between align-items-center hover"
+                class="nav-item text-capitalize hover"
                 data-bs-toggle="collapse"
                 href="#buttonsCollapse"
                 role="button"
                 aria-expanded="false"
                 aria-controls="buttonsCollapse"
               >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-cursor px-3"></i>
-                  <span class="d-min-sidebar">buttons</span>
+                <a
+                  class="nav-link d-flex justify-content-between align-items-center h-100"
+                >
+                  <div>
+                    <i class="small-icon bi bi-cursor px-3"></i>
+                    <span class="d-min-sidebar">buttons</span>
+                  </div>
+                  <i class="bi bi-chevron-down me-2"></i>
                 </a>
-                <i class="bi bi-chevron-down me-2"></i>
               </li>
               <!-- buttons collapse -->
               <ul class="collapse ps-0 sidebar-bg-2" id="buttonsCollapse">
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    buttons
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/buttons.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      buttons
+                    </div>
                   </a>
                 </li>
 
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    button groups
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/button-groups.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      button groups
+                    </div>
                   </a>
                 </li>
 
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    drowdowns
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center"
+                    href="/dropdowns.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      dropdowns
+                    </div>
                   </a>
                 </li>
               </ul>
               <!-- forms -->
               <li
-                class="nav-item text-capitalize d-flex justify-content-between align-items-center hover"
+                class="nav-item text-capitalize hover"
                 data-bs-toggle="collapse"
                 href="#formsCollapse"
                 role="button"
                 aria-expanded="false"
                 aria-controls="formsCollapse"
               >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-card-text px-3"></i>
-                  <span class="d-min-sidebar">forms</span>
+                <a
+                  class="nav-link d-flex justify-content-between align-items-center h-100"
+                >
+                  <div>
+                    <i class="small-icon bi bi-card-text px-3"></i>
+                    <span class="d-min-sidebar">forms</span>
+                  </div>
+                  <i class="bi bi-chevron-down me-2"></i>
                 </a>
-                <i class="bi bi-chevron-down me-2"></i>
               </li>
               <!-- forms collapse -->
               <ul class="collapse ps-0 sidebar-bg-2" id="formsCollapse">
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    form control
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/form-control.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      form control
+                    </div>
                   </a>
                 </li>
 
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    select
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/select.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      select
+                    </div>
                   </a>
                 </li>
 
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    checks and radios
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="checks-radios.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      checks and radios
+                    </div>
                   </a>
                 </li>
 
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    range
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/range.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      range
+                    </div>
                   </a>
                 </li>
 
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    input group
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/input-group.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      input group
+                    </div>
                   </a>
                 </li>
 
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    floating labels
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/floating-labels.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      floating labels
+                    </div>
                   </a>
                 </li>
 
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    layout
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/layout.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      layout
+                    </div>
                   </a>
                 </li>
 
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    validation
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/validation.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      validation
+                    </div>
                   </a>
                 </li>
               </ul>
@@ -916,199 +1161,258 @@
               <li
                 class="nav-item text-capitalize d-flex align-items-center justify-content-between hover"
               >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-pie-chart px-3"></i>
-                  <span class="d-min-sidebar">charts</span>
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/charts.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-pie-chart px-3"></i>
+                    <span class="d-min-sidebar">charts</span>
+                  </div>
                 </a>
               </li>
               <!-- icons -->
               <li
-                class="nav-item text-capitalize d-flex justify-content-between gap-5 align-items-center hover"
+                class="nav-item text-capitalize align-items-center hover"
                 data-bs-toggle="collapse"
                 href="#iconsCollapse"
                 role="button"
                 aria-expanded="false"
                 aria-controls="iconsCollapse"
               >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-star px-3"></i>
-                  <span class="d-min-sidebar">icons</span>
+                <a
+                  class="nav-link d-flex align-items-center justify-content-between h-100"
+                >
+                  <div>
+                    <i class="small-icon bi bi-star px-3"></i>
+                    <span class="d-min-sidebar">icons</span>
+                  </div>
+                  <i class="bi bi-chevron-down me-2"></i>
                 </a>
-                <i class="bi bi-chevron-down me-2"></i>
               </li>
               <!-- icons collapse -->
               <ul class="collapse ps-0 sidebar-bg-2" id="iconsCollapse">
-                <li
-                  class="nav-item text-capitalize d-flex justify-content-between align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    coreUI icons
-                  </a>
-                  <small
-                    class="sm-badge float-end bg-success fw-bold small-font me-2"
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center justify-content-between h-100"
+                    href="/coreUI-icons.html"
                   >
-                    free
-                  </small>
-                </li>
-
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    coreUI icons - brand
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      coreUI icons
+                    </div>
+                    <small
+                      class="sm-badge float-end bg-success fw-bold small-font me-2"
+                    >
+                      free
+                    </small>
                   </a>
                 </li>
 
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    coreUI icons - flag
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/coreUI-icons-brand"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      coreUI icons - brand
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/coreUI-icons-flag"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      coreUI icons - flag
+                    </div>
                   </a>
                 </li>
               </ul>
               <!-- notifications -->
               <li
-                class="nav-item text-capitalize d-flex justify-content-between gap-5 align-items-center hover"
+                class="nav-item text-capitalize hover"
                 data-bs-toggle="collapse"
                 href="#notificationsCollapse"
                 role="button"
                 aria-expanded="false"
                 aria-controls="notificationsCollapse"
               >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-bell px-3"></i>
-                  <span class="d-min-sidebar">notifications</span>
+                <a
+                  class="nav-link d-flex align-items-center justify-content-between h-100"
+                >
+                  <div>
+                    <i class="small-icon bi bi-bell px-3"></i>
+                    <span class="d-min-sidebar">notifications</span>
+                  </div>
+                  <i class="bi bi-chevron-down me-2"></i>
                 </a>
-                <i class="bi bi-chevron-down me-2"></i>
               </li>
               <!-- notifications collapse -->
               <ul class="collapse ps-0 sidebar-bg-2" id="notificationsCollapse">
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    alerts
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/alerts.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      alerts
+                    </div>
                   </a>
                 </li>
 
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    badges
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/badges.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      badges
+                    </div>
                   </a>
                 </li>
 
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    model
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/model.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      model
+                    </div>
                   </a>
                 </li>
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                    toasts
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/toasts.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                      toasts
+                    </div>
                   </a>
                 </li>
               </ul>
               <!-- widgets -->
-              <li
-                class="nav-item text-capitalize d-flex justify-content-between align-items-center hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-calculator px-3"></i>
-                  <span class="d-min-sidebar">widgets</span>
-                </a>
-                <small
-                  class="sm-badge float-end bg-primary fw-bold me-2 d-min-sidebar"
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center justify-content-between h-100"
+                  href="/widgets.html"
                 >
-                  new
-                </small>
+                  <div>
+                    <i class="small-icon bi bi-calculator px-3"></i>
+                    <span class="d-min-sidebar">widgets</span>
+                  </div>
+                  <small
+                    class="sm-badge float-end bg-primary fw-bold me-2 d-min-sidebar"
+                  >
+                    new
+                  </small>
+                </a>
               </li>
               <!-- extras -->
-              <li class="nav-item text-uppercase text-title">extras</li>
+              <div class="nav-item text-uppercase text-title">extras</div>
               <!-- pages -->
               <li
-                class="nav-item text-capitalize d-flex justify-content-between gap-5 align-items-center hover"
+                class="nav-item text-capitalize hover"
                 data-bs-toggle="collapse"
                 href="#pagesCollapse"
                 role="button"
                 aria-expanded="false"
                 aria-controls="pagesCollapse"
               >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-star px-3"></i>
-                  <span class="d-min-sidebar">pages</span>
+                <a
+                  class="nav-link d-flex align-items-center justify-content-between h-100"
+                >
+                  <div>
+                    <i class="small-icon bi bi-star px-3"></i>
+                    <span class="d-min-sidebar">pages</span>
+                  </div>
+                  <i class="bi bi-chevron-down me-2"></i>
                 </a>
-                <i class="bi bi-chevron-down me-2"></i>
               </li>
               <!-- pages collapse -->
               <ul class="collapse ps-0 sidebar-bg-2" id="pagesCollapse">
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-box-arrow-in-left px-3"></i>
-                    login
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/login.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-box-arrow-in-left px-3"></i>
+                      login
+                    </div>
                   </a>
                 </li>
 
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-box-arrow-left px-3"></i>
-                    register
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/register.html"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-box-arrow-left px-3"></i>
+                      register
+                    </div>
                   </a>
                 </li>
 
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-bug px-3"></i>
-                    error 404
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/error-404"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-bug px-3"></i>
+                      error 404
+                    </div>
                   </a>
                 </li>
 
-                <li
-                  class="nav-item text-capitalize d-flex align-items-center hover"
-                >
-                  <a class="nav-link" href="">
-                    <i class="small-icon bi bi-bug px-3"></i>
-                    error 500
+                <li class="nav-item text-capitalize hover">
+                  <a
+                    class="nav-link d-flex align-items-center h-100"
+                    href="/error-500"
+                  >
+                    <div>
+                      <i class="small-icon bi bi-bug px-3"></i>
+                      error 500
+                    </div>
                   </a>
                 </li>
               </ul>
               <!-- docs -->
-              <li
-                class="nav-item text-capitalize d-flex align-items-center justify-content-between hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-file-earmark-text px-3"></i>
-                  <span class="d-min-sidebar">docs</span>
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/docs.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-file-earmark-text px-3"></i>
+                    <span class="d-min-sidebar">docs</span>
+                  </div>
                 </a>
               </li>
               <!-- try core -->
-              <li
-                class="nav-item text-capitalize d-flex align-items-center justify-content-between hover"
-              >
-                <a class="nav-link" href="">
-                  <i class="small-icon bi bi-file-earmark-text px-3"></i>
-                  <span class="d-min-sidebar"
-                    >try coreUI<strong>PRO</strong></span
-                  >
+              <li class="nav-item text-capitalize hover">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/try coreUI-PRO.html"
+                >
+                  <div>
+                    <i class="small-icon bi bi-file-earmark-text px-3"></i>
+                    <span class="d-min-sidebar">
+                      try coreUI<strong>PRO</strong>
+                    </span>
+                  </div>
                 </a>
               </li>
             </ul>
@@ -1116,9 +1420,6 @@
           <!-- sidebar info end -->
         </div>
       </div>
-      <!-- offcanvas end -->
-
-      <!-- sidebar end -->
 
       <!-- middle -->
       <div class="middle-navbar bg-body-secondary">
@@ -1137,7 +1438,9 @@
                     role="button"
                     aria-controls="offcanvasExample"
                   ></i>
-                  <i class="bi bi-list close-sidebar-icon lg-sidebar-icon"></i>
+                  <i
+                    class="bi bi-list close-sidebar-icon lg-sidebar-icon"
+                  ></i>
                 </div>
                 <!-- lg show setting -->
                 <div class="navbar font-size">
@@ -1291,32 +1594,25 @@
                 </div>
               </div>
             </div>
-            <!-- navbar setting 1 end -->
+
             <hr class="mt-0" />
             <!-- navbar setting 2 -->
             <div class="navbar-setting-two">
               <ul class="d-flex gap-2 text-capitalize font-size">
-                <li class="nav-item">
-                  <a href="" class="nav-link">home</a>
-                </li>
+                <div>home</div>
                 <p>/</p>
-                <li class="nav-item text-gray">
-                  <a href="" class="nav-link">dashboard</a>
-                </li>
+                <div class="text-gray">dashboard</div>
               </ul>
             </div>
-            <!-- navbar setting 2 -->
           </div>
-          <!-- navbar settings end -->
         </div>
-        <!-- navbar things end -->
 
         <!-- middle bg size -->
         <div class="mx-3">
           <!-- cards -->
           <div class="container-fluid mt-4">
             <!-- 4 card -->
-            <div class="row row-cols-4 row-cols-sm-2 row-gap-3">
+            <div class="row row-cols-2 row-cols-lg-4 row-gap-3">
               <!-- card 1 -->
               <div class="col">
                 <div class="card text-white">
@@ -1368,7 +1664,6 @@
                   </div>
                 </div>
               </div>
-              <!-- card 1 end -->
 
               <!-- card 2 -->
               <div class="col">
@@ -1421,7 +1716,6 @@
                   </div>
                 </div>
               </div>
-              <!-- card 2 end -->
 
               <!-- card 3 -->
               <div class="col">
@@ -1474,7 +1768,6 @@
                   </div>
                 </div>
               </div>
-              <!-- card 3 end -->
 
               <!-- card 4 -->
               <div class="col">
@@ -1527,10 +1820,8 @@
                   </div>
                 </div>
               </div>
-              <!-- card 4 end -->
             </div>
           </div>
-          <!-- cards end -->
 
           <!-- traffic -->
           <div class="container-fluid mt-3">
@@ -1538,9 +1829,35 @@
             <div class="card">
               <!-- card progress -->
               <div class="card-body">
-                <div class="text-capitalize pt-1">
-                  <div class="fs-5 fw-bold">traffic</div>
-                  <small class="text-gray">january - july 2022</small>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="text-capitalize pt-1">
+                    <div class="fs-5 fw-bold">traffic</div>
+                    <small class="text-gray">january - july 2022</small>
+                  </div>
+                  <div class="d-md-flex align-items-center d-sm-none">
+                    <div class="btn-group">
+                      <button
+                        class="btn btn-outline-secondary text-gray text-capitalize"
+                      >
+                        day
+                      </button>
+                      <button
+                        class="btn btn-outline-secondary text-capitalize bg-secondary-subtle"
+                      >
+                        month
+                      </button>
+                      <button
+                        class="btn btn-outline-secondary text-gray text-capitalize"
+                      >
+                        year
+                      </button>
+                    </div>
+                    <div class="ms-4">
+                      <button class="btn btn-primary">
+                        <i class="bi bi-cloud-download font-size"></i>
+                      </button>
+                    </div>
+                  </div>
                 </div>
                 <div class="chart-place-2">
                   <canvas
@@ -1551,126 +1868,128 @@
                   ></canvas>
                 </div>
               </div>
-              <!-- card progress end -->
 
               <!-- progress list -->
               <div class="card-footer">
-                <!-- list 1 -->
-                <div class="progress-list">
-                  <div class="text-capitalize text-center mt-1">
-                    <div class="fw-light">visits</div>
-                    <div class="fw-bold">29.703 users (40%)</div>
-                  </div>
-                  <div
-                    class="progress mt-2"
-                    role="progressbar"
-                    aria-label="Basic example"
-                    aria-valuenow="40"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="height: 4px"
-                  >
+                <div class="row row-cols-1 row-cols-md-5">
+                  <!-- list 1 -->
+                  <div class="progress-list col">
+                    <div class="text-capitalize text-center mt-1 font-size">
+                      <div class="text-gray">visits</div>
+                      <div class="fw-bold text-center">29.703 users (40%)</div>
+                    </div>
                     <div
-                      class="progress-bar bg-success"
-                      style="width: 40%"
-                    ></div>
+                      class="progress mt-2"
+                      role="progressbar"
+                      aria-label="Basic example"
+                      aria-valuenow="40"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="height: 4px"
+                    >
+                      <div
+                        class="progress-bar bg-success"
+                        style="width: 40%"
+                      ></div>
+                    </div>
                   </div>
-                </div>
-                <!-- list 1 end -->
+                  <!-- list 1 end -->
 
-                <!-- list 2 -->
-                <div class="progress-list">
-                  <div class="text-capitalize text-center mt-1">
-                    <div class="fw-light">unique</div>
-                    <div class="fw-bold">24.093 users (20%)</div>
-                  </div>
-                  <div
-                    class="progress mt-2"
-                    role="progressbar"
-                    aria-label="Basic example"
-                    aria-valuenow="20"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="height: 4px"
-                  >
-                    <div class="progress-bar bg-info" style="width: 20%"></div>
-                  </div>
-                </div>
-                <!-- list 2 end -->
-
-                <!-- list 3 -->
-                <div class="progress-list">
-                  <div class="text-capitalize text-center mt-1">
-                    <div class="fw-light">pageviews</div>
-                    <div class="fw-bold">78.706 users (60%)</div>
-                  </div>
-                  <div
-                    class="progress mt-2"
-                    role="progressbar"
-                    aria-label="Basic example"
-                    aria-valuenow="60"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="height: 4px"
-                  >
+                  <!-- list 2 -->
+                  <div class="progress-list col">
+                    <div class="text-capitalize text-center mt-1 font-size">
+                      <div class="text-gray">unique</div>
+                      <div class="fw-bold">24.093 users (20%)</div>
+                    </div>
                     <div
-                      class="progress-bar bg-warning"
-                      style="width: 60%"
-                    ></div>
+                      class="progress mt-2"
+                      role="progressbar"
+                      aria-label="Basic example"
+                      aria-valuenow="20"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="height: 4px"
+                    >
+                      <div
+                        class="progress-bar bg-info"
+                        style="width: 20%"
+                      ></div>
+                    </div>
                   </div>
-                </div>
-                <!-- list 3 end -->
+                  <!-- list 2 end -->
 
-                <!-- list 4 -->
-                <div class="progress-list">
-                  <div class="text-capitalize text-center mt-1">
-                    <div class="fw-light">new users</div>
-                    <div class="fw-bold">22.123 users (80%)</div>
-                  </div>
-                  <div
-                    class="progress mt-2"
-                    role="progressbar"
-                    aria-label="Basic example"
-                    aria-valuenow="80"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="height: 4px"
-                  >
+                  <!-- list 3 -->
+                  <div class="progress-list col">
+                    <div class="text-capitalize text-center mt-1 font-size">
+                      <div class="text-gray">pageviews</div>
+                      <div class="fw-bold">78.706 users (60%)</div>
+                    </div>
                     <div
-                      class="progress-bar bg-danger"
-                      style="width: 80%"
-                    ></div>
+                      class="progress mt-2"
+                      role="progressbar"
+                      aria-label="Basic example"
+                      aria-valuenow="60"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="height: 4px"
+                    >
+                      <div
+                        class="progress-bar bg-warning"
+                        style="width: 60%"
+                      ></div>
+                    </div>
                   </div>
-                </div>
-                <!-- list 4 end -->
+                  <!-- list 3 end -->
 
-                <!-- list 5 -->
-                <div class="progress-list">
-                  <div class="text-capitalize text-center mt-1">
-                    <div class="fw-light">bounce rate</div>
-                    <div class="fw-bold">29.703 (40%)</div>
-                  </div>
-                  <div
-                    class="progress mt-2"
-                    role="progressbar"
-                    aria-label="Basic example"
-                    aria-valuenow="40"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="height: 4px"
-                  >
+                  <!-- list 4 -->
+                  <div class="progress-list col">
+                    <div class="text-capitalize text-center mt-1 font-size">
+                      <div class="text-gray">new users</div>
+                      <div class="fw-bold">22.123 users (80%)</div>
+                    </div>
                     <div
-                      class="progress-bar bg-primary"
-                      style="width: 40%"
-                    ></div>
+                      class="progress mt-2"
+                      role="progressbar"
+                      aria-label="Basic example"
+                      aria-valuenow="80"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="height: 4px"
+                    >
+                      <div
+                        class="progress-bar bg-danger"
+                        style="width: 80%"
+                      ></div>
+                    </div>
                   </div>
+                  <!-- list 4 end -->
+
+                  <!-- list 5 -->
+                  <div class="progress-list col">
+                    <div class="text-capitalize text-center mt-1 font-size">
+                      <div class="text-gray">bounce rate</div>
+                      <div class="fw-bold">29.703 (40%)</div>
+                    </div>
+                    <div
+                      class="progress mt-2"
+                      role="progressbar"
+                      aria-label="Basic example"
+                      aria-valuenow="40"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="height: 4px"
+                    >
+                      <div
+                        class="progress-bar bg-primary"
+                        style="width: 40%"
+                      ></div>
+                    </div>
+                  </div>
+                  <!-- list 5 end -->
                 </div>
-                <!-- list 5 end -->
               </div>
             </div>
-            <!-- main-card & progress end -->
           </div>
-          <!-- traffic end -->
 
           <!-- apps -->
           <div class="container-fluid mt-3">
@@ -1705,7 +2024,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- apps 1 end -->
 
                 <!-- apps 2 -->
                 <div class="col">
@@ -1734,7 +2052,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- apps 2 end -->
 
                 <!-- apps 3 -->
                 <div class="col">
@@ -1763,13 +2080,9 @@
                     </div>
                   </div>
                 </div>
-                <!-- apps 3 -->
               </div>
-              <!-- card apps end -->
             </div>
-            <!-- 3 app end -->
           </div>
-          <!-- apps end -->
 
           <!-- traffic and sales -->
           <div class="container-fluid mt-3">
@@ -1779,7 +2092,6 @@
               <div class="card-header">
                 <div class="text-capitalize">traffic & sales</div>
               </div>
-              <!-- traffic card header end -->
 
               <!-- traffic card body -->
               <div class="card-body">
@@ -1798,7 +2110,6 @@
                           <div class="fw-bold">9.123</div>
                         </div>
                       </div>
-                      <!-- traffic col 1 end -->
 
                       <!-- traffic col 2 -->
                       <div class="col">
@@ -1809,9 +2120,8 @@
                           <div class="fw-bold">22.643</div>
                         </div>
                       </div>
-                      <!-- traffic col 2 end -->
                     </div>
-                    <!-- traffic row end -->
+
                     <hr />
                     <!-- day progress -->
                     <div>
@@ -1823,7 +2133,6 @@
                         <div class="col">
                           <small class="day text-gray">monday</small>
                         </div>
-                        <!-- day end  -->
 
                         <!-- progress -->
                         <div class="progress-list col-8">
@@ -1839,9 +2148,7 @@
                           >
                             <!-- bar -->
                             <div class="progress-bar" style="width: 40%"></div>
-                            <!-- bar end -->
                           </div>
-                          <!-- progress end -->
 
                           <!-- progress -->
                           <div
@@ -1858,13 +2165,9 @@
                               class="progress-bar bg-danger"
                               style="width: 70%"
                             ></div>
-                            <!-- bar end -->
                           </div>
-                          <!-- progress end -->
                         </div>
-                        <!-- progress end -->
                       </div>
-                      <!-- day progress 1 end -->
 
                       <!-- day progress 2 -->
                       <div
@@ -1874,7 +2177,6 @@
                         <div class="col">
                           <small class="day text-gray">tuesday</small>
                         </div>
-                        <!-- day end  -->
 
                         <!-- progress -->
                         <div class="progress-list col-8">
@@ -1890,7 +2192,6 @@
                           >
                             <div class="progress-bar" style="width: 60%"></div>
                           </div>
-                          <!-- progress end -->
 
                           <!-- progress -->
                           <div
@@ -1907,20 +2208,18 @@
                               style="width: 90%"
                             ></div>
                           </div>
-                          <!-- progress end -->
                         </div>
                       </div>
                       <!-- day progress 2 end -->
 
                       <!-- day progress 3 -->
                       <div
-                        class="day-progress text-capitalize row align-items-center mt-4"
+                        class="day-progress text-capitalize row align-items-center mt-4 flex-wrap"
                       >
                         <!-- day  -->
                         <div class="col">
                           <small class="day text-gray">wednesday</small>
                         </div>
-                        <!-- day end  -->
 
                         <!-- progress -->
                         <div class="progress-list col-8">
@@ -1950,9 +2249,7 @@
                             ></div>
                           </div>
                         </div>
-                        <!-- progress end -->
                       </div>
-                      <!-- day progress 3 end -->
 
                       <!-- day progress 4 -->
                       <div
@@ -1962,7 +2259,6 @@
                         <div class="col">
                           <small class="day text-gray">thursday</small>
                         </div>
-                        <!-- day end  -->
 
                         <!-- progress -->
                         <div class="progress-list col-8">
@@ -1992,9 +2288,7 @@
                             ></div>
                           </div>
                         </div>
-                        <!-- progress end -->
                       </div>
-                      <!-- day progress 4 end -->
 
                       <!-- day progress 5 -->
                       <div
@@ -2004,7 +2298,6 @@
                         <div class="col">
                           <small class="day text-gray">friday</small>
                         </div>
-                        <!-- day end  -->
 
                         <!-- progress -->
                         <div class="progress-list col-8">
@@ -2034,7 +2327,6 @@
                             ></div>
                           </div>
                         </div>
-                        <!-- progress end -->
                       </div>
                       <!-- day progress 5 end -->
 
@@ -2046,7 +2338,6 @@
                         <div class="col">
                           <small class="day text-gray">saturday</small>
                         </div>
-                        <!-- day end  -->
 
                         <!-- progress -->
                         <div class="progress-list col-8">
@@ -2076,9 +2367,7 @@
                             ></div>
                           </div>
                         </div>
-                        <!-- progress end -->
                       </div>
-                      <!-- day progress end -->
 
                       <!-- day progress 7 -->
                       <div
@@ -2088,7 +2377,6 @@
                         <div class="col">
                           <small class="day text-gray">sunday</small>
                         </div>
-                        <!-- day end  -->
 
                         <!-- progress -->
                         <div class="progress-list col-8">
@@ -2118,13 +2406,9 @@
                             ></div>
                           </div>
                         </div>
-                        <!-- progress end -->
                       </div>
-                      <!-- day progress 7 end -->
                     </div>
-                    <!-- day progress end -->
                   </div>
-                  <!-- traffic col 1 end -->
 
                   <!-- traffic col 2 -->
                   <div class="col">
@@ -2139,7 +2423,6 @@
                           <div class="fw-bold">78.623</div>
                         </div>
                       </div>
-                      <!-- traffic col 1 end -->
 
                       <!-- traffic col 2 -->
                       <div class="col">
@@ -2150,9 +2433,8 @@
                           <div class="fw-bold">49.123</div>
                         </div>
                       </div>
-                      <!-- traffic col 2 end -->
                     </div>
-                    <!-- traffic row end -->
+
                     <hr />
                     <!-- people icons progress -->
                     <div>
@@ -2170,7 +2452,6 @@
                           </div>
                           <div class="fw-semibold">43%</div>
                         </div>
-                        <!-- icon text end -->
 
                         <!-- progress -->
                         <div
@@ -2187,9 +2468,7 @@
                             style="width: 43%"
                           ></div>
                         </div>
-                        <!-- progress end -->
                       </div>
-                      <!-- icon progress end -->
 
                       <!-- icon progress -->
                       <div class="icon-progress mt-3">
@@ -2205,7 +2484,6 @@
                           </div>
                           <div class="fw-semibold">37%</div>
                         </div>
-                        <!-- icon text end -->
 
                         <!-- progress -->
                         <div
@@ -2222,11 +2500,8 @@
                             style="width: 37%"
                           ></div>
                         </div>
-                        <!-- progress end -->
                       </div>
-                      <!-- icon progress end -->
                     </div>
-                    <!-- people icons progress end -->
 
                     <!-- app icons progress -->
                     <div class="mt-3 pt-4">
@@ -2239,7 +2514,7 @@
                           <div
                             class="text-capitalize align-items-center d-flex text-gray"
                           >
-                            <i class="bx bxl-google fs-3 pe-2 text-black"></i>
+                            <i class="bx bxl-google pe-2 text-black"></i>
                             organic search
                           </div>
                           <div class="fw-semibold">
@@ -2247,7 +2522,6 @@
                             <small class="fw-normal">(56%)</small>
                           </div>
                         </div>
-                        <!-- icon text end -->
 
                         <!-- progress -->
                         <div
@@ -2264,9 +2538,7 @@
                             style="width: 56%"
                           ></div>
                         </div>
-                        <!-- progress end -->
                       </div>
-                      <!-- icon progress end -->
 
                       <!-- icon progress -->
                       <div class="icon-progress mt-2 pt-2">
@@ -2285,7 +2557,6 @@
                             <small class="fw-normal">(15%)</small>
                           </div>
                         </div>
-                        <!-- icon text end -->
 
                         <!-- progress -->
                         <div
@@ -2302,9 +2573,7 @@
                             style="width: 15%"
                           ></div>
                         </div>
-                        <!-- progress end -->
                       </div>
-                      <!-- icon progress end -->
 
                       <!-- icon progress -->
                       <div class="icon-progress mt-2 pt-2">
@@ -2323,7 +2592,6 @@
                             <small class="fw-normal">(11%)</small>
                           </div>
                         </div>
-                        <!-- icon text end -->
 
                         <!-- progress -->
                         <div
@@ -2340,9 +2608,7 @@
                             style="width: 11%"
                           ></div>
                         </div>
-                        <!-- progress end -->
                       </div>
-                      <!-- icon progress end -->
 
                       <!-- icon progress -->
                       <div class="icon-progress mt-2 pt-2">
@@ -2363,7 +2629,6 @@
                             <small class="fw-normal">(8%)</small>
                           </div>
                         </div>
-                        <!-- icon text end -->
 
                         <!-- progress -->
                         <div
@@ -2380,565 +2645,585 @@
                             style="width: 8%"
                           ></div>
                         </div>
-                        <!-- progress end -->
                       </div>
-                      <!-- icon progress end -->
                     </div>
-                    <!-- app icons progress end -->
                   </div>
-                  <!-- traffic col 2 end -->
                 </div>
-                <!-- traffic row end -->
 
                 <!-- user activity -->
-                <table class="card mt-5">
-                  <div class="card-header p-0">
-                    <!-- user title -->
-                    <div class="">
-                      <thead
-                        class="text-capitalize user-title bg-secondary-subtle"
-                      >
-                        <!-- title -->
-                        <tr class="user-space">
-                          <th>
+                <div class="card mt-5 overflow-x-auto">
+                  <table>
+                    <!-- title -->
+                    <thead class="bg-secondary-subtle">
+                      <tr class="text-capitalize text-start font-size">
+                        <th scope="col" class="text-center py-3">
+                          <i
+                            class="bx bx-user d-flex align-items-center justify-content-center"
+                          ></i>
+                        </th>
+                        <th scope="col" class="ps-2">user</th>
+                        <th scope="col" class="px-2">country</th>
+                        <th scope="col" class="px-2">usage</th>
+                        <th scope="col" class="text-center">payment method</th>
+                        <th scope="col" class="px-2">activity</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+
+                    <!-- body -->
+                    <tbody>
+                      <tr>
+                        <th scope="row" class="text-center ps-1">
+                          <div class="user-img">
+                            <img
+                              src="image/images.jpeg"
+                              class="rounded-circle profile-img"
+                            />
+                            <div class="user-activity bg-success"></div>
+                          </div>
+                        </th>
+
+                        <td class="text-capitalize py-1 ps-2">
+                          <div>yiorgos avaamu</div>
+                          <small class="text-gray">
+                            new | registerd: jan 1,2020
+                          </small>
+                        </td>
+
+                        <td class="text-center">
+                          <i class="bx bx-flag"></i>
+                        </td>
+
+                        <td class="ps-2">
+                          <div class="text-capitalize">
+                            <strong>50%</strong>
+                            <div class="small text-gray">
+                              jun 11, 2020 - jul 10, 2020
+                            </div>
+                            <div
+                              class="progress"
+                              role="progressbar"
+                              aria-label="Basic example"
+                              aria-valuenow="50"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                              style="height: 4px"
+                            >
+                              <div
+                                class="progress-bar bg-success"
+                                style="width: 50%"
+                              ></div>
+                            </div>
+                          </div>
+                        </td>
+
+                        <td class="text-center">
+                          <i class="bx bx-credit-card-alt fs-2"></i>
+                        </td>
+
+                        <td class="first-word ps-2">
+                          <small class="text-gray">last login</small>
+                          <div class="small fw-semibold">10 sec ago</div>
+                        </td>
+
+                        <td>
+                          <div class="dropdown user-dropdown text-capitalize">
                             <i
-                              class="bx bx-user fs-5 d-flex justify-content-center"
+                              class="bx bx-dots-vertical-rounded fs-4"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
                             ></i>
-                          </th>
-                          <th class="ps-2">
-                            <div class="">user</div>
-                          </th>
-                          <th class="ps-2">
-                            <div>country</div>
-                          </th>
-                          <th class="ps-2">
-                            <div>usage</div>
-                          </th>
-                          <th class="ps-2">
-                            <div class="text-center">payment method</div>
-                          </th>
-                          <th class="ps-2">
-                            <div>activity</div>
-                          </th>
-                          <th></th>
-                        </tr>
-                        <!-- title end -->
-                      </thead>
-                    </div>
-                    <!-- user title end -->
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item text-gray" href="#"
+                                  >info</a
+                                >
+                              </li>
+                              <li>
+                                <a class="dropdown-item text-gray" href="#"
+                                  >edit</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item text-danger text-gray"
+                                  href="#"
+                                  >delete</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
 
-                    <!-- user body -->
-                    <div class="card-body">
-                      <tbody class="user-space text-capitalize">
-                        <!-- body -->
-                        <tr class="user-space border-bottom">
-                          <td class="ps-1">
-                            <div class="user-img">
-                              <img
-                                src="image/images.jpeg"
-                                class="rounded-circle profile-img"
-                              />
-                              <div class="user-activity bg-success"></div>
-                            </div>
-                          </td>
-                          <td class="py-2 ps-2">
-                            <div>yiorgos avaamu</div>
-                            <small class="text-gray">
-                              new | registerd: jan 1,2020
-                            </small>
-                          </td>
-                          <td class="text-center">
-                            <i class="bx bx-flag"></i>
-                          </td>
-                          <td class="ps-2">
-                            <div>
-                              <strong>50%</strong>
-                              <div class="small text-gray">
-                                jun 11, 2020 - jul 10, 2020
-                              </div>
-                              <div
-                                class="progress"
-                                role="progressbar"
-                                aria-label="Basic example"
-                                aria-valuenow="50"
-                                aria-valuemin="0"
-                                aria-valuemax="100"
-                                style="height: 4px"
-                              >
-                                <div
-                                  class="progress-bar bg-success"
-                                  style="width: 50%"
-                                ></div>
-                              </div>
-                            </div>
-                          </td>
-                          <td class="text-center">
-                            <i class="bx bx-credit-card-alt fs-2"></i>
-                          </td>
-                          <td class="py-2 ps-2 text-lowercase first-word">
-                            <small class="text-gray">last login</small>
-                            <div class="small fw-semibold first-word">10 sec ago</div>
-                          </td>
-                          <td class="text-center">
-                            <div class="dropdown user-dropdown">
-                              <i
-                                class="bx bx-dots-vertical-rounded fs-4"
-                                type="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                              ></i>
-                              <ul class="dropdown-menu">
-                                <li>
-                                  <a class="dropdown-item text-gray" href="#"
-                                    >info</a
-                                  >
-                                </li>
-                                <li>
-                                  <a class="dropdown-item text-gray" href="#"
-                                    >edit</a
-                                  >
-                                </li>
-                                <li>
-                                  <a
-                                    class="dropdown-item text-danger text-gray"
-                                    href="#"
-                                    >delete</a
-                                  >
-                                </li>
-                              </ul>
-                            </div>
-                          </td>
-                        </tr>
-                        <!-- body end -->
+                      <!-- body -->
+                      <tr>
+                        <th scope="row" class="text-center ps-1">
+                          <div class="user-img">
+                            <img
+                              src="image/images.jpeg"
+                              class="rounded-circle profile-img"
+                            />
+                            <div class="user-activity bg-danger"></div>
+                          </div>
+                        </th>
 
-                        <!-- body -->
-                        <tr class="user-space">
-                          <td class="ps-1">
-                            <div class="user-img">
-                              <img
-                                src="image/images.jpeg"
-                                class="rounded-circle profile-img"
-                              />
-                              <div class="user-activity bg-danger"></div>
-                            </div>
-                          </td>
-                          <td class="py-2 ps-2">
-                            <div>avram tarasions</div>
-                            <small class="text-gray">
-                              recurring | <br />
-                              registered jan 1, 2020
-                            </small>
-                          </td>
-                          <td class="text-center">
-                            <i class="bx bx-flag"></i>
-                          </td>
-                          <td class="ps-2">
-                            <div>
-                              <strong>10%</strong>
-                              <div class="small text-gray">
-                                jun 11, 2020 - jul 10, 2020
-                              </div>
-                              <div
-                                class="progress"
-                                role="progressbar"
-                                aria-label="Basic example"
-                                aria-valuenow="10"
-                                aria-valuemin="0"
-                                aria-valuemax="100"
-                                style="height: 4px"
-                              >
-                                <div
-                                  class="progress-bar"
-                                  style="width: 10%"
-                                ></div>
-                              </div>
-                            </div>
-                          </td>
-                          <td class="text-center">
-                            <i class="bx bx-credit-card-alt fs-2"></i>
-                          </td>
-                          <td class="py-2 ps-2 text-lowercase first-word">
-                            <small class="text-gray">last login</small>
-                            <div class="small fw-semibold first-word">5 minutes ago</div>
-                          </td>
-                          <td class="text-center">
-                            <div class="dropdown user-dropdown">
-                              <i
-                                class="bx bx-dots-vertical-rounded fs-4"
-                                type="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                              ></i>
-                              <ul class="dropdown-menu">
-                                <li>
-                                  <a class="dropdown-item text-gray" href="#">
-                                    info
-                                  </a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item text-gray" href="#">
-                                    edit
-                                  </a>
-                                </li>
-                                <li>
-                                  <a
-                                    class="dropdown-item text-danger text-gray"
-                                    href="#"
-                                  >
-                                    delete
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                          </td>
-                        </tr>
-                        <!-- body end -->
+                        <td class="text-capitalize py-1 ps-2">
+                          <div>avram tarasions</div>
+                          <small class="text-gray">
+                            recurring | registered jan 1, 2020
+                          </small>
+                        </td>
 
-                        <!-- body -->
-                        <tr class="user-space">
-                          <td class="ps-1">
-                            <div class="user-img">
-                              <img
-                                src="image/images.jpeg"
-                                class="rounded-circle profile-img"
-                              />
-                              <div class="user-activity bg-warning"></div>
-                            </div>
-                          </td>
-                          <td class="py-2 ps-2">
-                            <div>quintin ed</div>
-                            <small class="text-gray">
-                              New | Registered: Jan 1, 2020
-                            </small>
-                          </td>
-                          <td class="text-center">
-                            <i class="bx bx-flag"></i>
-                          </td>
-                          <td class="ps-2">
-                            <div>
-                              <strong>74%</strong>
-                              <div class="small text-gray">
-                                jun 11, 2020 - jul 10, 2020
-                              </div>
-                              <div
-                                class="progress"
-                                role="progressbar"
-                                aria-label="Basic example"
-                                aria-valuenow="74"
-                                aria-valuemin="0"
-                                aria-valuemax="100"
-                                style="height: 4px"
-                              >
-                                <div
-                                  class="progress-bar bg-warning"
-                                  style="width: 74%"
-                                ></div>
-                              </div>
-                            </div>
-                          </td>
-                          <td class="text-center">
-                            <i class="bx bx-credit-card-alt fs-2"></i>
-                          </td>
-                          <td class="py-2 ps-2 text-lowercase first-word">
-                            <small class="text-gray">last login</small>
-                            <div class="small fw-semibold first-word">1 hour ago</div>
-                          </td>
-                          <td class="text-center">
-                            <div class="dropdown user-dropdown">
-                              <i
-                                class="bx bx-dots-vertical-rounded fs-4"
-                                type="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                              ></i>
-                              <ul class="dropdown-menu">
-                                <li>
-                                  <a class="dropdown-item text-gray" href="#">
-                                    info
-                                  </a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item text-gray" href="#">
-                                    edit
-                                  </a>
-                                </li>
-                                <li>
-                                  <a
-                                    class="dropdown-item text-danger text-gray"
-                                    href="#"
-                                  >
-                                    delete
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                          </td>
-                        </tr>
-                        <!-- body end -->
+                        <td class="text-center">
+                          <i class="bx bx-flag"></i>
+                        </td>
 
-                        <!-- body -->
-                        <tr class="user-space">
-                          <td class="ps-1">
-                            <div class="user-img">
-                              <img
-                                src="image/images.jpeg"
-                                class="rounded-circle profile-img"
-                              />
-                              <div class="user-activity bg-secondary"></div>
+                        <td class="ps-2">
+                          <div class="text-capitalize">
+                            <strong>10%</strong>
+                            <div class="small text-gray">
+                              jun 11, 2020 - jul 10, 2020
                             </div>
-                          </td>
-                          <td class="py-2 ps-2">
-                            <div>eness kwadwo</div>
-                            <small class="text-gray">
-                              New | Registered: Jan 1, 2020
-                            </small>
-                          </td>
-                          <td class="text-center">
-                            <i class="bx bx-flag"></i>
-                          </td>
-                          <td class="ps-2">
-                            <div>
-                              <strong>22%</strong>
-                              <div class="small text-gray">
-                                jun 11, 2020 - jul 10, 2020
-                              </div>
+                            <div
+                              class="progress"
+                              role="progressbar"
+                              aria-label="Basic example"
+                              aria-valuenow="10"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                              style="height: 4px"
+                            >
                               <div
-                                class="progress"
-                                role="progressbar"
-                                aria-label="Basic example"
-                                aria-valuenow="98"
-                                aria-valuemin="0"
-                                aria-valuemax="100"
-                                style="height: 4px"
-                              >
-                                <div
-                                  class="progress-bar bg-danger"
-                                  style="width: 98%"
-                                ></div>
-                              </div>
+                                class="progress-bar"
+                                style="width: 10%"
+                              ></div>
                             </div>
-                          </td>
-                          <td class="text-center">
-                            <i class="bx bx-credit-card-alt fs-2"></i>
-                          </td>
-                          <td class="py-2 ps-2 text-lowercase first-word">
-                            <small class="text-gray">last login</small>
-                            <div class="small fw-semibold first-word">last month</div>
-                          </td>
-                          <td class="text-center">
-                            <div class="dropdown user-dropdown">
-                              <i
-                                class="bx bx-dots-vertical-rounded fs-4"
-                                type="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                              ></i>
-                              <ul class="dropdown-menu">
-                                <li>
-                                  <a class="dropdown-item text-gray" href="#">
-                                    info
-                                  </a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item text-gray" href="#">
-                                    edit
-                                  </a>
-                                </li>
-                                <li>
-                                  <a
-                                    class="dropdown-item text-danger text-gray"
-                                    href="#"
-                                  >
-                                    delete
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                          </td>
-                        </tr>
-                        <!-- body end -->
+                          </div>
+                        </td>
 
-                        <!-- body -->
-                        <tr class="user-space">
-                          <td class="ps-1">
-                            <div class="user-img">
-                              <img
-                                src="image/images.jpeg"
-                                class="rounded-circle profile-img"
-                              />
-                              <div class="user-activity bg-success"></div>
-                            </div>
-                          </td>
-                          <td class="py-2 ps-2">
-                            <div>agapetus tadeas</div>
-                            <small class="text-gray">
-                              New | Registered: Jan 1, 2020
-                            </small>
-                          </td>
-                          <td class="text-center">
-                            <i class="bx bx-flag"></i>
-                          </td>
-                          <td class="ps-2">
-                            <div>
-                              <strong>22%</strong>
-                              <div class="small text-gray">
-                                jun 11, 2020 - jul 10, 2020
-                              </div>
-                              <div
-                                class="progress"
-                                role="progressbar"
-                                aria-label="Basic example"
-                                aria-valuenow="22"
-                                aria-valuemin="0"
-                                aria-valuemax="100"
-                                style="height: 4px"
-                              >
-                                <div
-                                  class="progress-bar"
-                                  style="width: 22%"
-                                ></div>
-                              </div>
-                            </div>
-                          </td>
-                          <td class="text-center">
-                            <i class="bx bx-credit-card-alt fs-2"></i>
-                          </td>
-                          <td class="py-2 ps-2 text-lowercase first-word">
-                            <small class="text-gray">last login</small>
-                            <div class="small fw-semibold first-word">last week</div>
-                          </td>
-                          <td class="text-center">
-                            <div class="dropdown user-dropdown">
-                              <i
-                                class="bx bx-dots-vertical-rounded fs-4"
-                                type="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                              ></i>
-                              <ul class="dropdown-menu">
-                                <li>
-                                  <a class="dropdown-item text-gray" href="#">
-                                    info
-                                  </a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item text-gray" href="#">
-                                    edit
-                                  </a>
-                                </li>
-                                <li>
-                                  <a
-                                    class="dropdown-item text-danger text-gray"
-                                    href="#"
-                                  >
-                                    delete
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                          </td>
-                        </tr>
-                        <!-- body end -->
+                        <td class="text-center">
+                          <i class="bx bx-credit-card-alt fs-2"></i>
+                        </td>
 
-                        <!-- body -->
-                        <tr class="user-space">
-                          <td class="ps-1">
-                            <div class="user-img">
-                              <img
-                                src="image/images.jpeg"
-                                class="rounded-circle profile-img"
-                              />
-                              <div class="user-activity bg-danger"></div>
+                        <td class="first-word ps-2">
+                          <small class="text-gray">last login</small>
+                          <div class="small fw-semibold">5 minutes ago</div>
+                        </td>
+
+                        <td>
+                          <div class="dropdown user-dropdown text-capitalize">
+                            <i
+                              class="bx bx-dots-vertical-rounded fs-4"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            ></i>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item text-gray" href="#">
+                                  info
+                                </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item text-gray" href="#">
+                                  edit
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item text-danger text-gray"
+                                  href="#"
+                                >
+                                  delete
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!-- body -->
+                      <tr>
+                        <th scope="row" class="text-center ps-1">
+                          <div class="user-img">
+                            <img
+                              src="image/images.jpeg"
+                              class="rounded-circle profile-img"
+                            />
+                            <div class="user-activity bg-warning"></div>
+                          </div>
+                        </th>
+
+                        <td class="text-capitalize ps-2 py-1">
+                          <div>quintin ed</div>
+                          <small class="text-gray">
+                            New | Registered: Jan 1, 2020
+                          </small>
+                        </td>
+
+                        <td class="text-center">
+                          <i class="bx bx-flag"></i>
+                        </td>
+
+                        <td class="ps-2">
+                          <div>
+                            <strong>74%</strong>
+                            <div class="small text-gray">
+                              jun 11, 2020 - jul 10, 2020
                             </div>
-                          </td>
-                          <td class="py-2 ps-2">
-                            <div>agapetus tadeas</div>
-                            <small class="text-gray">
-                              New | Registered: Jan 1, 2020
-                            </small>
-                          </td>
-                          <td class="text-center">
-                            <i class="bx bx-flag"></i>
-                          </td>
-                          <td class="ps-2">
-                            <div>
-                              <strong>43%</strong>
-                              <div class="small text-gray">
-                                jun 11, 2020 - jul 10, 2020
-                              </div>
+                            <div
+                              class="progress"
+                              role="progressbar"
+                              aria-label="Basic example"
+                              aria-valuenow="74"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                              style="height: 4px"
+                            >
                               <div
-                                class="progress"
-                                role="progressbar"
-                                aria-label="Basic example"
-                                aria-valuenow="43"
-                                aria-valuemin="0"
-                                aria-valuemax="100"
-                                style="height: 4px"
-                              >
-                                <div
-                                  class="progress-bar bg-success"
-                                  style="width: 43%"
-                                ></div>
-                              </div>
+                                class="progress-bar bg-warning"
+                                style="width: 74%"
+                              ></div>
                             </div>
-                          </td>
-                          <td class="text-center">
-                            <i class="bx bx-credit-card-alt fs-2"></i>
-                          </td>
-                          <td class="py-2 ps-2 text-lowercase first-word">
-                            <small class="text-gray ">last login</small>
-                            <div class="small fw-semibold first-word">yesterday</div>
-                          </td>
-                          <td class="text-center">
-                            <div class="dropdown user-dropdown">
-                              <i
-                                class="bx bx-dots-vertical-rounded fs-4"
-                                type="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                              ></i>
-                              <ul class="dropdown-menu">
-                                <li>
-                                  <a class="dropdown-item text-gray" href="#">
-                                    info
-                                  </a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item text-gray" href="#">
-                                    edit
-                                  </a>
-                                </li>
-                                <li>
-                                  <a
-                                    class="dropdown-item text-danger text-gray"
-                                    href="#"
-                                  >
-                                    delete
-                                  </a>
-                                </li>
-                              </ul>
+                          </div>
+                        </td>
+
+                        <td class="text-center">
+                          <i class="bx bx-credit-card-alt fs-2"></i>
+                        </td>
+
+                        <td class="first-word ps-2">
+                          <small class="text-gray">last login</small>
+                          <div class="small fw-semibold first-word">
+                            1 hour ago
+                          </div>
+                        </td>
+
+                        <td>
+                          <div class="dropdown user-dropdown">
+                            <i
+                              class="bx bx-dots-vertical-rounded fs-4"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            ></i>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item text-gray" href="#">
+                                  info
+                                </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item text-gray" href="#">
+                                  edit
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item text-danger text-gray"
+                                  href="#"
+                                >
+                                  delete
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!-- body -->
+                      <tr>
+                        <th scope="row" class="text-center ps-1">
+                          <div class="user-img">
+                            <img
+                              src="image/images.jpeg"
+                              class="rounded-circle profile-img"
+                            />
+                            <div class="user-activity bg-secondary"></div>
+                          </div>
+                        </th>
+
+                        <td class="text-capitalize ps-2 py-1">
+                          <div>eness kwadwo</div>
+                          <small class="text-gray">
+                            New | Registered: Jan 1, 2020
+                          </small>
+                        </td>
+
+                        <td class="text-center">
+                          <i class="bx bx-flag"></i>
+                        </td>
+
+                        <td class="ps-2">
+                          <div>
+                            <strong>22%</strong>
+                            <div class="small text-gray">
+                              jun 11, 2020 - jul 10, 2020
                             </div>
-                          </td>
-                        </tr>
-                        <!-- body end -->
-                      </tbody>
-                    </div>
-                    <!-- user body end -->
-                  </div>
-                </table>
-                <!-- user activity end -->
+                            <div
+                              class="progress"
+                              role="progressbar"
+                              aria-label="Basic example"
+                              aria-valuenow="98"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                              style="height: 4px"
+                            >
+                              <div
+                                class="progress-bar bg-danger"
+                                style="width: 98%"
+                              ></div>
+                            </div>
+                          </div>
+                        </td>
+
+                        <td class="text-center">
+                          <i class="bx bx-credit-card-alt fs-2"></i>
+                        </td>
+
+                        <td class="first-word ps-2">
+                          <small class="text-gray">last login</small>
+                          <div class="small fw-semibold first-word">
+                            last month
+                          </div>
+                        </td>
+
+                        <td>
+                          <div class="dropdown user-dropdown">
+                            <i
+                              class="bx bx-dots-vertical-rounded fs-4"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            ></i>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item text-gray" href="#">
+                                  info
+                                </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item text-gray" href="#">
+                                  edit
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item text-danger text-gray"
+                                  href="#"
+                                >
+                                  delete
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!-- body -->
+                      <tr scope="row">
+                        <th scope="row" class="text-capitalize ps-1">
+                          <div class="user-img">
+                            <img
+                              src="image/images.jpeg"
+                              class="rounded-circle profile-img"
+                            />
+                            <div class="user-activity bg-success"></div>
+                          </div>
+                        </th>
+
+                        <td class="text-capitalize py-2 ps-2">
+                          <div>agapetus tadeas</div>
+                          <small class="text-gray">
+                            New | Registered: Jan 1, 2020
+                          </small>
+                        </td>
+
+                        <td class="text-center">
+                          <i class="bx bx-flag"></i>
+                        </td>
+
+                        <td class="ps-2">
+                          <div>
+                            <strong>22%</strong>
+                            <div class="small text-gray">
+                              jun 11, 2020 - jul 10, 2020
+                            </div>
+                            <div
+                              class="progress"
+                              role="progressbar"
+                              aria-label="Basic example"
+                              aria-valuenow="22"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                              style="height: 4px"
+                            >
+                              <div
+                                class="progress-bar"
+                                style="width: 22%"
+                              ></div>
+                            </div>
+                          </div>
+                        </td>
+
+                        <td class="text-center">
+                          <i class="bx bx-credit-card-alt fs-2"></i>
+                        </td>
+
+                        <td class="py-2 ps-2 first-word">
+                          <small class="text-gray">last login</small>
+                          <div class="small fw-semibold first-word">
+                            last week
+                          </div>
+                        </td>
+
+                        <td>
+                          <div class="dropdown user-dropdown">
+                            <i
+                              class="bx bx-dots-vertical-rounded fs-4"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            ></i>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item text-gray" href="#">
+                                  info
+                                </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item text-gray" href="#">
+                                  edit
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item text-danger text-gray"
+                                  href="#"
+                                >
+                                  delete
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!-- body -->
+                      <tr>
+                        <th scope="row" class="text-capitalize ps-1">
+                          <div class="user-img">
+                            <img
+                              src="image/images.jpeg"
+                              class="rounded-circle profile-img"
+                            />
+                            <div class="user-activity bg-danger"></div>
+                          </div>
+                        </th>
+
+                        <td class="text-capitalize py-2 ps-2">
+                          <div>agapetus tadeas</div>
+                          <small class="text-gray">
+                            New | Registered: Jan 1, 2020
+                          </small>
+                        </td>
+
+                        <td class="text-center">
+                          <i class="bx bx-flag"></i>
+                        </td>
+
+                        <td class="ps-2">
+                          <div>
+                            <strong>43%</strong>
+                            <div class="small text-gray">
+                              jun 11, 2020 - jul 10, 2020
+                            </div>
+                            <div
+                              class="progress"
+                              role="progressbar"
+                              aria-label="Basic example"
+                              aria-valuenow="43"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                              style="height: 4px"
+                            >
+                              <div
+                                class="progress-bar bg-success"
+                                style="width: 43%"
+                              ></div>
+                            </div>
+                          </div>
+                        </td>
+
+                        <td class="text-center">
+                          <i class="bx bx-credit-card-alt fs-2"></i>
+                        </td>
+
+                        <td class="py-2 ps-2 first-word">
+                          <small class="text-gray">last login</small>
+                          <div class="small fw-semibold first-word">
+                            yesterday
+                          </div>
+                        </td>
+
+                        <td class="">
+                          <div class="dropdown user-dropdown">
+                            <i
+                              class="bx bx-dots-vertical-rounded fs-4"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            ></i>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item text-gray" href="#">
+                                  info
+                                </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item text-gray" href="#">
+                                  edit
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item text-danger text-gray"
+                                  href="#"
+                                >
+                                  delete
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
-              <!-- traffic card body end -->
             </div>
-            <!-- traffic card end -->
           </div>
-          <!-- traffic and sales end -->
         </div>
-        <!-- middle bg size end -->
+
+        <hr />
+        <!-- footer -->
+        <footer class="container-fluid pb-2">
+          <div class="d-flex flex-wrap font-size">
+            <div>
+              <a class="text-capitalize" href="#"> coreUI </a>
+              <a href="#" class="text-capitalize"> bootstrap admin template </a>
+              &copy; 2023 creativeLabs.
+            </div>
+            <div class="text-capitalize ms-auto text-end">
+              powered by
+              <a href="#">coreUI components </a>
+            </div>
+          </div>
+        </footer>
       </div>
-      <!-- middle end -->
     </section>
-    <!-- web end -->
 
     <script src="bootstrap-5.3.0/script/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
