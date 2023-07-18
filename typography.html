@@ -133,7 +133,7 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a class="nav-link d-flex align-items-center h-100" href="/card.html">
+                <a class="nav-link d-flex align-items-center h-100" href="/cards.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     cards
@@ -878,7 +878,7 @@
                 <li class="nav-item text-capitalize hover">
                   <a
                     class="nav-link d-flex align-items-center h-100"
-                    href="/nabs-tabs"
+                    href="/nabs-tabs.html"
                   >
                     <div>
                       <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
@@ -1212,7 +1212,7 @@
                 <li class="nav-item text-capitalize hover">
                   <a
                     class="nav-link d-flex align-items-center h-100"
-                    href="/coreUI-icons-brand"
+                    href="/coreUI-icons-brand.html"
                   >
                     <div>
                       <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
@@ -1224,7 +1224,7 @@
                 <li class="nav-item text-capitalize hover">
                   <a
                     class="nav-link d-flex align-items-center h-100"
-                    href="/coreUI-icons-flag"
+                    href="/coreUI-icons-flag.html"
                   >
                     <div>
                       <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
@@ -1368,7 +1368,7 @@
                 <li class="nav-item text-capitalize hover">
                   <a
                     class="nav-link d-flex align-items-center h-100"
-                    href="/error-404"
+                    href="/error-404.html"
                   >
                     <div>
                       <i class="small-icon bi bi-bug px-3"></i>
@@ -1380,7 +1380,7 @@
                 <li class="nav-item text-capitalize hover">
                   <a
                     class="nav-link d-flex align-items-center h-100"
-                    href="/error-500"
+                    href="/error-500.html"
                   >
                     <div>
                       <i class="small-icon bi bi-bug px-3"></i>
@@ -1605,7 +1605,7 @@
                   <a href="/">theme</a>
                 </li>
                 <p>/</p>
-                <div class="text-gray">colors</div>
+                <div class="text-gray">typography</div>
               </ul>
             </div>
           </div>
@@ -1616,138 +1616,265 @@
           <!-- cards -->
           <div class="card">
             <div class="card-header">
-              <div class="text-gray">Theme colors</div>
+              <div class="text-gray">Headings</div>
             </div>
             <div class="card-body">
-              <div class="row row-cols-6 row-cols-md-4 row-cols-sm-3 row-gap-3 mb-3">
-                <div class="col">
-                  <div
-                    class="bg-primary w-75 rounded mb-2"
-                    style="padding-top: 75%"
-                  ></div>
-                  <div class="text-capitalize">brand primary color</div>
-                  <div class="text-uppercase text-gray pt-1">
-                    hex
-                    <span class="text-lowercase ps-2"> #0d6efd </span>
+              <div>
+                Documentation and examples for Bootstrap typography, including
+                global settings, headings, body text, lists, and more.
+              </div>
+              <table class="table">
+                <thead>
+                  <tr class="">
+                    <th scope="col" class="col-2">
+                      <p class="fw-normal pe-5">Heading</p>
+                    </th>
+                    <th scope="col" class="col">
+                      <p class="fw-normal">Example</p>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <code> &lsaquo;h1&rsaquo; &lsaquo;/h1&rsaquo; </code>
+                    </td>
+                    <td>
+                      <h1>h1. Bootsrap heading</h1>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code> &lsaquo;h2&rsaquo; &lsaquo;/h2&rsaquo; </code>
+                    </td>
+                    <td>
+                      <h2>h2. Bootsrap heading</h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code> &lsaquo;h3&rsaquo; &lsaquo;/h3&rsaquo; </code>
+                    </td>
+                    <td>
+                      <h3>h3. Bootsrap heading</h3>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code> &lsaquo;h4&rsaquo; &lsaquo;/h4&rsaquo; </code>
+                    </td>
+                    <td>
+                      <h4>h4. Bootsrap heading</h4>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code> &lsaquo;h5&rsaquo; &lsaquo;/h5&rsaquo; </code>
+                    </td>
+                    <td>
+                      <h5>h5. Bootsrap heading</h5>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code> &lsaquo;h6&rsaquo; &lsaquo;/h6&rsaquo; </code>
+                    </td>
+                    <td>
+                      <h6>h6. Bootsrap heading</h6>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <div class="card">
+              <div class="card-header">
+                <div class="text-gray">Headings</div>
+              </div>
+              <div class="card-body">
+                <div>
+                  <code>.h1</code> through <code>.h6</code> classes are also
+                  available, for when you want to match the font styling of a
+                  heading but cannot use the associated HTML element.
+                </div>
+                <div class="mt-3">
+                  <h1>h1. Bootstrap heading</h1>
+                  <h2>h2. Bootstrap heading</h2>
+                  <h3>h3. Bootstrap heading</h3>
+                  <h4>h4. Bootstrap heading</h4>
+                  <h5>h5. Bootstrap heading</h5>
+                  <h6>h6. Bootstrap heading</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <div class="card">
+              <div class="card-header">
+                <div class="text-gray">Display headings</div>
+              </div>
+              <div class="card-body">
+                <div>
+                  Traditional heading elements are designed to work best in the
+                  meat of your page content. When you need a heading to stand
+                  out, consider using a <strong>display heading</strong>—a
+                  larger, slightly more opinionated heading style.
+                </div>
+                <div class="mt-3">
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <td class="pb-0">
+                          <p class="display-1">Display 1</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="pb-0">
+                          <p class="display-2">Display 2</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="pb-0">
+                          <p class="display-3">Display 3</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="pb-0">
+                          <p class="display-4">Display 4</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <div class="card">
+              <div class="card-header">
+                <div class="text-gray">Inline text elements</div>
+              </div>
+              <div class="card-body">
+                <div>
+                  Traditional heading elements are designed to work best in the
+                  meat of your page content. When you need a heading to stand
+                  out, consider using a <strong>display heading</strong>—a
+                  larger, slightly more opinionated heading style.
+                </div>
+                <div class="mt-3">
+                  <p>
+                    You can use the mark tag to <mark>highlight</mark> text.
+                  </p>
+                  <p>
+                    <del>
+                      This line of text is meant to be treated as deleted text.
+                    </del>
+                  </p>
+                  <p>
+                    <s>
+                      This line of text is meant to be treated as no longer
+                      accurate.
+                    </s>
+                  </p>
+                  <p>
+                    <ins>
+                      This line of text is meant to be treated as an addition to
+                      the document.
+                    </ins>
+                  </p>
+                  <p>
+                    <u> This line of text will render as underlined </u>
+                  </p>
+                  <p>
+                    <small>
+                      This line of text is meant to be treated as fine print.
+                    </small>
+                  </p>
+                  <p>
+                    <strong> This line rendered as bold text. </strong>
+                  </p>
+                  <p>
+                    <em> This line rendered as italicized text. </em>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <div class="card">
+              <div class="card-header">
+                <div class="text-gray">Description list alignment</div>
+              </div>
+              <div class="card-body">
+                <div>
+                  Align terms and descriptions horizontally by using our grid
+                  system's predefined classes (or semantic mixins). For longer
+                  terms, you can optionally add a.text-truncate class to
+                  truncate the text with an ellipsis.
+                </div>
+                <div class="mt-3">
+                  <div class="row">
+                    <div class="col-3">
+                      <p>
+                        <strong>Description list</strong>
+                      </p>
+                    </div>
+                    <div class="col-9">
+                      <p>A description list is perfect for defining terms.</p>
+                    </div>
                   </div>
-                  <div class="text-uppercase text-gray pt-1">
-                    rgb
-                    <span class="text-lowercase ps-2"> rgb(13,110,253) </span>
+                  <div class="row">
+                    <div class="col-3">
+                      <p>
+                        <strong>Euismod</strong>
+                      </p>
+                    </div>
+                    <div class="col-9">
+                      <p>
+                        Vestibulum id ligula porta felis euismod semper eget
+                        lacinia odio sem nec elit.
+                      </p>
+                      <p>Donec id elit non mi porta gravida at eget metus.</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3">
+                      <p class="text-truncate">
+                        <strong> Truncated term is truncated </strong>
+                      </p>
+                    </div>
+                    <div class="col-9">
+                      <p>
+                        Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                        condimentum nibh, ut fermentum massa justo sit amet
+                        risus.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3">
+                      <p>
+                        <strong> Nesting </strong>
+                      </p>
+                    </div>
+                    <div class="col-3">
+                      <p>
+                        <strong> Nested definition list </strong>
+                      </p>
+                    </div>
+                    <div class="col-6">
+                      <p>
+                        Aenean posuere, tortor sed cursus feugiat, nunc augue
+                        blandit nunc.
+                      </p>
+                    </div>
                   </div>
                 </div>
-
-                <div class="col">
-                  <div
-                    class="bg-secondary w-75 rounded mb-2"
-                    style="padding-top: 75%"
-                  ></div>
-                  <div class="text-capitalize">brand secondary color</div>
-                  <div class="text-uppercase text-gray pt-1">
-                    hex
-                    <span class="text-lowercase ps-2"> #6c757d </span>
-                  </div>
-                  <div class="text-uppercase text-gray pt-1">
-                    rgb
-                    <span class="text-lowercase ps-2"> rgb(1108,117,125) </span>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div
-                    class="bg-success w-75 rounded mb-2"
-                    style="padding-top: 75%"
-                  ></div>
-                  <div class="text-capitalize">brand success color</div>
-                  <div class="text-uppercase text-gray pt-1">
-                    hex
-                    <span class="text-lowercase ps-2"> #198754 </span>
-                  </div>
-                  <div class="text-uppercase text-gray pt-1">
-                    rgb
-                    <span class="text-lowercase ps-2"> rgb(25,135,84) </span>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div
-                    class="bg-danger w-75 rounded mb-2"
-                    style="padding-top: 75%"
-                  ></div>
-                  <div class="text-capitalize">brand danger color</div>
-                  <div class="text-uppercase text-gray pt-1">
-                    hex
-                    <span class="text-lowercase ps-2"> #dc3545 </span>
-                  </div>
-                  <div class="text-uppercase text-gray pt-1">
-                    rgb
-                    <span class="text-lowercase ps-2"> rgb(2220,53,69) </span>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div
-                    class="bg-warning w-75 rounded mb-2"
-                    style="padding-top: 75%"
-                  ></div>
-                  <div class="text-capitalize">brand warning color</div>
-                  <div class="text-uppercase text-gray pt-1">
-                    hex
-                    <span class="text-lowercase ps-2"> #ffc107 </span>
-                  </div>
-                  <div class="text-uppercase text-gray pt-1">
-                    rgb
-                    <span class="text-lowercase ps-2"> rgb(255,193,7) </span>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div
-                    class="bg-info w-75 rounded mb-2"
-                    style="padding-top: 75%"
-                  ></div>
-                  <div class="text-capitalize">brand info color</div>
-                  <div class="text-uppercase text-gray pt-1">
-                    hex
-                    <span class="text-lowercase ps-2"> #0dcaf0 </span>
-                  </div>
-                  <div class="text-uppercase text-gray pt-1">
-                    rgb
-                    <span class="text-lowercase ps-2"> rgb(13,202,240) </span>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div
-                    class="bg-light w-75 rounded mb-2"
-                    style="padding-top: 75%"
-                  ></div>
-                  <div class="text-capitalize">brand light color</div>
-                  <div class="text-uppercase text-gray pt-1">
-                    hex
-                    <span class="text-lowercase ps-2"> #f8f9fa </span>
-                  </div>
-                  <div class="text-uppercase text-gray pt-1">
-                    rgb
-                    <span class="text-lowercase ps-2"> rgb(248,249,250) </span>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div
-                    class="bg-dark w-75 rounded mb-2"
-                    style="padding-top: 75%"
-                  ></div>
-                  <div class="text-capitalize">brand dark color</div>
-                  <div class="text-uppercase text-gray pt-1">
-                    hex
-                    <span class="text-lowercase ps-2"> #212529 </span>
-                  </div>
-                  <div class="text-uppercase text-gray pt-1">
-                    rgb
-                    <span class="text-lowercase ps-2"> rgb(33,37,41) </span>
-                  </div>
-                </div>
-
               </div>
             </div>
           </div>

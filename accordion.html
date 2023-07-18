@@ -133,7 +133,10 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a class="nav-link d-flex align-items-center h-100" href="/card.html">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/cards.html"
+                >
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     cards
@@ -878,7 +881,7 @@
                 <li class="nav-item text-capitalize hover">
                   <a
                     class="nav-link d-flex align-items-center h-100"
-                    href="/nabs-tabs"
+                    href="/nabs-tabs.html"
                   >
                     <div>
                       <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
@@ -1212,7 +1215,7 @@
                 <li class="nav-item text-capitalize hover">
                   <a
                     class="nav-link d-flex align-items-center h-100"
-                    href="/coreUI-icons-brand"
+                    href="/coreUI-icons-brand.html"
                   >
                     <div>
                       <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
@@ -1224,7 +1227,7 @@
                 <li class="nav-item text-capitalize hover">
                   <a
                     class="nav-link d-flex align-items-center h-100"
-                    href="/coreUI-icons-flag"
+                    href="/coreUI-icons-flag.html"
                   >
                     <div>
                       <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
@@ -1368,7 +1371,7 @@
                 <li class="nav-item text-capitalize hover">
                   <a
                     class="nav-link d-flex align-items-center h-100"
-                    href="/error-404"
+                    href="/error-404.html"
                   >
                     <div>
                       <i class="small-icon bi bi-bug px-3"></i>
@@ -1380,7 +1383,7 @@
                 <li class="nav-item text-capitalize hover">
                   <a
                     class="nav-link d-flex align-items-center h-100"
-                    href="/error-500"
+                    href="/error-500.html"
                   >
                     <div>
                       <i class="small-icon bi bi-bug px-3"></i>
@@ -1602,10 +1605,14 @@
                 </li>
                 <p>/</p>
                 <li class="nav-item text-gray">
-                  <a href="/">theme</a>
+                  <a href="/">components</a>
                 </li>
                 <p>/</p>
-                <div class="text-gray">colors</div>
+                <li class="nav-item text-gray">
+                  <a href="/">base</a>
+                </li>
+                <p>/</p>
+                <div class="text-black-50">accordion</div>
               </ul>
             </div>
           </div>
@@ -1616,138 +1623,259 @@
           <!-- cards -->
           <div class="card">
             <div class="card-header">
-              <div class="text-gray">Theme colors</div>
+              <div>
+                <strong>Accordion</strong>
+              </div>
             </div>
             <div class="card-body">
-              <div class="row row-cols-6 row-cols-md-4 row-cols-sm-3 row-gap-3 mb-3">
-                <div class="col">
-                  <div
-                    class="bg-primary w-75 rounded mb-2"
-                    style="padding-top: 75%"
-                  ></div>
-                  <div class="text-capitalize">brand primary color</div>
-                  <div class="text-uppercase text-gray pt-1">
-                    hex
-                    <span class="text-lowercase ps-2"> #0d6efd </span>
+              <div class="text-black-50 small">
+                Click the accordions below to expand/collapse the accordion
+                content.
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="accordion pt-3 px-3" id="accordion">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed text-black-50"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#accordionOne"
+                        aria-expanded="false"
+                        aria-controls="accordionOne"
+                      >
+                        Accordion Item #1
+                      </button>
+                    </h2>
+                    <div id="accordionOne" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                        <strong
+                          >This is the first item's accordion body.</strong
+                        >
+                        It is shown by default, until the collapse plugin adds
+                        the appropriate classes that we use to style each
+                        element. These classes control the overall appearance,
+                        as well as the showing and hiding via CSS transitions.
+                        You can modify any of this with custom CSS or overriding
+                        our default variables. It's also worth noting that just
+                        about any HTML can go within the
+                        <code>.accordion-body</code>, though the transition does
+                        limit overflow.
+                      </div>
+                    </div>
                   </div>
-                  <div class="text-uppercase text-gray pt-1">
-                    rgb
-                    <span class="text-lowercase ps-2"> rgb(13,110,253) </span>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed text-black-50"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#accordionTwo"
+                        aria-expanded="false"
+                        aria-controls="accordionTwo"
+                      >
+                        Accordion Item #2
+                      </button>
+                    </h2>
+                    <div id="accordionTwo" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                        <strong
+                          >This is the first item's accordion body.</strong
+                        >
+                        It is shown by default, until the collapse plugin adds
+                        the appropriate classes that we use to style each
+                        element. These classes control the overall appearance,
+                        as well as the showing and hiding via CSS transitions.
+                        You can modify any of this with custom CSS or overriding
+                        our default variables. It's also worth noting that just
+                        about any HTML can go within the
+                        <code>.accordion-body</code>, though the transition does
+                        limit overflow.
+                      </div>
+                    </div>
                   </div>
-                </div>
-
-                <div class="col">
-                  <div
-                    class="bg-secondary w-75 rounded mb-2"
-                    style="padding-top: 75%"
-                  ></div>
-                  <div class="text-capitalize">brand secondary color</div>
-                  <div class="text-uppercase text-gray pt-1">
-                    hex
-                    <span class="text-lowercase ps-2"> #6c757d </span>
-                  </div>
-                  <div class="text-uppercase text-gray pt-1">
-                    rgb
-                    <span class="text-lowercase ps-2"> rgb(1108,117,125) </span>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div
-                    class="bg-success w-75 rounded mb-2"
-                    style="padding-top: 75%"
-                  ></div>
-                  <div class="text-capitalize">brand success color</div>
-                  <div class="text-uppercase text-gray pt-1">
-                    hex
-                    <span class="text-lowercase ps-2"> #198754 </span>
-                  </div>
-                  <div class="text-uppercase text-gray pt-1">
-                    rgb
-                    <span class="text-lowercase ps-2"> rgb(25,135,84) </span>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div
-                    class="bg-danger w-75 rounded mb-2"
-                    style="padding-top: 75%"
-                  ></div>
-                  <div class="text-capitalize">brand danger color</div>
-                  <div class="text-uppercase text-gray pt-1">
-                    hex
-                    <span class="text-lowercase ps-2"> #dc3545 </span>
-                  </div>
-                  <div class="text-uppercase text-gray pt-1">
-                    rgb
-                    <span class="text-lowercase ps-2"> rgb(2220,53,69) </span>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div
-                    class="bg-warning w-75 rounded mb-2"
-                    style="padding-top: 75%"
-                  ></div>
-                  <div class="text-capitalize">brand warning color</div>
-                  <div class="text-uppercase text-gray pt-1">
-                    hex
-                    <span class="text-lowercase ps-2"> #ffc107 </span>
-                  </div>
-                  <div class="text-uppercase text-gray pt-1">
-                    rgb
-                    <span class="text-lowercase ps-2"> rgb(255,193,7) </span>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div
-                    class="bg-info w-75 rounded mb-2"
-                    style="padding-top: 75%"
-                  ></div>
-                  <div class="text-capitalize">brand info color</div>
-                  <div class="text-uppercase text-gray pt-1">
-                    hex
-                    <span class="text-lowercase ps-2"> #0dcaf0 </span>
-                  </div>
-                  <div class="text-uppercase text-gray pt-1">
-                    rgb
-                    <span class="text-lowercase ps-2"> rgb(13,202,240) </span>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div
-                    class="bg-light w-75 rounded mb-2"
-                    style="padding-top: 75%"
-                  ></div>
-                  <div class="text-capitalize">brand light color</div>
-                  <div class="text-uppercase text-gray pt-1">
-                    hex
-                    <span class="text-lowercase ps-2"> #f8f9fa </span>
-                  </div>
-                  <div class="text-uppercase text-gray pt-1">
-                    rgb
-                    <span class="text-lowercase ps-2"> rgb(248,249,250) </span>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div
-                    class="bg-dark w-75 rounded mb-2"
-                    style="padding-top: 75%"
-                  ></div>
-                  <div class="text-capitalize">brand dark color</div>
-                  <div class="text-uppercase text-gray pt-1">
-                    hex
-                    <span class="text-lowercase ps-2"> #212529 </span>
-                  </div>
-                  <div class="text-uppercase text-gray pt-1">
-                    rgb
-                    <span class="text-lowercase ps-2"> rgb(33,37,41) </span>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed text-black-50"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#accordionThree"
+                        aria-expanded="false"
+                        aria-controls="accordionThree"
+                      >
+                        Accordion Item #3
+                      </button>
+                    </h2>
+                    <div
+                      id="accordionThree"
+                      class="accordion-collapse collapse"
+                    >
+                      <div class="accordion-body">
+                        <strong
+                          >This is the first item's accordion body.</strong
+                        >
+                        It is shown by default, until the collapse plugin adds
+                        the appropriate classes that we use to style each
+                        element. These classes control the overall appearance,
+                        as well as the showing and hiding via CSS transitions.
+                        You can modify any of this with custom CSS or overriding
+                        our default variables. It's also worth noting that just
+                        about any HTML can go within the
+                        <code>.accordion-body</code>, though the transition does
+                        limit overflow.
+                      </div>
+                    </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="card mt-4">
+            <div class="card-header">
+              <div>
+                <strong>Accordion</strong>
+                <small class="text-black-50">Flush</small>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="text-black-50 small">
+                Add <code>.accordion-flush</code> to remove the default
+                <code>background-color</code>, some borders, and some rounded
+                corners to render accordions edge-to-edge with their parent
+                container.
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="accordion accordion-flush pt-3 px-3" id="accordion">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed text-black-50"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#accordionFlushOne"
+                        aria-expanded="false"
+                        aria-controls="accordionFlushOne"
+                      >
+                        Accordion Item #1
+                      </button>
+                    </h2>
+                    <div
+                      id="accordionFlushOne"
+                      class="accordion-collapse collapse"
+                    >
+                      <div class="accordion-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high
+                        life accusamus terry richardson ad squid. 3 wolf moon
+                        officia aute, non cupidatat skateboard dolor brunch.
+                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                        wolf moon tempor, sunt aliqua put a bird on it squid
+                        single-origin coffee nulla assumenda shoreditch et.
+                        Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident. Ad vegan
+                        excepteur butcher vice lomo. Leggings occaecat craft
+                        beer farm-to-table, raw denim aesthetic synth nesciunt
+                        you probably haven't heard of them accusamus labore
+                        sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed text-black-50"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#accordionFlushTwo"
+                        aria-expanded="false"
+                        aria-controls="accordionFlushTwo"
+                      >
+                        Accordion Item #2
+                      </button>
+                    </h2>
+                    <div
+                      id="accordionFlushTwo"
+                      class="accordion-collapse collapse"
+                    >
+                      <div class="accordion-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high
+                        life accusamus terry richardson ad squid. 3 wolf moon
+                        officia aute, non cupidatat skateboard dolor brunch.
+                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                        wolf moon tempor, sunt aliqua put a bird on it squid
+                        single-origin coffee nulla assumenda shoreditch et.
+                        Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident. Ad vegan
+                        excepteur butcher vice lomo. Leggings occaecat craft
+                        beer farm-to-table, raw denim aesthetic synth nesciunt
+                        you probably haven't heard of them accusamus labore
+                        sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed text-black-50"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#accordionFlushThree"
+                        aria-expanded="false"
+                        aria-controls="accordionFlushThree"
+                      >
+                        Accordion Item #3
+                      </button>
+                    </h2>
+                    <div
+                      id="accordionFlushThree"
+                      class="accordion-collapse collapse"
+                    >
+                      <div class="accordion-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high
+                        life accusamus terry richardson ad squid. 3 wolf moon
+                        officia aute, non cupidatat skateboard dolor brunch.
+                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                        wolf moon tempor, sunt aliqua put a bird on it squid
+                        single-origin coffee nulla assumenda shoreditch et.
+                        Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident. Ad vegan
+                        excepteur butcher vice lomo. Leggings occaecat craft
+                        beer farm-to-table, raw denim aesthetic synth nesciunt
+                        you probably haven't heard of them accusamus labore
+                        sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
