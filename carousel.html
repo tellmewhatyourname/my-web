@@ -133,7 +133,10 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a class="nav-link d-flex align-items-center h-100" href="/cards.html">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/cards.html"
+                >
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     cards
@@ -1602,10 +1605,14 @@
                 </li>
                 <p>/</p>
                 <li class="nav-item text-gray">
-                  <a href="/">theme</a>
+                  <a href="/">components</a>
                 </li>
                 <p>/</p>
-                <div class="text-gray">typography</div>
+                <li class="nav-item text-gray">
+                  <a href="/">base</a>
+                </li>
+                <p>/</p>
+                <div class="text-black-50">Carousel</div>
               </ul>
             </div>
           </div>
@@ -1616,96 +1623,70 @@
           <!-- cards -->
           <div class="card">
             <div class="card-header">
-              <div class="text-gray">Headings</div>
+              <div>
+                <strong>Carousel</strong>
+                <small class="text-black-50">Slides only</small>
+              </div>
             </div>
             <div class="card-body">
-              <div>
-                Documentation and examples for Bootstrap typography, including
-                global settings, headings, body text, lists, and more.
+              <div class="text-black-50 small">
+                <p>
+                  Here's a carousel with slides. Note the appearance of the
+                  <code>.d-block</code> also, <code>.w-100</code> on carousel
+                  images to override browser default image alignment.
+                </p>
               </div>
-              <table class="table">
-                <thead>
-                  <tr class="">
-                    <th scope="col" class="col-2">
-                      <p class="fw-normal pe-5">Heading</p>
-                    </th>
-                    <th scope="col" class="col">
-                      <p class="fw-normal">Example</p>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <code> &lsaquo;h1&rsaquo; &lsaquo;/h1&rsaquo; </code>
-                    </td>
-                    <td>
-                      <h1>h1. Bootsrap heading</h1>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <code> &lsaquo;h2&rsaquo; &lsaquo;/h2&rsaquo; </code>
-                    </td>
-                    <td>
-                      <h2>h2. Bootsrap heading</h2>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <code> &lsaquo;h3&rsaquo; &lsaquo;/h3&rsaquo; </code>
-                    </td>
-                    <td>
-                      <h3>h3. Bootsrap heading</h3>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <code> &lsaquo;h4&rsaquo; &lsaquo;/h4&rsaquo; </code>
-                    </td>
-                    <td>
-                      <h4>h4. Bootsrap heading</h4>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <code> &lsaquo;h5&rsaquo; &lsaquo;/h5&rsaquo; </code>
-                    </td>
-                    <td>
-                      <h5>h5. Bootsrap heading</h5>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <code> &lsaquo;h6&rsaquo; &lsaquo;/h6&rsaquo; </code>
-                    </td>
-                    <td>
-                      <h6>h6. Bootsrap heading</h6>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <div class="mt-4">
-            <div class="card">
-              <div class="card-header">
-                <div class="text-gray">Headings</div>
-              </div>
-              <div class="card-body">
-                <div>
-                  <code>.h1</code> through <code>.h6</code> classes are also
-                  available, for when you want to match the font styling of a
-                  heading but cannot use the associated HTML element.
-                </div>
-                <div class="mt-3">
-                  <h1>h1. Bootstrap heading</h1>
-                  <h2>h2. Bootstrap heading</h2>
-                  <h3>h3. Bootstrap heading</h3>
-                  <h4>h4. Bootstrap heading</h4>
-                  <h5>h5. Bootstrap heading</h5>
-                  <h6>h6. Bootstrap heading</h6>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <div
+                    id="carouselExampleSlidesOnly"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                  >
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div
+                          style="height: 400px"
+                          class="d-block w-100 bg-dark bg-opacity-25 d-flex justify-content-center align-items-center"
+                          alt="first slide"
+                        >
+                          <div class="text-black fs-5">First slide</div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div
+                          style="height: 400px"
+                          class="d-block w-100 bg-dark bg-opacity-50 d-flex justify-content-center align-items-center"
+                          alt="first slide"
+                        >
+                          <div class="text-black fs-5">Second slide</div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div
+                          style="height: 400px"
+                          class="d-block w-100 bg-dark bg-opacity-75 d-flex justify-content-center align-items-center"
+                          alt="first slide"
+                        >
+                          <div class="text-black fs-5">Third slide</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1714,40 +1695,96 @@
           <div class="mt-4">
             <div class="card">
               <div class="card-header">
-                <div class="text-gray">Display headings</div>
+                <div>
+                  <strong>Carousel</strong>
+                  <small class="text-black-50">With controls</small>
+                </div>
               </div>
               <div class="card-body">
-                <div>
-                  Traditional heading elements are designed to work best in the
-                  meat of your page content. When you need a heading to stand
-                  out, consider using a <strong>display heading</strong>—a
-                  larger, slightly more opinionated heading style.
+                <div class="text-black-50 small">
+                  <p>
+                    Adding in the previous and next controls. We recommend using
+                    <code>&lsaquo;button&rsaquo;</code> elements, but you can
+                    also use <code>&lsaquo;a&rsaquo;</code> elements with
+                    <code>role="button"</code>.
+                  </p>
                 </div>
-                <div class="mt-3">
-                  <table class="table">
-                    <tbody>
-                      <tr>
-                        <td class="pb-0">
-                          <p class="display-1">Display 1</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="pb-0">
-                          <p class="display-2">Display 2</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="pb-0">
-                          <p class="display-3">Display 3</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="pb-0">
-                          <p class="display-4">Display 4</p>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <ul class="nav nav-tabs mt-4">
+                  <li class="nav-item">
+                    <a href="" class="nav-link active text-black-50">
+                      <i class="bi bi-play"></i>
+                      Preview
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="bi-code-slash"></i>
+                      Code
+                    </a>
+                  </li>
+                </ul>
+                <div class="bg-body-secondary bg-opacity-25">
+                  <div class="p-3">
+                    <div
+                      id="carouselWithControls"
+                      class="carousel slide"
+                      data-bs-ride="carousel"
+                    >
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <div
+                            style="height: 400px"
+                            class="d-block w-100 bg-dark bg-opacity-25 d-flex justify-content-center align-items-center"
+                            alt="first slide"
+                          >
+                            <div class="text-black fs-5">First slide</div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div
+                            style="height: 400px"
+                            class="d-block w-100 bg-dark bg-opacity-50 d-flex justify-content-center align-items-center"
+                            alt="first slide"
+                          >
+                            <div class="text-black fs-5">Second slide</div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div
+                            style="height: 400px"
+                            class="d-block w-100 bg-dark bg-opacity-75 d-flex justify-content-center align-items-center"
+                            alt="first slide"
+                          >
+                            <div class="text-black fs-5">Third slide</div>
+                          </div>
+                        </div>
+                        <button
+                          class="carousel-control-prev"
+                          type="button"
+                          data-bs-target="#carouselWithControls"
+                          data-bs-slide="prev"
+                        >
+                          <span
+                            class="carousel-control-prev-icon"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                          class="carousel-control-next"
+                          type="button"
+                          data-bs-target="#carouselWithControls"
+                          data-bs-slide="next"
+                        >
+                          <span
+                            class="carousel-control-next-icon"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1756,50 +1793,115 @@
           <div class="mt-4">
             <div class="card">
               <div class="card-header">
-                <div class="text-gray">Inline text elements</div>
+                <div>
+                  <strong>Carousel</strong>
+                  <small class="text-black-50">With indicators</small>
+                </div>
               </div>
               <div class="card-body">
-                <div>
-                  Traditional heading elements are designed to work best in the
-                  meat of your page content. When you need a heading to stand
-                  out, consider using a <strong>display heading</strong>—a
-                  larger, slightly more opinionated heading style.
+                <div class="text-black-50 small">
+                  <p>
+                    You can attach the indicators to the carousel, lengthwise
+                    the controls, too.
+                  </p>
                 </div>
-                <div class="mt-3">
-                  <p>
-                    You can use the mark tag to <mark>highlight</mark> text.
-                  </p>
-                  <p>
-                    <del>
-                      This line of text is meant to be treated as deleted text.
-                    </del>
-                  </p>
-                  <p>
-                    <s>
-                      This line of text is meant to be treated as no longer
-                      accurate.
-                    </s>
-                  </p>
-                  <p>
-                    <ins>
-                      This line of text is meant to be treated as an addition to
-                      the document.
-                    </ins>
-                  </p>
-                  <p>
-                    <u> This line of text will render as underlined </u>
-                  </p>
-                  <p>
-                    <small>
-                      This line of text is meant to be treated as fine print.
-                    </small>
-                  </p>
-                  <p>
-                    <strong> This line rendered as bold text. </strong>
-                  </p>
-                  <p>
-                    <em> This line rendered as italicized text. </em>
-                  </p>
+                <ul class="nav nav-tabs mt-4">
+                  <li class="nav-item">
+                    <a href="" class="nav-link active text-black-50">
+                      <i class="bi bi-play"></i>
+                      Preview
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="bi-code-slash"></i>
+                      Code
+                    </a>
+                  </li>
+                </ul>
+                <div class="bg-body-secondary bg-opacity-25">
+                  <div class="p-3">
+                    <div
+                      id="carouselWithControlsAndIndicators"
+                      class="carousel slide"
+                    >
+                      <div class="carousel-indicators">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselWithControlsAndIndicators"
+                          data-bs-slide-to="0"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselWithControlsAndIndicators"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselWithControlsAndIndicators"
+                          data-bs-slide-to="2"
+                          aria-label="Slide 3"
+                        ></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <div
+                            style="height: 400px"
+                            class="d-block w-100 bg-dark bg-opacity-25 d-flex justify-content-center align-items-center"
+                            alt="first slide"
+                          >
+                            <div class="text-black fs-5">First slide</div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div
+                            style="height: 400px"
+                            class="d-block w-100 bg-dark bg-opacity-50 d-flex justify-content-center align-items-center"
+                            alt="first slide"
+                          >
+                            <div class="text-black fs-5">Second slide</div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div
+                            style="height: 400px"
+                            class="d-block w-100 bg-dark bg-opacity-75 d-flex justify-content-center align-items-center"
+                            alt="first slide"
+                          >
+                            <div class="text-black fs-5">Third slide</div>
+                          </div>
+                        </div>
+                        <button
+                          class="carousel-control-prev"
+                          type="button"
+                          data-bs-target="#carouselWithControlsAndIndicators"
+                          data-bs-slide="prev"
+                        >
+                          <span
+                            class="carousel-control-prev-icon"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                          class="carousel-control-next"
+                          type="button"
+                          data-bs-target="#carouselWithControlsAndIndicators"
+                          data-bs-slide="next"
+                        >
+                          <span
+                            class="carousel-control-next-icon"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1808,76 +1910,319 @@
           <div class="mt-4">
             <div class="card">
               <div class="card-header">
-                <div class="text-gray">Description list alignment</div>
+                <div>
+                  <strong>Carousel</strong>
+                  <small class="text-black-50">With captions</small>
+                </div>
               </div>
               <div class="card-body">
-                <div>
-                  Align terms and descriptions horizontally by using our grid
-                  system's predefined classes (or semantic mixins). For longer
-                  terms, you can optionally add a.text-truncate class to
-                  truncate the text with an ellipsis.
+                <div class="text-black-50 small">
+                  <p>
+                    You can add captions to slides with the
+                    <code>.carousel-caption</code> element within any
+                    <code>.carousel-item</code>. They can be immediately hidden
+                    on smaller viewports, as shown below, with optional
+                    <a href="">display utilities</a>. We hide them with
+                    <code>.d-none</code> and draw them back on medium-sized
+                    devices with <code>.d-md-block</code>.
+                  </p>
                 </div>
-                <div class="mt-3">
-                  <div class="row">
-                    <div class="col-3">
-                      <p>
-                        <strong>Description list</strong>
-                      </p>
-                    </div>
-                    <div class="col-9">
-                      <p>A description list is perfect for defining terms.</p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-3">
-                      <p>
-                        <strong>Euismod</strong>
-                      </p>
-                    </div>
-                    <div class="col-9">
-                      <p>
-                        Vestibulum id ligula porta felis euismod semper eget
-                        lacinia odio sem nec elit.
-                      </p>
-                      <p>Donec id elit non mi porta gravida at eget metus.</p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-3">
-                      <p class="text-truncate">
-                        <strong> Truncated term is truncated </strong>
-                      </p>
-                    </div>
-                    <div class="col-9">
-                      <p>
-                        Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                        condimentum nibh, ut fermentum massa justo sit amet
-                        risus.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-3">
-                      <p>
-                        <strong> Nesting </strong>
-                      </p>
-                    </div>
-                    <div class="col-3">
-                      <p>
-                        <strong> Nested definition list </strong>
-                      </p>
-                    </div>
-                    <div class="col-6">
-                      <p>
-                        Aenean posuere, tortor sed cursus feugiat, nunc augue
-                        blandit nunc.
-                      </p>
+                <ul class="nav nav-tabs mt-4">
+                  <li class="nav-item">
+                    <a href="" class="nav-link active text-black-50">
+                      <i class="bi bi-play"></i>
+                      Preview
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="bi-code-slash"></i>
+                      Code
+                    </a>
+                  </li>
+                </ul>
+                <div class="bg-body-secondary bg-opacity-25">
+                  <div class="p-3">
+                    <div
+                      id="carouselWithControlsAndCaptions"
+                      class="carousel slide"
+                    >
+                      <div class="carousel-indicators">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselWithControlsAndCaptions"
+                          data-bs-slide-to="0"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselWithControlsAndCaptions"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselWithControlsAndCaptions"
+                          data-bs-slide-to="2"
+                          aria-label="Slide 3"
+                        ></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <div
+                            style="height: 400px"
+                            class="d-block w-100 bg-dark bg-opacity-25 d-flex justify-content-center align-items-center"
+                            alt="first slide"
+                          >
+                            <div class="text-black fs-5">First slide</div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div
+                            style="height: 400px"
+                            class="d-block w-100 bg-dark bg-opacity-50 d-flex justify-content-center align-items-center"
+                            alt="first slide"
+                          >
+                            <div class="text-black fs-5">Second slide</div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div
+                            style="height: 400px"
+                            class="d-block w-100 bg-dark bg-opacity-75 d-flex justify-content-center align-items-center"
+                            alt="first slide"
+                          >
+                            <div class="text-black fs-5">Third slide</div>
+                          </div>
+                        </div>
+                        <button
+                          class="carousel-control-prev"
+                          type="button"
+                          data-bs-target="#carouselWithControlsAndCaptions"
+                          data-bs-slide="prev"
+                        >
+                          <span
+                            class="carousel-control-prev-icon"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                          class="carousel-control-next"
+                          type="button"
+                          data-bs-target="#carouselWithControlsAndCaptions"
+                          data-bs-slide="next"
+                        >
+                          <span
+                            class="carousel-control-next-icon"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
+          <div class="mt-4">
+            <div class="card">
+              <div class="card-header">
+                <div>
+                  <strong>Carousel</strong>
+                  <small class="text-black-50">Crossfade</small>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="text-black-50 small">
+                  <p>
+                    Add <code>.carousel-fade</code> to your carousel to animate
+                    slides with a fade transition instead of a slide.
+                  </p>
+                </div>
+                <ul class="nav nav-tabs mt-4">
+                  <li class="nav-item">
+                    <a href="" class="nav-link active text-black-50">
+                      <i class="bi bi-play"></i>
+                      Preview
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="bi-code-slash"></i>
+                      Code
+                    </a>
+                  </li>
+                </ul>
+                <div class="bg-body-secondary bg-opacity-25">
+                  <div class="p-3">
+                    <div
+                      id="carouselCrossfade"
+                      class="carousel slide carousel-fade"
+                    >
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <div
+                            style="height: 400px"
+                            class="d-block w-100 bg-dark bg-opacity-25 d-flex justify-content-center align-items-center"
+                            alt="first slide"
+                          >
+                            <div class="text-black fs-5">First slide</div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div
+                            style="height: 400px"
+                            class="d-block w-100 bg-dark bg-opacity-50 d-flex justify-content-center align-items-center"
+                            alt="first slide"
+                          >
+                            <div class="text-black fs-5">Second slide</div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div
+                            style="height: 400px"
+                            class="d-block w-100 bg-dark bg-opacity-75 d-flex justify-content-center align-items-center"
+                            alt="first slide"
+                          >
+                            <div class="text-black fs-5">Third slide</div>
+                          </div>
+                        </div>
+                        <button
+                          class="carousel-control-prev"
+                          type="button"
+                          data-bs-target="#carouselCrossfade"
+                          data-bs-slide="prev"
+                        >
+                          <span
+                            class="carousel-control-prev-icon"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                          class="carousel-control-next"
+                          type="button"
+                          data-bs-target="#carouselCrossfade"
+                          data-bs-slide="next"
+                        >
+                          <span
+                            class="carousel-control-next-icon"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <div class="card">
+              <div class="card-header">
+                <div>
+                  <strong>Carousel</strong>
+                  <small class="text-black-50">Drak variant</small>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="text-black-50 small">
+                  <p>
+                    Add <code>.carousel-dark</code> to the
+                    <code>.carousel</code> for darker controls, indicators, and
+                    captions. Controls have been inverted from their default
+                    white fill with the <code>filter</code> CSS property.
+                    Captions and controls have additional Sass variables that
+                    customize the color and <code>background-color</code>.
+                  </p>
+                </div>
+                <ul class="nav nav-tabs mt-4">
+                  <li class="nav-item">
+                    <a href="" class="nav-link active text-black-50">
+                      <i class="bi bi-play"></i>
+                      Preview
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="bi-code-slash"></i>
+                      Code
+                    </a>
+                  </li>
+                </ul>
+                <div class="bg-body-secondary bg-opacity-25">
+                  <div class="p-3">
+                    <div
+                      id="carouselDarkVariant"
+                      class="carousel slide carousel-dark"
+                    >
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <div
+                            style="height: 400px"
+                            class="d-block w-100 bg-dark bg-opacity-25 d-flex justify-content-center align-items-center"
+                            alt="first slide"
+                          >
+                            <div class="text-black fs-5">First slide</div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div
+                            style="height: 400px"
+                            class="d-block w-100 bg-dark bg-opacity-50 d-flex justify-content-center align-items-center"
+                            alt="first slide"
+                          >
+                            <div class="text-black fs-5">Second slide</div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div
+                            style="height: 400px"
+                            class="d-block w-100 bg-dark bg-opacity-75 d-flex justify-content-center align-items-center"
+                            alt="first slide"
+                          >
+                            <div class="text-black fs-5">Third slide</div>
+                          </div>
+                        </div>
+                        <button
+                          class="carousel-control-prev"
+                          type="button"
+                          data-bs-target="#carouselDarkVariant"
+                          data-bs-slide="prev"
+                        >
+                          <span
+                            class="carousel-control-prev-icon"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                          class="carousel-control-next"
+                          type="button"
+                          data-bs-target="#carouselDarkVariant"
+                          data-bs-slide="next"
+                        >
+                          <span
+                            class="carousel-control-next-icon"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
         </div>
 
         <hr />

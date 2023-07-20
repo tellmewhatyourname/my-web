@@ -133,7 +133,10 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a class="nav-link d-flex align-items-center h-100" href="/cards.html">
+                <a
+                  class="nav-link d-flex align-items-center h-100"
+                  href="/cards.html"
+                >
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     cards
@@ -1602,10 +1605,14 @@
                 </li>
                 <p>/</p>
                 <li class="nav-item text-gray">
-                  <a href="/">theme</a>
+                  <a href="/">components</a>
                 </li>
                 <p>/</p>
-                <div class="text-gray">typography</div>
+                <li class="nav-item text-gray">
+                  <a href="/">Base</a>
+                </li>
+                <p>/</p>
+                <div class="text-black-50">navs</div>
               </ul>
             </div>
           </div>
@@ -1616,138 +1623,98 @@
           <!-- cards -->
           <div class="card">
             <div class="card-header">
-              <div class="text-gray">Headings</div>
+              <div>
+                <strong>Navs</strong>
+                <small class="text-black-50">Basic nav</small>
+              </div>
             </div>
             <div class="card-body">
-              <div>
-                Documentation and examples for Bootstrap typography, including
-                global settings, headings, body text, lists, and more.
+              <div class="text-black-50 small">
+                <p>
+                  Navigation available in Bootstrap share general markup and
+                  styles, from the base <code>.nav</code> class to the active
+                  and disabled states. Swap modifier classes to switch between
+                  each style.
+                </p>
+                <p>
+                  The base <code>.nav</code> component is built with flexbox and
+                  provide a strong foundation for building all types of
+                  navigation components. It includes some style overrides (for
+                  working with lists), some link padding for larger hit areas,
+                  and basic disabled styling.
+                </p>
               </div>
-              <table class="table">
-                <thead>
-                  <tr class="">
-                    <th scope="col" class="col-2">
-                      <p class="fw-normal pe-5">Heading</p>
-                    </th>
-                    <th scope="col" class="col">
-                      <p class="fw-normal">Example</p>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <code> &lsaquo;h1&rsaquo; &lsaquo;/h1&rsaquo; </code>
-                    </td>
-                    <td>
-                      <h1>h1. Bootsrap heading</h1>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <code> &lsaquo;h2&rsaquo; &lsaquo;/h2&rsaquo; </code>
-                    </td>
-                    <td>
-                      <h2>h2. Bootsrap heading</h2>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <code> &lsaquo;h3&rsaquo; &lsaquo;/h3&rsaquo; </code>
-                    </td>
-                    <td>
-                      <h3>h3. Bootsrap heading</h3>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <code> &lsaquo;h4&rsaquo; &lsaquo;/h4&rsaquo; </code>
-                    </td>
-                    <td>
-                      <h4>h4. Bootsrap heading</h4>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <code> &lsaquo;h5&rsaquo; &lsaquo;/h5&rsaquo; </code>
-                    </td>
-                    <td>
-                      <h5>h5. Bootsrap heading</h5>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <code> &lsaquo;h6&rsaquo; &lsaquo;/h6&rsaquo; </code>
-                    </td>
-                    <td>
-                      <h6>h6. Bootsrap heading</h6>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <ul class="nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Active</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled text-black-50">Disabled</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
 
-          <div class="mt-4">
-            <div class="card">
-              <div class="card-header">
-                <div class="text-gray">Headings</div>
+              <div class="text-black-50 small mt-4">
+                <p>
+                  Classes are used throughout, so your markup can be super
+                  flexible. Use <code>&lsaquo;ul&rsaquo;</code>s like above,
+                  <code>&lsaquo;ol&rsaquo;</code> if the order of your items is
+                  important, or roll your own with a
+                  <code>&lsaquo;nav&rsaquo;</code> element. Because the
+                  <code>.nav</code> uses <code>display: flex</code>, the nav
+                  links behave the same as nav items would, but without the
+                  extra markup.
+                </p>
               </div>
-              <div class="card-body">
-                <div>
-                  <code>.h1</code> through <code>.h6</code> classes are also
-                  available, for when you want to match the font styling of a
-                  heading but cannot use the associated HTML element.
-                </div>
-                <div class="mt-3">
-                  <h1>h1. Bootstrap heading</h1>
-                  <h2>h2. Bootstrap heading</h2>
-                  <h3>h3. Bootstrap heading</h3>
-                  <h4>h4. Bootstrap heading</h4>
-                  <h5>h5. Bootstrap heading</h5>
-                  <h6>h6. Bootstrap heading</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-4">
-            <div class="card">
-              <div class="card-header">
-                <div class="text-gray">Display headings</div>
-              </div>
-              <div class="card-body">
-                <div>
-                  Traditional heading elements are designed to work best in the
-                  meat of your page content. When you need a heading to stand
-                  out, consider using a <strong>display heading</strong>—a
-                  larger, slightly more opinionated heading style.
-                </div>
-                <div class="mt-3">
-                  <table class="table">
-                    <tbody>
-                      <tr>
-                        <td class="pb-0">
-                          <p class="display-1">Display 1</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="pb-0">
-                          <p class="display-2">Display 2</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="pb-0">
-                          <p class="display-3">Display 3</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="pb-0">
-                          <p class="display-4">Display 4</p>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <nav class="nav">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Active</a
+                    >
+                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link disabled">Disabled</a>
+                  </nav>
                 </div>
               </div>
             </div>
@@ -1756,50 +1723,92 @@
           <div class="mt-4">
             <div class="card">
               <div class="card-header">
-                <div class="text-gray">Inline text elements</div>
+                <div>
+                  <strong>Navs</strong>
+                  <small class="text-black-50">Horizontal alignment</small>
+                </div>
               </div>
               <div class="card-body">
-                <div>
-                  Traditional heading elements are designed to work best in the
-                  meat of your page content. When you need a heading to stand
-                  out, consider using a <strong>display heading</strong>—a
-                  larger, slightly more opinionated heading style.
+                <div class="text-black-50 small">
+                  <p>
+                    Change the horizontal alignment of your nav with
+                    <a href="">flexbox utilities</a>. By default, navs are
+                    left-aligned, but you can easily change them to center or
+                    right aligned.
+                  </p>
+                  <p>Centered with <code>.justify-content-center:</code></p>
                 </div>
-                <div class="mt-3">
-                  <p>
-                    You can use the mark tag to <mark>highlight</mark> text.
-                  </p>
-                  <p>
-                    <del>
-                      This line of text is meant to be treated as deleted text.
-                    </del>
-                  </p>
-                  <p>
-                    <s>
-                      This line of text is meant to be treated as no longer
-                      accurate.
-                    </s>
-                  </p>
-                  <p>
-                    <ins>
-                      This line of text is meant to be treated as an addition to
-                      the document.
-                    </ins>
-                  </p>
-                  <p>
-                    <u> This line of text will render as underlined </u>
-                  </p>
-                  <p>
-                    <small>
-                      This line of text is meant to be treated as fine print.
-                    </small>
-                  </p>
-                  <p>
-                    <strong> This line rendered as bold text. </strong>
-                  </p>
-                  <p>
-                    <em> This line rendered as italicized text. </em>
-                  </p>
+                <ul class="nav nav-tabs mt-4">
+                  <li class="nav-item">
+                    <a href="" class="nav-link active text-black-50">
+                      <i class="bi bi-play"></i>
+                      Preview
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="bi-code-slash"></i>
+                      Code
+                    </a>
+                  </li>
+                </ul>
+                <div class="bg-body-secondary bg-opacity-25">
+                  <div class="p-3">
+                    <ul class="nav justify-content-center">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"
+                          >Active</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="text-black-50 small">
+                  <p>Right-aligned with <code>.justify-content-end:</code></p>
+                </div>
+                <ul class="nav nav-tabs mt-4">
+                  <li class="nav-item">
+                    <a href="" class="nav-link active text-black-50">
+                      <i class="bi bi-play"></i>
+                      Preview
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="bi-code-slash"></i>
+                      Code
+                    </a>
+                  </li>
+                </ul>
+                <div class="bg-body-secondary bg-opacity-25">
+                  <div class="p-3">
+                    <ul class="nav justify-content-end">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"
+                          >Active</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1808,76 +1817,570 @@
           <div class="mt-4">
             <div class="card">
               <div class="card-header">
-                <div class="text-gray">Description list alignment</div>
+                <div>
+                  <strong>Navs</strong>
+                  <small class="text-black-50">Vertical</small>
+                </div>
               </div>
               <div class="card-body">
-                <div>
-                  Align terms and descriptions horizontally by using our grid
-                  system's predefined classes (or semantic mixins). For longer
-                  terms, you can optionally add a.text-truncate class to
-                  truncate the text with an ellipsis.
+                <div class="text-black-50 small">
+                  <p>
+                    Stack your navigation by changing the flex item direction
+                    with the <code>.flex-column</code> utility. Need to stack
+                    them on some viewports but not others? Use the responsive
+                    versions (e.g., <code>.flex-sm-column</code>).
+                  </p>
                 </div>
-                <div class="mt-3">
-                  <div class="row">
-                    <div class="col-3">
-                      <p>
-                        <strong>Description list</strong>
-                      </p>
-                    </div>
-                    <div class="col-9">
-                      <p>A description list is perfect for defining terms.</p>
-                    </div>
+                <ul class="nav nav-tabs mt-4">
+                  <li class="nav-item">
+                    <a href="" class="nav-link active text-black-50">
+                      <i class="bi bi-play"></i>
+                      Preview
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="bi-code-slash"></i>
+                      Code
+                    </a>
+                  </li>
+                </ul>
+                <div class="bg-body-secondary bg-opacity-25">
+                  <div class="p-3">
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"
+                          >Active</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
                   </div>
-                  <div class="row">
-                    <div class="col-3">
-                      <p>
-                        <strong>Euismod</strong>
-                      </p>
-                    </div>
-                    <div class="col-9">
-                      <p>
-                        Vestibulum id ligula porta felis euismod semper eget
-                        lacinia odio sem nec elit.
-                      </p>
-                      <p>Donec id elit non mi porta gravida at eget metus.</p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-3">
-                      <p class="text-truncate">
-                        <strong> Truncated term is truncated </strong>
-                      </p>
-                    </div>
-                    <div class="col-9">
-                      <p>
-                        Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                        condimentum nibh, ut fermentum massa justo sit amet
-                        risus.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-3">
-                      <p>
-                        <strong> Nesting </strong>
-                      </p>
-                    </div>
-                    <div class="col-3">
-                      <p>
-                        <strong> Nested definition list </strong>
-                      </p>
-                    </div>
-                    <div class="col-6">
-                      <p>
-                        Aenean posuere, tortor sed cursus feugiat, nunc augue
-                        blandit nunc.
-                      </p>
-                    </div>
+                </div>
+
+                <div class="text-black-50 small mt-4">
+                  <p>
+                    As always, vertical navigation is possible without
+                    <code>&lsaquo;ul&rsaquo;</code>s, too.
+                  </p>
+                </div>
+                <ul class="nav nav-tabs mt-4">
+                  <li class="nav-item">
+                    <a href="" class="nav-link active text-black-50">
+                      <i class="bi bi-play"></i>
+                      Preview
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="bi-code-slash"></i>
+                      Code
+                    </a>
+                  </li>
+                </ul>
+                <div class="bg-body-secondary bg-opacity-25">
+                  <div class="p-3">
+                    <nav class="nav flex-column">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Active</a
+                      >
+                      <a class="nav-link" href="#">Link</a>
+                      <a class="nav-link" href="#">Link</a>
+                      <a class="nav-link disabled">Disabled</a>
+                    </nav>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
+          <div class="mt-4">
+            <div class="card">
+              <div class="card-header">
+                <div>
+                  <strong>Navs</strong>
+                  <small class="text-black-50">Tabs</small>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="text-black-50 small">
+                  <p>
+                    Takes the basic nav from above and adds the
+                    <code>.nav-tabs</code> class to generate a tabbed interface.
+                    Use them to create tabbable regions with our
+                    <a href="">tab JavaScript plugin.</a>
+                  </p>
+                  <p>
+                    Be sure to <strong>not use the standard</strong>
+                    <code>.btn</code> <strong>classes here</strong>.
+                  </p>
+                </div>
+                <ul class="nav nav-tabs mt-4">
+                  <li class="nav-item">
+                    <a href="" class="nav-link active text-black-50">
+                      <i class="bi bi-play"></i>
+                      Preview
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="bi-code-slash"></i>
+                      Code
+                    </a>
+                  </li>
+                </ul>
+                <div class="bg-body-secondary bg-opacity-25">
+                  <div class="p-3">
+                    <ul class="nav nav-tabs">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"
+                          >Active</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <div class="card">
+              <div class="card-header">
+                <div>
+                  <strong>Navs</strong>
+                  <small class="text-black-50">Pilis</small>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="text-black-50 small">
+                  <p>
+                    Take that same HTML, but use
+                    <code>.nav-pills</code> instead:
+                  </p>
+                </div>
+                <ul class="nav nav-tabs mt-4">
+                  <li class="nav-item">
+                    <a href="" class="nav-link active text-black-50">
+                      <i class="bi bi-play"></i>
+                      Preview
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="bi-code-slash"></i>
+                      Code
+                    </a>
+                  </li>
+                </ul>
+                <div class="bg-body-secondary bg-opacity-25">
+                  <div class="p-3">
+                    <ul class="nav nav-pills">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"
+                          >Active</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <div class="card">
+              <div class="card-header">
+                <div>
+                  <strong>Navs</strong>
+                  <small class="text-black-50">Fill and justify</small>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="text-black-50 small">
+                  <p>
+                    Force your <code>.nav</code>'s contents to extend the full
+                    available width one of two modifier classes. To
+                    proportionately fill all available space with your
+                    <code>.nav-items</code>, use <code>.nav-fill</code>. Notice
+                    that all horizontal space is occupied, but not every nav
+                    item has the same width.
+                  </p>
+                </div>
+                <ul class="nav nav-tabs mt-4">
+                  <li class="nav-item">
+                    <a href="" class="nav-link active text-black-50">
+                      <i class="bi bi-play"></i>
+                      Preview
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="bi-code-slash"></i>
+                      Code
+                    </a>
+                  </li>
+                </ul>
+                <div class="bg-body-secondary bg-opacity-25">
+                  <div class="p-3">
+                    <ul class="nav nav-pills nav-fill">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"
+                          >Active</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Much longer nav link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="text-black-50 small mt-4">
+                  <p>
+                    When using a <code>&lsaquo;nav&rsaquo;</code>-based
+                    navigation, you can safely omit <code>.nav-item</code> as
+                    only <code>.nav-link</code> is required for styling
+                    <code>&lsaquo;a&rsaquo;</code> elements.
+                  </p>
+                </div>
+                <ul class="nav nav-tabs mt-4">
+                  <li class="nav-item">
+                    <a href="" class="nav-link active text-black-50">
+                      <i class="bi bi-play"></i>
+                      Preview
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="bi-code-slash"></i>
+                      Code
+                    </a>
+                  </li>
+                </ul>
+                <div class="bg-body-secondary bg-opacity-25">
+                  <div class="p-3">
+                    <nav class="nav nav-pills nav-fill">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Active</a
+                      >
+                      <a class="nav-link" href="#">Much longer nav link</a>
+                      <a class="nav-link" href="#">Link</a>
+                      <a class="nav-link disabled">Disabled</a>
+                    </nav>
+                  </div>
+                </div>
+
+                <div class="text-black-50 small mt-4">
+                  <p>
+                    For equal-width elements, use <code>.nav-justified</code>.
+                    All horizontal space will be occupied by nav links, but
+                    unlike the <code>.nav-fill</code> above, every nav item will
+                    be the same width.
+                  </p>
+                </div>
+                <ul class="nav nav-tabs mt-4">
+                  <li class="nav-item">
+                    <a href="" class="nav-link active text-black-50">
+                      <i class="bi bi-play"></i>
+                      Preview
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="bi-code-slash"></i>
+                      Code
+                    </a>
+                  </li>
+                </ul>
+                <div class="bg-body-secondary bg-opacity-25">
+                  <div class="p-3">
+                    <ul class="nav nav-pills nav-justified">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"
+                          >Active</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Much longer nav link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="text-black-50 small mt-4">
+                  <p>
+                    Similar to the .nav-fill example using a
+                    <code>&lsaquo;nav&rsaquo;</code>-based navigation.
+                  </p>
+                </div>
+                <ul class="nav nav-tabs mt-4">
+                  <li class="nav-item">
+                    <a href="" class="nav-link active text-black-50">
+                      <i class="bi bi-play"></i>
+                      Preview
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="bi-code-slash"></i>
+                      Code
+                    </a>
+                  </li>
+                </ul>
+                <div class="bg-body-secondary bg-opacity-25">
+                  <div class="p-3">
+                    <nav class="nav nav-pills nav-justified">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Active</a
+                      >
+                      <a class="nav-link" href="#">Much longer nav link</a>
+                      <a class="nav-link" href="#">Link</a>
+                      <a class="nav-link disabled">Disabled</a>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <div class="card">
+              <div class="card-header">
+                <div>
+                  <strong>Navs</strong>
+                  <small class="text-black-50"
+                    >Working with flex utilities</small
+                  >
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="text-black-50 small">
+                  <p>
+                    If you need responsive nav variations, consider using a
+                    series of <a href="">flexbox utilities</a>. While more
+                    verbose, these utilities offer greater customization across
+                    responsive breakpoints. In the example below, our nav will
+                    be stacked on the lowest breakpoint, then adapt to a
+                    horizontal layout that fills the available width starting
+                    from the small breakpoint.
+                  </p>
+                </div>
+                <ul class="nav nav-tabs mt-4">
+                  <li class="nav-item">
+                    <a href="" class="nav-link active text-black-50">
+                      <i class="bi bi-play"></i>
+                      Preview
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="bi-code-slash"></i>
+                      Code
+                    </a>
+                  </li>
+                </ul>
+                <div class="bg-body-secondary bg-opacity-25">
+                  <div class="p-3">
+                    <nav class="nav nav-pills flex-column flex-sm-row">
+                      <a
+                        class="flex-sm-fill text-sm-center nav-link active"
+                        aria-current="page"
+                        href="#"
+                        >Active</a
+                      >
+                      <a class="flex-sm-fill text-sm-center nav-link" href="#"
+                        >Longer nav link</a
+                      >
+                      <a class="flex-sm-fill text-sm-center nav-link" href="#"
+                        >Link</a
+                      >
+                      <a class="flex-sm-fill text-sm-center nav-link disabled"
+                        >Disabled</a
+                      >
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <div class="card">
+              <div class="card-header">
+                <div>
+                  <strong>Navs</strong>
+                  <small class="text-black-50">Tabs with dropdowns</small>
+                </div>
+              </div>
+              <div class="card-body">
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a href="" class="nav-link active text-black-50">
+                      <i class="bi bi-play"></i>
+                      Preview
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="bi-code-slash"></i>
+                      Code
+                    </a>
+                  </li>
+                </ul>
+                <div class="bg-body-secondary bg-opacity-25">
+                  <div class="p-3">
+                    <ul class="nav nav-tabs">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"
+                          >Active</a
+                        >
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a
+                          class="nav-link dropdown-toggle"
+                          data-bs-toggle="dropdown"
+                          href="#"
+                          role="button"
+                          aria-expanded="false"
+                          >Dropdown</a
+                        >
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </li>
+                          <li><hr class="dropdown-divider" /></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <div class="card">
+              <div class="card-header">
+                <div>
+                  <strong>Navs</strong>
+                  <small class="text-black-50">pills with dropdown</small>
+                </div>
+              </div>
+              <div class="card-body">
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a href="" class="nav-link active text-black-50">
+                      <i class="bi bi-play"></i>
+                      Preview
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="bi-code-slash"></i>
+                      Code
+                    </a>
+                  </li>
+                </ul>
+                <div class="bg-body-secondary bg-opacity-25">
+                  <div class="p-3">
+                    <ul class="nav nav-pills">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"
+                          >Active</a
+                        >
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a
+                          class="nav-link dropdown-toggle"
+                          data-bs-toggle="dropdown"
+                          href="#"
+                          role="button"
+                          aria-expanded="false"
+                          >Dropdown</a
+                        >
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </li>
+                          <li><hr class="dropdown-divider" /></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
         </div>
 
         <hr />
