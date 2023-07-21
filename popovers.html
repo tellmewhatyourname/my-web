@@ -1204,7 +1204,7 @@
                 <a href="">Base</a>
               </li>
               <p>/</p>
-              <div class="text-black-50">placeholders</div>
+              <div class="text-black-50">popovers</div>
             </ul>
           </div>
         </div>
@@ -1216,17 +1216,11 @@
         <div class="card">
           <div class="card-header">
             <div>
-              <strong>Placeholders</strong>
+              <strong>Popovers</strong>
+              <small class="text-black-50">Basic example</small>
             </div>
           </div>
           <div class="card-body">
-            <div class="text-black-50 small">
-              <p>
-                In the example below, we take a typical card component and
-                recreate it with placeholders applied to create a “loading
-                card”. Size and proportions are the same between the two.
-              </p>
-            </div>
             <ul class="nav nav-tabs mt-4">
               <li class="nav-item">
                 <a href="" class="nav-link active text-black-50">
@@ -1243,37 +1237,11 @@
             </ul>
             <div class="bg-body-secondary bg-opacity-25">
               <div class="p-3">
-                <div class="d-flex justify-content-around">
-                  <div class="card" style="width: 18rem">
-                    <img src="image/full.jpg" class="card-img-top" />
-
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-
-                  <div class="card" aria-hidden="true" style="width: 18rem">
-                    <img src="image/full.jpg" class="card-img-top" />
-                    <div class="card-body">
-                      <h5 class="card-title placeholder-glow">
-                        <span class="placeholder col-6"></span>
-                      </h5>
-                      <p class="card-text placeholder-glow">
-                        <span class="placeholder col-7"></span>
-                        <span class="placeholder col-4"></span>
-                        <span class="placeholder col-4"></span>
-                        <span class="placeholder col-6"></span>
-                        <span class="placeholder col-8"></span>
-                      </p>
-                      <a class="btn btn-primary disabled placeholder col-6"></a>
-                    </div>
-                  </div>
-                </div>
+                <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title=""
+                  data-bs-content="And here's some amazing content. It's very engaging. Right?"
+                  data-bs-original-title="Popover title">
+                  Click to toggle popover
+                </button>
               </div>
             </div>
           </div>
@@ -1283,16 +1251,15 @@
           <div class="card">
             <div class="card-header">
               <div>
-                <strong>Placeholders</strong>
+                <strong>Popover</strong>
+                <small class="text-black-50">Four direction</small>
               </div>
             </div>
             <div class="card-body">
               <div class="text-black-50 small">
                 <p>
-                  Create placeholders with the <code>.placeholder</code> class
-                  and a grid column class (e.g., .col-6) to set the width.
-                  They can replace the text inside an element or be added as a
-                  modifier class to an existing component.
+                  Four options are available: top, right, bottom, and left aligned. Directions are mirrored when using
+                  Bootstrap in RTL.
                 </p>
               </div>
               <ul class="nav nav-tabs mt-4">
@@ -1311,11 +1278,22 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <p aria-hidden="true">
-                    <span class="placeholder col-6"></span>
-                  </p>
-
-                  <a class="btn btn-primary disabled placeholder col-4"></a>
+                  <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+                    data-bs-placement="top" data-bs-content="Top popover">
+                    Popover on top
+                  </button>
+                  <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+                    data-bs-placement="right" data-bs-content="Right popover">
+                    Popover on right
+                  </button>
+                  <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+                    data-bs-placement="bottom" data-bs-content="Bottom popover">
+                    Popover on bottom
+                  </button>
+                  <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+                    data-bs-placement="left" data-bs-content="Left popover">
+                    Popover on left
+                  </button>
                 </div>
               </div>
             </div>
@@ -1326,15 +1304,15 @@
           <div class="card">
             <div class="card-header">
               <div>
-                <strong>Placeholders</strong>
-                <small class="text-black-50">Width</small>
+                <strong>Popover</strong>
+                <small class="text-black-50">Dismiss on next click</small>
               </div>
             </div>
             <div class="card-body">
               <div class="text-black-50 small">
                 <p>
-                  You can change the width through grid column classes, width
-                  utilities, or inline styles.
+                  Use the focus trigger to dismiss popovers on the user's next click of a different element than the
+                  toggle element.
                 </p>
               </div>
               <ul class="nav nav-tabs mt-4">
@@ -1353,8 +1331,10 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <span class="placeholder col-6"></span>
-                  <span class="placeholder w-75"></span>
+                  <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover"
+                    data-bs-trigger="focus" data-bs-title="Dismissible popover"
+                    data-bs-content="And here's some amazing content. It's very engaging. Right?">Dismissible
+                    popover</a>
                 </div>
               </div>
             </div>
@@ -1365,16 +1345,23 @@
           <div class="card">
             <div class="card-header">
               <div>
-                <strong>Pagnation</strong>
-                <small class="text-black-50">Color</small>
+                <strong>Popover</strong>
+                <small class="text-black-50">Disabled elements</small>
               </div>
             </div>
             <div class="card-body">
               <div class="text-black-50 small">
                 <p>
-                  By default, the <code>placeholder</code> uses
-                  <code>currentColor</code>. This can be overridden with a
-                  custom color or utility class.
+                  Elements with the disabled attribute aren't interactive, meaning users cannot hover or click them to
+                  trigger a popover
+                  (or tooltip). As a workaround, you'll want to trigger the popover from a wrapper
+                  <code>&lsaquo;div&rsaquo;</code> or <code>&lsaquo;span&rsaquo;</code>, ideally made
+                  keyboard-focusable using tabindex="0".
+                </p>
+                <p>
+                  For disabled popover triggers, you may also prefer <code>data-coreui-trigger="hover focus"</code> so
+                  that the popover appears as
+                  immediate visual feedback to your users as they may not expect to click on a disabled element.
                 </p>
               </div>
               <ul class="nav nav-tabs mt-4">
@@ -1393,113 +1380,16 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <span class="placeholder col-12"></span>
-
-                  <span class="placeholder col-12 bg-primary"></span>
-                  <span class="placeholder col-12 bg-secondary"></span>
-                  <span class="placeholder col-12 bg-success"></span>
-                  <span class="placeholder col-12 bg-danger"></span>
-                  <span class="placeholder col-12 bg-warning"></span>
-                  <span class="placeholder col-12 bg-info"></span>
-                  <span class="placeholder col-12 bg-light"></span>
-                  <span class="placeholder col-12 bg-dark"></span>
+                  <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                    data-bs-content="Disabled popover">
+                    <button class="btn btn-primary" type="button" disabled>Disabled button</button>
+                  </span>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="mt-4">
-          <div class="card">
-            <div class="card-header">
-              <div>
-                <strong>Pagination</strong>
-                <small class="text-black-50">Sizing</small>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="text-black-50 small">
-                <p>
-                  The size of
-                  <code>.placeholders</code>
-                  are based on the typographic style of the parent element.
-                  Customize them with sizing modifiers:
-                  <code>.placeholder-lg</code>, <code>.placeholder-sm</code>,
-                  or <code>.placeholder-xs</code>.
-                </p>
-              </div>
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <span class="placeholder col-12 placeholder-lg"></span>
-                  <span class="placeholder col-12"></span>
-                  <span class="placeholder col-12 placeholder-sm"></span>
-                  <span class="placeholder col-12 placeholder-xs"></span>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-4">
-          <div class="card">
-            <div class="card-header">
-              <div>
-                <strong>Pagination</strong>
-                <small class="text-black-50">Animation</small>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="text-black-50 small">
-                <p>
-                  Animate placeholders with <code>.placeholder-glow or</code> <code>.placeholder-wave</code> to better
-                  convey the perception of something being
-                  actively loaded.
-                </p>
-              </div>
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <p class="placeholder-glow">
-                    <span class="placeholder col-12"></span>
-                  </p>
-
-                  <p class="placeholder-wave">
-                    <span class="placeholder col-12"></span>
-                  </p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
         <!-- end -->
       </div>
 
@@ -1522,6 +1412,7 @@
   </section>
 
   <script src="bootstrap-5.3.0/script/bootstrap.bundle.min.js"></script>
+  <script src="script/popover.js"></script>
   <script src="script/index.js"></script>
 </body>
 

@@ -4,6 +4,7 @@ let sidebar = document.querySelector(".sidebar-menu .sidebar");
 let minSidebar = document.querySelector(".js-min-sidebar-icon");
 let chevronLeft = document.querySelector(".bx-chevron-left");
 
+// minsidebar
 minSidebar.addEventListener("click", () => {
   if (chevronLeft.classList.toggle("bx-chevron-right")) {
     sidebarMenu.classList.add("minSidebar");
@@ -11,7 +12,6 @@ minSidebar.addEventListener("click", () => {
     sidebarMenu.classList.remove("minSidebar");
   }
 });
-// sidebar end
 
 // middle sidebar
 let lgCloseSide = document.querySelector(".lg-sidebar-icon");
@@ -23,7 +23,6 @@ lgCloseSide.addEventListener("click", () => {
     sidebarMenu.classList.remove("close");
   }
 });
-// middle sidebar end
 
 // offcanvas sidebar
 let mdCloseSide = document.querySelector(".md-sidebar-icon");
@@ -267,4 +266,3 @@ const mainChart = new Chart(document.getElementById("main-chart"), {
     },
   },
 });
-// charts end
