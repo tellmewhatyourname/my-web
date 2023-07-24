@@ -535,7 +535,7 @@
     </div>
 
     <!-- offcanvas -->
-    <div class="sidebar-menu">
+    <div class="sidebar-menu d-md-block d-lg-none">
       <div class="sidebar sidebar-bg offcanvas" tabindex="-1" id="offcanvasExample">
         <!-- sidebar info -->
         <nav class="navbar-nav offcanvas-body p-0" data-bs-scroll="true" data-bs-backdrop="false">
@@ -1188,24 +1188,24 @@
             </div>
           </div>
 
-          <hr class="mt-0" />
           <!-- navbar setting 2 -->
-          <div class="navbar-setting-two">
-            <ul class="d-flex gap-2 text-capitalize font-size">
-              <li class="nav-item">
-                <a href="">home</a>
-              </li>
-              <p>/</p>
-              <li class="nav-item text-gray">
-                <a href="">components</a>
-              </li>
-              <p>/</p>
-              <li class="nav-item text-gray">
-                <a href="">base</a>
-              </li>
-              <p>/</p>
-              <div class="text-black-50">breedcrumb</div>
-            </ul>
+          <div class="navbar-setting-two border-top border-dark-subtle">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb ps-4 pt-2 pb-2">
+                <li class="breadcrumb-item">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="index.html">Components</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="index.html">Base</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Breadcrumb
+                </li>
+              </ol>
+            </nav>
           </div>
         </div>
       </div>
@@ -1213,95 +1213,97 @@
       <!-- middle bg size -->
       <div class="mx-4">
         <!-- cards -->
-        <div class="card">
-          <div class="card-header">
-            <div>
-              <strong>Breadcrumb</strong>
+        <div class="mt-4">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <strong>Breadcrumb</strong>
+              </div>
             </div>
-          </div>
-          <div class="card-body">
-            <div class="text-black-50 small">
-              The breadcrumb navigation provides links back to each previous
-              page the user navigated through and shows the current location
-              in a website or an application. You don't have to add
-              separators, because they automatically added in CSS through
-              <a href="">::before</a> and <a href="">content</a>.
-            </div>
-            <ul class="nav nav-tabs mt-4">
-              <li class="nav-item">
-                <a href="" class="nav-link active text-black-50">
-                  <i class="bi bi-play"></i>
-                  Preview
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="bi-code-slash"></i>
-                  Code
-                </a>
-              </li>
-            </ul>
-            <div class="bg-body-secondary bg-opacity-25">
-              <div class="p-3">
-                <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item active text-black-50" aria-current="page">
-                      Home
-                    </li>
-                  </ol>
-                </nav>
+            <div class="card-body">
+              <div class="text-black-50 small">
+                The breadcrumb navigation provides links back to each previous
+                page the user navigated through and shows the current location
+                in a website or an application. You don't have to add
+                separators, because they automatically added in CSS through
+                <a href="">::before</a> and <a href="">content</a>.
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item active text-black-50" aria-current="page">
+                        Home
+                      </li>
+                    </ol>
+                  </nav>
 
-                <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                      <a href="#">Home</a>
-                    </li>
-                    <li class="breadcrumb-item active text-black-50" aria-current="page">
-                      Library
-                    </li>
-                  </ol>
-                </nav>
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">
+                        <a href="#">Home</a>
+                      </li>
+                      <li class="breadcrumb-item active text-black-50" aria-current="page">
+                        Library
+                      </li>
+                    </ol>
+                  </nav>
 
-                <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                      <a href="#">Home</a>
-                    </li>
-                    <li class="breadcrumb-item">
-                      <a href="#">Library</a>
-                    </li>
-                    <li class="breadcrumb-item active text-black-50" aria-current="page">
-                      Data
-                    </li>
-                  </ol>
-                </nav>
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">
+                        <a href="#">Home</a>
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a href="#">Library</a>
+                      </li>
+                      <li class="breadcrumb-item active text-black-50" aria-current="page">
+                        Data
+                      </li>
+                    </ol>
+                  </nav>
 
-                <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                      <a href="#">Home</a>
-                    </li>
-                    <li class="breadcrumb-item">
-                      <a href="#">Library</a>
-                    </li>
-                    <li class="breadcrumb-item">
-                      <a href="#">Data</a>
-                    </li>
-                    <li class="breadcrumb-item active text-black-50" aria-current="page">
-                      Bootstrap
-                    </li>
-                  </ol>
-                </nav>
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">
+                        <a href="#">Home</a>
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a href="#">Library</a>
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a href="#">Data</a>
+                      </li>
+                      <li class="breadcrumb-item active text-black-50" aria-current="page">
+                        Bootstrap
+                      </li>
+                    </ol>
+                  </nav>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <hr />
       <!-- footer -->
+      <hr class="">
       <footer class="container-fluid pb-2">
-        <div class="d-flex flex-wrap font-size">
+        <div class="d-flex flex-wrap font-size footer">
           <div>
             <a class="text-capitalize" href="#"> coreUI </a>
             <a href="#" class="text-capitalize"> bootstrap admin template </a>
@@ -1313,7 +1315,6 @@
           </div>
         </div>
       </footer>
-    </div>
   </section>
 
   <script src="bootstrap-5.3.0/script/bootstrap.bundle.min.js"></script>

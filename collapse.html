@@ -1188,24 +1188,24 @@
             </div>
           </div>
 
-          <hr class="mt-0" />
           <!-- navbar setting 2 -->
-          <div class="navbar-setting-two">
-            <ul class="d-flex gap-2 text-capitalize font-size">
-              <li class="nav-item">
-                <a href="index.html">home</a>
-              </li>
-              <p>/</p>
-              <li class="nav-item text-gray">
-                <a href="index.html">components</a>
-              </li>
-              <p>/</p>
-              <li class="nav-item text-gray">
-                <a href="index.html">Base</a>
-              </li>
-              <p>/</p>
-              <div class="text-black-50">Collapse</div>
-            </ul>
+          <div class="navbar-setting-two border-top border-dark-subtle">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb ps-4 pt-2 pb-2">
+                <li class="breadcrumb-item">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="index.html">Components</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="index.html">Base</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Collapse
+                </li>
+              </ol>
+            </nav>
           </div>
         </div>
       </div>
@@ -1213,52 +1213,54 @@
       <!-- middle bg size -->
       <div class="mx-4">
         <!-- cards -->
-        <div class="card">
-          <div class="card-header">
-            <div>
-              <strong>Collapse</strong>
+        <div class="mt-4">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <strong>Collapse</strong>
+              </div>
             </div>
-          </div>
-          <div class="card-body">
-            <div class="text-black-50 small">
-              <p>
-                You can use a link with the <code>href</code> attribute, or a
-                button with the <code>data-bs-target</code> attribute. In both
-                samples, the <code>data-bs-toggle="collapse""</code> is
-                required.
-              </p>
-            </div>
-            <ul class="nav nav-tabs mt-4">
-              <li class="nav-item">
-                <a href="" class="nav-link active text-black-50">
-                  <i class="bi bi-play"></i>
-                  Preview
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="bi-code-slash"></i>
-                  Code
-                </a>
-              </li>
-            </ul>
-            <div class="bg-body-secondary bg-opacity-25">
-              <div class="p-3">
+            <div class="card-body">
+              <div class="text-black-50 small">
                 <p>
-                  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse" role="button"
-                    aria-expanded="false" aria-controls="collapse">
-                    Link with href
-                  </a>
-                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse"
-                    aria-expanded="false" aria-controls="collapse">
-                    Button with data-bs-target
-                  </button>
+                  You can use a link with the <code>href</code> attribute, or a
+                  button with the <code>data-bs-target</code> attribute. In both
+                  samples, the <code>data-bs-toggle="collapse""</code> is
+                  required.
                 </p>
-                <div class="collapse" id="collapse">
-                  <div class="card card-body">
-                    Some placeholder content for the collapse component. This
-                    panel is hidden by default but revealed when the user
-                    activates the relevant trigger.
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <p>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse" role="button"
+                      aria-expanded="false" aria-controls="collapse">
+                      Link with href
+                    </a>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse"
+                      aria-expanded="false" aria-controls="collapse">
+                      Button with data-bs-target
+                    </button>
+                  </p>
+                  <div class="collapse" id="collapse">
+                    <div class="card card-body">
+                      Some placeholder content for the collapse component. This
+                      panel is hidden by default but revealed when the user
+                      activates the relevant trigger.
+                    </div>
                   </div>
                 </div>
               </div>

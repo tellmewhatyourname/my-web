@@ -1,60 +1,553 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>web</title>
 
-    <link rel="stylesheet" href="bootstrap-5.3.0/style/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>web</title>
 
-    <!-- icon -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
+  <link rel="stylesheet" href="bootstrap-5.3.0/style/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
 
-    <link rel="stylesheet" href="style/index.css" />
-  </head>
+  <!-- icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 
-  <body>
-    <section class="sidebar-menu">
-      <!-- sidebar -->
-      <div class="sidebar sidebar-bg d-sm-none d-md-block">
-        <!-- logo -->
-        <nav
-          class="sidebar-bg-2 text-light text-uppercase logo-height offcanvas-display"
-        >
-          <div class="d-flex justify-content-center align-items-center pt-3">
-            <i class="logo-icon fs-4 pe-1">c</i>
-            <div class="d-min-sidebar">
-              <span class="d-flex logo-middle-word">
-                code
-                <small class="logo-last-word">ui</small>
-              </span>
-            </div>
+  <link rel="stylesheet" href="style/index.css" />
+</head>
+
+<body>
+  <section class="sidebar-menu">
+    <!-- sidebar -->
+    <div class="sidebar sidebar-bg d-sm-none d-md-block">
+      <!-- logo -->
+      <nav class="sidebar-bg-2 text-light text-uppercase logo-height offcanvas-display">
+        <div class="d-flex justify-content-center align-items-center pt-3">
+          <i class="logo-icon fs-4 pe-1">c</i>
+          <div class="d-min-sidebar">
+            <span class="d-flex logo-middle-word">
+              code
+              <small class="logo-last-word">ui</small>
+            </span>
           </div>
-        </nav>
+        </div>
+      </nav>
 
+      <!-- sidebar info -->
+      <nav class="navbar-nav">
+        <ul class="flex-column text-white-50 ps-0 mb-0 overflow">
+          <!-- dashboard -->
+          <li class="nav-item text-capitalize hover">
+            <a class="nav-link d-flex justify-content-between align-items-center h-100" href="index.html">
+              <div>
+                <i class="small-icon bi bi-speedometer2 px-3"></i>
+                <span class="d-min-sidebar">dashboard</span>
+              </div>
+              <small class="sm-badge float-end bg-primary fw-bold me-2 d-min-sidebar">
+                new
+              </small>
+            </a>
+          </li>
+          <!-- theme -->
+          <li class="nav-item text-uppercase text-title">theme</li>
+          <!-- colors -->
+          <li class="nav-item text-capitalize hover">
+            <a class="nav-link h-100 d-flex align-items-center" href="color.html">
+              <div>
+                <i class="small-icon bx bx-droplet px-3"></i>
+                <span class="d-min-sidebar">colors</span>
+              </div>
+            </a>
+          </li>
+          <!-- typography -->
+          <li class="nav-item text-capitalize hover">
+            <a class="nav-link h-100 d-flex align-items-center" href="typography.html">
+              <div>
+                <i class="small-icon bx bx-pencil px-3"></i>
+                <span class="d-min-sidebar">typography</span>
+              </div>
+            </a>
+          </li>
+          <!-- components -->
+          <li class="nav-item text-uppercase text-title">components</li>
+          <!-- base -->
+          <li class="nav-item text-capitalize hover" data-bs-toggle="collapse" href="#baseCollapse" role="button"
+            aria-expanded="false" aria-controls="baseCollapse">
+            <a class="nav-link d-flex justify-content-between align-items-center h-100">
+              <div>
+                <i class="small-icon bi bi-puzzle px-3"></i>
+                <span class="d-min-sidebar">base</span>
+              </div>
+              <i class="bi bi-chevron-down me-2"></i>
+            </a>
+          </li>
+          <!-- base collapse -->
+          <ul class="collapse ps-0 sidebar-bg-2" id="baseCollapse">
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="accordion.html">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  accordion
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="breadcrumbs.html">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  breadcrumbs
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="cards.html">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  cards
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="carousel.html">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  carousel
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="collapse.html">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  collapse
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="list-groups.html">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  list groups
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="navs-tabs.html">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  navs & tabs
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="pagination.html">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  pagination
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="placeholder.html">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  placeholder
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="popovers.html">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  popovers
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="progress.html">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  progress
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="spinners.html">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  spinners
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="tables.html">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  tables
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="tabs.html">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  tabs
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  tooltips
+                </div>
+              </a>
+            </li>
+          </ul>
+          <!-- buttons -->
+          <li class="nav-item text-capitalize hover" data-bs-toggle="collapse" href="#buttonsCollapse" role="button"
+            aria-expanded="false" aria-controls="buttonsCollapse">
+            <a class="nav-link d-flex justify-content-between align-items-center h-100">
+              <div>
+                <i class="small-icon bi bi-cursor px-3"></i>
+                <span class="d-min-sidebar">buttons</span>
+              </div>
+              <i class="bi bi-chevron-down me-2"></i>
+            </a>
+          </li>
+          <!-- buttons collapse -->
+          <ul class="collapse ps-0 sidebar-bg-2" id="buttonsCollapse">
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="buttons.html">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  buttons
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="button-groups.html">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  button groups
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center" href="dropdowns.html">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  dropdowns
+                </div>
+              </a>
+            </li>
+          </ul>
+          <!-- forms -->
+          <li class="nav-item text-capitalize hover" data-bs-toggle="collapse" href="#formsCollapse" role="button"
+            aria-expanded="false" aria-controls="formsCollapse">
+            <a class="nav-link d-flex justify-content-between align-items-center h-100">
+              <div>
+                <i class="small-icon bi bi-card-text px-3"></i>
+                <span class="d-min-sidebar">forms</span>
+              </div>
+              <i class="bi bi-chevron-down me-2"></i>
+            </a>
+          </li>
+          <!-- forms collapse -->
+          <ul class="collapse ps-0 sidebar-bg-2" id="formsCollapse">
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="form-control.html">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  form control
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="select.html">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  select
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="checks-radios.html">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  checks and radios
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="range.html">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  range
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="input-group.html">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  input group
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="floating-labels.html">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  floating labels
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="layout.html">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  layout
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="validation.html">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  validation
+                </div>
+              </a>
+            </li>
+          </ul>
+          <!-- charts -->
+          <li class="nav-item text-capitalize hover">
+            <a class="nav-link d-flex align-items-center h-100" href="charts.html">
+              <div>
+                <i class="small-icon bi bi-pie-chart px-3"></i>
+                <span class="d-min-sidebar">charts</span>
+              </div>
+            </a>
+          </li>
+          <!-- icons -->
+          <li class="nav-item text-capitalize hover" data-bs-toggle="collapse" href="#iconsCollapse" role="button"
+            aria-expanded="false" aria-controls="iconsCollapse">
+            <a class="nav-link d-flex align-items-center justify-content-between h-100">
+              <div>
+                <i class="small-icon bi bi-star px-3"></i>
+                <span class="d-min-sidebar">icons</span>
+              </div>
+              <i class="bi bi-chevron-down me-2"></i>
+            </a>
+          </li>
+          <!-- icons collapse -->
+          <ul class="collapse ps-0 sidebar-bg-2" id="iconsCollapse">
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center justify-content-between h-100" href="coreUI-icons.html">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  coreUI icons
+                </div>
+                <small class="sm-badge float-end bg-success fw-bold small-font me-2">
+                  free
+                </small>
+              </a>
+            </li>
+
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="coreUI-icons-brand">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  coreUI icons - brand
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="coreUI-icons-flag">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  coreUI icons - flag
+                </div>
+              </a>
+            </li>
+          </ul>
+          <!-- notifications -->
+          <li class="nav-item text-capitalize hover" data-bs-toggle="collapse" href="#notificationsCollapse"
+            role="button" aria-expanded="false" aria-controls="notificationsCollapse">
+            <a class="nav-link d-flex align-items-center justify-content-between h-100">
+              <div>
+                <i class="small-icon bi bi-bell px-3"></i>
+                <span class="d-min-sidebar">notifications</span>
+              </div>
+              <i class="bi bi-chevron-down me-2"></i>
+            </a>
+          </li>
+          <!-- notifications collapse -->
+          <ul class="collapse ps-0 sidebar-bg-2" id="notificationsCollapse">
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="alerts.html">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  alerts
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="badges.html">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  badges
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="model.html">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  model
+                </div>
+              </a>
+            </li>
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="toasts.html">
+                <div>
+                  <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
+                  toasts
+                </div>
+              </a>
+            </li>
+          </ul>
+          <!-- widgets -->
+          <li class="nav-item text-capitalize hover">
+            <a class="nav-link d-flex align-items-center justify-content-between h-100" href="widgets.html">
+              <div>
+                <i class="small-icon bi bi-calculator px-3"></i>
+                <span class="d-min-sidebar">widgets</span>
+              </div>
+              <small class="sm-badge float-end bg-primary fw-bold me-2 d-min-sidebar">
+                new
+              </small>
+            </a>
+          </li>
+          <!-- extras -->
+          <li class="nav-item text-uppercase text-title">extras</li>
+          <!-- pages -->
+          <li class="nav-item text-capitalize hover" data-bs-toggle="collapse" href="#pagesCollapse" role="button"
+            aria-expanded="false" aria-controls="pagesCollapse">
+            <a class="nav-link d-flex align-items-center justify-content-between h-100">
+              <div>
+                <i class="small-icon bi bi-star px-3"></i>
+                <span class="d-min-sidebar">pages</span>
+              </div>
+              <i class="bi bi-chevron-down me-2"></i>
+            </a>
+          </li>
+          <!-- pages collapse -->
+          <ul class="collapse ps-0 sidebar-bg-2" id="pagesCollapse">
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="login.html">
+                <div>
+                  <i class="small-icon bi bi-box-arrow-in-left px-3"></i>
+                  login
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="register.html">
+                <div>
+                  <i class="small-icon bi bi-box-arrow-left px-3"></i>
+                  register
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="error-404.html">
+                <div>
+                  <i class="small-icon bi bi-bug px-3"></i>
+                  error 404
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="error-500.html">
+                <div>
+                  <i class="small-icon bi bi-bug px-3"></i>
+                  error 500
+                </div>
+              </a>
+            </li>
+          </ul>
+          <!-- docs -->
+          <li class="nav-item text-capitalize hover">
+            <a class="nav-link d-flex align-items-center h-100" href="docs.html">
+              <div>
+                <i class="small-icon bi bi-file-earmark-text px-3"></i>
+                <span class="d-min-sidebar">docs</span>
+              </div>
+            </a>
+          </li>
+          <!-- try core -->
+          <li class="nav-item text-capitalize hover">
+            <a class="nav-link d-flex align-items-center h-100" href="try coreUI-PRO.html">
+              <div>
+                <i class="small-icon bi bi-file-earmark-text px-3"></i>
+                <span class="d-min-sidebar">
+                  try coreUI<strong>PRO</strong>
+                </span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- open sidebar icon -->
+      <div class="open-sidebar-icon sidebar-bg js-min-sidebar-icon offcanvas-display">
+        <i class="bx bx-chevron-left color float-end pe-3 py-2"></i>
+      </div>
+    </div>
+
+    <!-- offcanvas -->
+    <div class="sidebar-menu">
+      <div class="sidebar sidebar-bg offcanvas" tabindex="-1" id="offcanvasExample">
         <!-- sidebar info -->
-        <nav class="navbar-nav">
+        <nav class="navbar-nav offcanvas-body p-0" data-bs-scroll="true" data-bs-backdrop="false">
           <ul class="flex-column text-white-50 ps-0 mb-0 overflow">
             <!-- dashboard -->
             <li class="nav-item text-capitalize hover">
-              <a
-                class="nav-link d-flex justify-content-between align-items-center h-100"
-                href="index.html"
-              >
-                <div>
+              <a class="nav-link d-flex justify-content-between align-items-center h-100" href="index.html">
+                <div class>
                   <i class="small-icon bi bi-speedometer2 px-3"></i>
                   <span class="d-min-sidebar">dashboard</span>
                 </div>
-                <small
-                  class="sm-badge float-end bg-primary fw-bold me-2 d-min-sidebar"
-                >
+                <small class="sm-badge float-end bg-primary fw-bold me-2 d-min-sidebar">
                   new
                 </small>
               </a>
@@ -63,10 +556,7 @@
             <li class="nav-item text-uppercase text-title">theme</li>
             <!-- colors -->
             <li class="nav-item text-capitalize hover">
-              <a
-                class="nav-link h-100 d-flex align-items-center"
-                href="color.html"
-              >
+              <a class="nav-link h-100 d-flex align-items-center" href="color.html">
                 <div>
                   <i class="small-icon bx bx-droplet px-3"></i>
                   <span class="d-min-sidebar">colors</span>
@@ -75,10 +565,7 @@
             </li>
             <!-- typography -->
             <li class="nav-item text-capitalize hover">
-              <a
-                class="nav-link h-100 d-flex align-items-center"
-                href="typography.html"
-              >
+              <a class="nav-link h-100 d-flex align-items-center" href="typography.html">
                 <div>
                   <i class="small-icon bx bx-pencil px-3"></i>
                   <span class="d-min-sidebar">typography</span>
@@ -88,17 +575,9 @@
             <!-- components -->
             <li class="nav-item text-uppercase text-title">components</li>
             <!-- base -->
-            <li
-              class="nav-item text-capitalize hover"
-              data-bs-toggle="collapse"
-              href="#baseCollapse"
-              role="button"
-              aria-expanded="false"
-              aria-controls="baseCollapse"
-            >
-              <a
-                class="nav-link d-flex justify-content-between align-items-center h-100"
-              >
+            <li class="nav-item text-capitalize hover" data-bs-toggle="collapse" href="#baseCollapse" role="button"
+              aria-expanded="false" aria-controls="baseCollapse">
+              <a class="nav-link d-flex justify-content-between align-items-center h-100">
                 <div>
                   <i class="small-icon bi bi-puzzle px-3"></i>
                   <span class="d-min-sidebar">base</span>
@@ -109,10 +588,7 @@
             <!-- base collapse -->
             <ul class="collapse ps-0 sidebar-bg-2" id="baseCollapse">
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="accordion.html"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="accordion.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     accordion
@@ -121,10 +597,7 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="breadcrumbs.html"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="breadcrumbs.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     breadcrumbs
@@ -133,10 +606,7 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="cards.html"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="cards.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     cards
@@ -145,10 +615,7 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="carousel.html"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="carousel.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     carousel
@@ -157,10 +624,7 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="collapse.html"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="collapse.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     collapse
@@ -169,10 +633,7 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="list-groups.html"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="list-groups.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     list groups
@@ -181,10 +642,7 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="navs-tabs.html"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="navs-tabs.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     navs & tabs
@@ -193,10 +651,7 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="pagination.html"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="pagination.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     pagination
@@ -205,10 +660,7 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="placeholder.html"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="placeholder.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     placeholder
@@ -217,10 +669,7 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="popovers.html"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="popovers.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     popovers
@@ -229,10 +678,7 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="progress.html"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="progress.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     progress
@@ -241,10 +687,7 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="spinners.html"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="spinners.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     spinners
@@ -253,10 +696,7 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="tables.html"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="tables.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     tables
@@ -265,10 +705,7 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="tabs.html"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="tabs.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     tabs
@@ -277,7 +714,7 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a class="nav-link d-flex align-items-center h-100" href="">
+                <a class="nav-link d-flex align-items-center h-100" href="tooltips.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     tooltips
@@ -286,17 +723,9 @@
               </li>
             </ul>
             <!-- buttons -->
-            <li
-              class="nav-item text-capitalize hover"
-              data-bs-toggle="collapse"
-              href="#buttonsCollapse"
-              role="button"
-              aria-expanded="false"
-              aria-controls="buttonsCollapse"
-            >
-              <a
-                class="nav-link d-flex justify-content-between align-items-center h-100"
-              >
+            <li class="nav-item text-capitalize hover" data-bs-toggle="collapse" href="#buttonsCollapse" role="button"
+              aria-expanded="false" aria-controls="buttonsCollapse">
+              <a class="nav-link d-flex justify-content-between align-items-center h-100">
                 <div>
                   <i class="small-icon bi bi-cursor px-3"></i>
                   <span class="d-min-sidebar">buttons</span>
@@ -307,10 +736,7 @@
             <!-- buttons collapse -->
             <ul class="collapse ps-0 sidebar-bg-2" id="buttonsCollapse">
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="buttons.html"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="buttons.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     buttons
@@ -319,10 +745,7 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="button-groups.html"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="button-groups.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     button groups
@@ -331,10 +754,7 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center"
-                  href="dropdowns.html"
-                >
+                <a class="nav-link d-flex align-items-center" href="dropdowns.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     dropdowns
@@ -343,17 +763,9 @@
               </li>
             </ul>
             <!-- forms -->
-            <li
-              class="nav-item text-capitalize hover"
-              data-bs-toggle="collapse"
-              href="#formsCollapse"
-              role="button"
-              aria-expanded="false"
-              aria-controls="formsCollapse"
-            >
-              <a
-                class="nav-link d-flex justify-content-between align-items-center h-100"
-              >
+            <li class="nav-item text-capitalize hover" data-bs-toggle="collapse" href="#formsCollapse" role="button"
+              aria-expanded="false" aria-controls="formsCollapse">
+              <a class="nav-link d-flex justify-content-between align-items-center h-100">
                 <div>
                   <i class="small-icon bi bi-card-text px-3"></i>
                   <span class="d-min-sidebar">forms</span>
@@ -364,10 +776,7 @@
             <!-- forms collapse -->
             <ul class="collapse ps-0 sidebar-bg-2" id="formsCollapse">
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="form-control.html"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="form-control.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     form control
@@ -376,10 +785,7 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="select.html"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="select.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     select
@@ -388,10 +794,7 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="checks-radios.html"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="checks-radios.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     checks and radios
@@ -400,10 +803,7 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="range.html"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="range.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     range
@@ -412,10 +812,7 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="input-group.html"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="input-group.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     input group
@@ -424,10 +821,7 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="floating-labels.html"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="floating-labels.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     floating labels
@@ -436,10 +830,7 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="layout.html"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="layout.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     layout
@@ -448,10 +839,7 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="validation.html"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="validation.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     validation
@@ -460,11 +848,8 @@
               </li>
             </ul>
             <!-- charts -->
-            <li class="nav-item text-capitalize hover">
-              <a
-                class="nav-link d-flex align-items-center h-100"
-                href="charts.html"
-              >
+            <li class="nav-item text-capitalize d-flex align-items-center justify-content-between hover">
+              <a class="nav-link d-flex align-items-center h-100" href="charts.html">
                 <div>
                   <i class="small-icon bi bi-pie-chart px-3"></i>
                   <span class="d-min-sidebar">charts</span>
@@ -472,17 +857,9 @@
               </a>
             </li>
             <!-- icons -->
-            <li
-              class="nav-item text-capitalize hover"
-              data-bs-toggle="collapse"
-              href="#iconsCollapse"
-              role="button"
-              aria-expanded="false"
-              aria-controls="iconsCollapse"
-            >
-              <a
-                class="nav-link d-flex align-items-center justify-content-between h-100"
-              >
+            <li class="nav-item text-capitalize align-items-center hover" data-bs-toggle="collapse"
+              href="#iconsCollapse" role="button" aria-expanded="false" aria-controls="iconsCollapse">
+              <a class="nav-link d-flex align-items-center justify-content-between h-100">
                 <div>
                   <i class="small-icon bi bi-star px-3"></i>
                   <span class="d-min-sidebar">icons</span>
@@ -493,27 +870,19 @@
             <!-- icons collapse -->
             <ul class="collapse ps-0 sidebar-bg-2" id="iconsCollapse">
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center justify-content-between h-100"
-                  href="coreUI-icons.html"
-                >
+                <a class="nav-link d-flex align-items-center justify-content-between h-100" href="coreUI-icons.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     coreUI icons
                   </div>
-                  <small
-                    class="sm-badge float-end bg-success fw-bold small-font me-2"
-                  >
+                  <small class="sm-badge float-end bg-success fw-bold small-font me-2">
                     free
                   </small>
                 </a>
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="coreUI-icons-brand"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="coreUI-icons-brand.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     coreUI icons - brand
@@ -522,10 +891,7 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="coreUI-icons-flag"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="coreUI-icons-flag.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     coreUI icons - flag
@@ -534,17 +900,9 @@
               </li>
             </ul>
             <!-- notifications -->
-            <li
-              class="nav-item text-capitalize hover"
-              data-bs-toggle="collapse"
-              href="#notificationsCollapse"
-              role="button"
-              aria-expanded="false"
-              aria-controls="notificationsCollapse"
-            >
-              <a
-                class="nav-link d-flex align-items-center justify-content-between h-100"
-              >
+            <li class="nav-item text-capitalize hover" data-bs-toggle="collapse" href="#notificationsCollapse"
+              role="button" aria-expanded="false" aria-controls="notificationsCollapse">
+              <a class="nav-link d-flex align-items-center justify-content-between h-100">
                 <div>
                   <i class="small-icon bi bi-bell px-3"></i>
                   <span class="d-min-sidebar">notifications</span>
@@ -555,10 +913,7 @@
             <!-- notifications collapse -->
             <ul class="collapse ps-0 sidebar-bg-2" id="notificationsCollapse">
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="alerts.html"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="alerts.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     alerts
@@ -567,10 +922,7 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="badges.html"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="badges.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     badges
@@ -579,10 +931,7 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="model.html"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="model.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     model
@@ -590,10 +939,7 @@
                 </a>
               </li>
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="toasts.html"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="toasts.html">
                   <div>
                     <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                     toasts
@@ -603,35 +949,22 @@
             </ul>
             <!-- widgets -->
             <li class="nav-item text-capitalize hover">
-              <a
-                class="nav-link d-flex align-items-center justify-content-between h-100"
-                href="widgets.html"
-              >
+              <a class="nav-link d-flex align-items-center justify-content-between h-100" href="widgets.html">
                 <div>
                   <i class="small-icon bi bi-calculator px-3"></i>
                   <span class="d-min-sidebar">widgets</span>
                 </div>
-                <small
-                  class="sm-badge float-end bg-primary fw-bold me-2 d-min-sidebar"
-                >
+                <small class="sm-badge float-end bg-primary fw-bold me-2 d-min-sidebar">
                   new
                 </small>
               </a>
             </li>
             <!-- extras -->
-            <li class="nav-item text-uppercase text-title">extras</li>
+            <div class="nav-item text-uppercase text-title">extras</div>
             <!-- pages -->
-            <li
-              class="nav-item text-capitalize hover"
-              data-bs-toggle="collapse"
-              href="#pagesCollapse"
-              role="button"
-              aria-expanded="false"
-              aria-controls="pagesCollapse"
-            >
-              <a
-                class="nav-link d-flex align-items-center justify-content-between h-100"
-              >
+            <li class="nav-item text-capitalize hover" data-bs-toggle="collapse" href="#pagesCollapse" role="button"
+              aria-expanded="false" aria-controls="pagesCollapse">
+              <a class="nav-link d-flex align-items-center justify-content-between h-100">
                 <div>
                   <i class="small-icon bi bi-star px-3"></i>
                   <span class="d-min-sidebar">pages</span>
@@ -642,10 +975,7 @@
             <!-- pages collapse -->
             <ul class="collapse ps-0 sidebar-bg-2" id="pagesCollapse">
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="login.html"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="login.html">
                   <div>
                     <i class="small-icon bi bi-box-arrow-in-left px-3"></i>
                     login
@@ -654,10 +984,7 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="register.html"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="register.html">
                   <div>
                     <i class="small-icon bi bi-box-arrow-left px-3"></i>
                     register
@@ -666,10 +993,7 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="error-404.html"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="error-404.html">
                   <div>
                     <i class="small-icon bi bi-bug px-3"></i>
                     error 404
@@ -678,10 +1002,7 @@
               </li>
 
               <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="error-500.html"
-                >
+                <a class="nav-link d-flex align-items-center h-100" href="error-500.html">
                   <div>
                     <i class="small-icon bi bi-bug px-3"></i>
                     error 500
@@ -691,10 +1012,7 @@
             </ul>
             <!-- docs -->
             <li class="nav-item text-capitalize hover">
-              <a
-                class="nav-link d-flex align-items-center h-100"
-                href="docs.html"
-              >
+              <a class="nav-link d-flex align-items-center h-100" href="docs.html">
                 <div>
                   <i class="small-icon bi bi-file-earmark-text px-3"></i>
                   <span class="d-min-sidebar">docs</span>
@@ -703,10 +1021,7 @@
             </li>
             <!-- try core -->
             <li class="nav-item text-capitalize hover">
-              <a
-                class="nav-link d-flex align-items-center h-100"
-                href="try coreUI-PRO.html"
-              >
+              <a class="nav-link d-flex align-items-center h-100" href="try coreUI-PRO.html">
                 <div>
                   <i class="small-icon bi bi-file-earmark-text px-3"></i>
                   <span class="d-min-sidebar">
@@ -717,910 +1032,188 @@
             </li>
           </ul>
         </nav>
-
-        <!-- open sidebar icon -->
-        <div
-          class="open-sidebar-icon sidebar-bg js-min-sidebar-icon offcanvas-display"
-        >
-          <i class="bx bx-chevron-left color float-end pe-3 py-2"></i>
-        </div>
+        <!-- sidebar info end -->
       </div>
+    </div>
 
-      <!-- offcanvas -->
-      <div class="sidebar-menu">
-        <div
-          class="sidebar sidebar-bg offcanvas"
-          tabindex="-1"
-          id="offcanvasExample"
-        >
-          <!-- sidebar info -->
-          <nav
-            class="navbar-nav offcanvas-body p-0"
-            data-bs-scroll="true"
-            data-bs-backdrop="false"
-          >
-            <ul class="flex-column text-white-50 ps-0 mb-0 overflow">
-              <!-- dashboard -->
-              <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex justify-content-between align-items-center h-100"
-                  href="index.html"
-                >
-                  <div class>
-                    <i class="small-icon bi bi-speedometer2 px-3"></i>
-                    <span class="d-min-sidebar">dashboard</span>
-                  </div>
-                  <small
-                    class="sm-badge float-end bg-primary fw-bold me-2 d-min-sidebar"
-                  >
-                    new
-                  </small>
-                </a>
-              </li>
-              <!-- theme -->
-              <li class="nav-item text-uppercase text-title">theme</li>
-              <!-- colors -->
-              <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link h-100 d-flex align-items-center"
-                  href="color.html"
-                >
-                  <div>
-                    <i class="small-icon bx bx-droplet px-3"></i>
-                    <span class="d-min-sidebar">colors</span>
-                  </div>
-                </a>
-              </li>
-              <!-- typography -->
-              <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link h-100 d-flex align-items-center"
-                  href="typography.html"
-                >
-                  <div>
-                    <i class="small-icon bx bx-pencil px-3"></i>
-                    <span class="d-min-sidebar">typography</span>
-                  </div>
-                </a>
-              </li>
-              <!-- components -->
-              <li class="nav-item text-uppercase text-title">components</li>
-              <!-- base -->
-              <li
-                class="nav-item text-capitalize hover"
-                data-bs-toggle="collapse"
-                href="#baseCollapse"
-                role="button"
-                aria-expanded="false"
-                aria-controls="baseCollapse"
-              >
-                <a
-                  class="nav-link d-flex justify-content-between align-items-center h-100"
-                >
-                  <div>
-                    <i class="small-icon bi bi-puzzle px-3"></i>
-                    <span class="d-min-sidebar">base</span>
-                  </div>
-                  <i class="bi bi-chevron-down me-2"></i>
-                </a>
-              </li>
-              <!-- base collapse -->
-              <ul class="collapse ps-0 sidebar-bg-2" id="baseCollapse">
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="accordion.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      accordion
-                    </div>
-                  </a>
-                </li>
-
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="breadcrumbs.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      breadcrumbs
-                    </div>
-                  </a>
-                </li>
-
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="cards.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      cards
-                    </div>
-                  </a>
-                </li>
-
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="carousel.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      carousel
-                    </div>
-                  </a>
-                </li>
-
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="collapse.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      collapse
-                    </div>
-                  </a>
-                </li>
-
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="list-groups.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      list groups
-                    </div>
-                  </a>
-                </li>
-
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="navs-tabs.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      navs & tabs
-                    </div>
-                  </a>
-                </li>
-
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="pagination.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      pagination
-                    </div>
-                  </a>
-                </li>
-
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="placeholder.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      placeholder
-                    </div>
-                  </a>
-                </li>
-
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="popovers.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      popovers
-                    </div>
-                  </a>
-                </li>
-
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="progress.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      progress
-                    </div>
-                  </a>
-                </li>
-
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="spinners.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      spinners
-                    </div>
-                  </a>
-                </li>
-
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="tables.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      tables
-                    </div>
-                  </a>
-                </li>
-
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="tabs.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      tabs
-                    </div>
-                  </a>
-                </li>
-
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="tooltips.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      tooltips
-                    </div>
-                  </a>
-                </li>
-              </ul>
-              <!-- buttons -->
-              <li
-                class="nav-item text-capitalize hover"
-                data-bs-toggle="collapse"
-                href="#buttonsCollapse"
-                role="button"
-                aria-expanded="false"
-                aria-controls="buttonsCollapse"
-              >
-                <a
-                  class="nav-link d-flex justify-content-between align-items-center h-100"
-                >
-                  <div>
-                    <i class="small-icon bi bi-cursor px-3"></i>
-                    <span class="d-min-sidebar">buttons</span>
-                  </div>
-                  <i class="bi bi-chevron-down me-2"></i>
-                </a>
-              </li>
-              <!-- buttons collapse -->
-              <ul class="collapse ps-0 sidebar-bg-2" id="buttonsCollapse">
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="buttons.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      buttons
-                    </div>
-                  </a>
-                </li>
-
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="button-groups.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      button groups
-                    </div>
-                  </a>
-                </li>
-
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center"
-                    href="dropdowns.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      dropdowns
-                    </div>
-                  </a>
-                </li>
-              </ul>
-              <!-- forms -->
-              <li
-                class="nav-item text-capitalize hover"
-                data-bs-toggle="collapse"
-                href="#formsCollapse"
-                role="button"
-                aria-expanded="false"
-                aria-controls="formsCollapse"
-              >
-                <a
-                  class="nav-link d-flex justify-content-between align-items-center h-100"
-                >
-                  <div>
-                    <i class="small-icon bi bi-card-text px-3"></i>
-                    <span class="d-min-sidebar">forms</span>
-                  </div>
-                  <i class="bi bi-chevron-down me-2"></i>
-                </a>
-              </li>
-              <!-- forms collapse -->
-              <ul class="collapse ps-0 sidebar-bg-2" id="formsCollapse">
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="form-control.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      form control
-                    </div>
-                  </a>
-                </li>
-
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="select.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      select
-                    </div>
-                  </a>
-                </li>
-
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="checks-radios.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      checks and radios
-                    </div>
-                  </a>
-                </li>
-
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="range.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      range
-                    </div>
-                  </a>
-                </li>
-
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="input-group.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      input group
-                    </div>
-                  </a>
-                </li>
-
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="floating-labels.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      floating labels
-                    </div>
-                  </a>
-                </li>
-
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="layout.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      layout
-                    </div>
-                  </a>
-                </li>
-
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="validation.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      validation
-                    </div>
-                  </a>
-                </li>
-              </ul>
-              <!-- charts -->
-              <li
-                class="nav-item text-capitalize d-flex align-items-center justify-content-between hover"
-              >
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="charts.html"
-                >
-                  <div>
-                    <i class="small-icon bi bi-pie-chart px-3"></i>
-                    <span class="d-min-sidebar">charts</span>
-                  </div>
-                </a>
-              </li>
-              <!-- icons -->
-              <li
-                class="nav-item text-capitalize align-items-center hover"
-                data-bs-toggle="collapse"
-                href="#iconsCollapse"
-                role="button"
-                aria-expanded="false"
-                aria-controls="iconsCollapse"
-              >
-                <a
-                  class="nav-link d-flex align-items-center justify-content-between h-100"
-                >
-                  <div>
-                    <i class="small-icon bi bi-star px-3"></i>
-                    <span class="d-min-sidebar">icons</span>
-                  </div>
-                  <i class="bi bi-chevron-down me-2"></i>
-                </a>
-              </li>
-              <!-- icons collapse -->
-              <ul class="collapse ps-0 sidebar-bg-2" id="iconsCollapse">
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center justify-content-between h-100"
-                    href="coreUI-icons.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      coreUI icons
-                    </div>
-                    <small
-                      class="sm-badge float-end bg-success fw-bold small-font me-2"
-                    >
-                      free
-                    </small>
-                  </a>
-                </li>
-
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="coreUI-icons-brand.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      coreUI icons - brand
-                    </div>
-                  </a>
-                </li>
-
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="coreUI-icons-flag.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      coreUI icons - flag
-                    </div>
-                  </a>
-                </li>
-              </ul>
-              <!-- notifications -->
-              <li
-                class="nav-item text-capitalize hover"
-                data-bs-toggle="collapse"
-                href="#notificationsCollapse"
-                role="button"
-                aria-expanded="false"
-                aria-controls="notificationsCollapse"
-              >
-                <a
-                  class="nav-link d-flex align-items-center justify-content-between h-100"
-                >
-                  <div>
-                    <i class="small-icon bi bi-bell px-3"></i>
-                    <span class="d-min-sidebar">notifications</span>
-                  </div>
-                  <i class="bi bi-chevron-down me-2"></i>
-                </a>
-              </li>
-              <!-- notifications collapse -->
-              <ul class="collapse ps-0 sidebar-bg-2" id="notificationsCollapse">
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="alerts.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      alerts
-                    </div>
-                  </a>
-                </li>
-
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="badges.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      badges
-                    </div>
-                  </a>
-                </li>
-
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="model.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      model
-                    </div>
-                  </a>
-                </li>
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="toasts.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
-                      toasts
-                    </div>
-                  </a>
-                </li>
-              </ul>
-              <!-- widgets -->
-              <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center justify-content-between h-100"
-                  href="widgets.html"
-                >
-                  <div>
-                    <i class="small-icon bi bi-calculator px-3"></i>
-                    <span class="d-min-sidebar">widgets</span>
-                  </div>
-                  <small
-                    class="sm-badge float-end bg-primary fw-bold me-2 d-min-sidebar"
-                  >
-                    new
-                  </small>
-                </a>
-              </li>
-              <!-- extras -->
-              <div class="nav-item text-uppercase text-title">extras</div>
-              <!-- pages -->
-              <li
-                class="nav-item text-capitalize hover"
-                data-bs-toggle="collapse"
-                href="#pagesCollapse"
-                role="button"
-                aria-expanded="false"
-                aria-controls="pagesCollapse"
-              >
-                <a
-                  class="nav-link d-flex align-items-center justify-content-between h-100"
-                >
-                  <div>
-                    <i class="small-icon bi bi-star px-3"></i>
-                    <span class="d-min-sidebar">pages</span>
-                  </div>
-                  <i class="bi bi-chevron-down me-2"></i>
-                </a>
-              </li>
-              <!-- pages collapse -->
-              <ul class="collapse ps-0 sidebar-bg-2" id="pagesCollapse">
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="login.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-box-arrow-in-left px-3"></i>
-                      login
-                    </div>
-                  </a>
-                </li>
-
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="register.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-box-arrow-left px-3"></i>
-                      register
-                    </div>
-                  </a>
-                </li>
-
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="error-404.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-bug px-3"></i>
-                      error 404
-                    </div>
-                  </a>
-                </li>
-
-                <li class="nav-item text-capitalize hover">
-                  <a
-                    class="nav-link d-flex align-items-center h-100"
-                    href="error-500.html"
-                  >
-                    <div>
-                      <i class="small-icon bi bi-bug px-3"></i>
-                      error 500
-                    </div>
-                  </a>
-                </li>
-              </ul>
-              <!-- docs -->
-              <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="docs.html"
-                >
-                  <div>
-                    <i class="small-icon bi bi-file-earmark-text px-3"></i>
-                    <span class="d-min-sidebar">docs</span>
-                  </div>
-                </a>
-              </li>
-              <!-- try core -->
-              <li class="nav-item text-capitalize hover">
-                <a
-                  class="nav-link d-flex align-items-center h-100"
-                  href="try coreUI-PRO.html"
-                >
-                  <div>
-                    <i class="small-icon bi bi-file-earmark-text px-3"></i>
-                    <span class="d-min-sidebar">
-                      try coreUI<strong>PRO</strong>
-                    </span>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <!-- sidebar info end -->
-        </div>
-      </div>
-
-      <!-- middle -->
-      <div class="middle-navbar bg-body-secondary">
-        <!-- navbar things -->
-        <div class="navbar-tings pt-2 px-0 bg-white sticky-top">
-          <!-- navbar settings -->
-          <div class="navbar-settings">
-            <!-- navbar setting 1 -->
-            <div class="navbar-setting d-flex justify-content-between">
-              <div class="navbar-setting d-flex align-items-center">
-                <div class="text-gray menu-icon">
-                  <i
-                    class="bi bi-list close-sidebar-icon md-sidebar-icon"
-                    data-bs-toggle="offcanvas"
-                    href="#offcanvasExample"
-                    role="button"
-                    aria-controls="offcanvasExample"
-                  ></i>
-                  <i class="bi bi-list close-sidebar-icon lg-sidebar-icon"></i>
-                </div>
-                <!-- lg show setting -->
-                <div class="navbar font-size">
-                  <ul class="nav text-capitalize gap-3 lg-display">
-                    <li class="nav-item">
-                      <a href="" class="underline-none text-gray">
-                        dashboard
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="" class="underline-none text-gray">user</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="" class="underline-none text-gray"> settings </a>
-                    </li>
-                  </ul>
-                </div>
-                <!-- md show logo -->
-                <div class="md-show-logo">
-                  <div class="d-flex align-items-center text-uppercase">
-                    <i class="pe-1 fs-5">c</i>
-                    <span class="d-flex logo-middle-word fw-bold text-gray">
-                      code
-                      <small class="logo-last-word">ui</small>
-                    </span>
-                  </div>
-                </div>
+    <!-- middle -->
+    <div class="middle-navbar bg-body-secondary">
+      <!-- navbar things -->
+      <div class="navbar-tings pt-2 px-0 bg-white sticky-top">
+        <!-- navbar settings -->
+        <div class="navbar-settings">
+          <!-- navbar setting 1 -->
+          <div class="navbar-setting d-flex justify-content-between">
+            <div class="navbar-setting d-flex align-items-center">
+              <div class="text-gray menu-icon">
+                <i class="bi bi-list close-sidebar-icon md-sidebar-icon" data-bs-toggle="offcanvas"
+                  href="#offcanvasExample" role="button" aria-controls="offcanvasExample"></i>
+                <i class="bi bi-list close-sidebar-icon lg-sidebar-icon"></i>
               </div>
-              <!-- icons nav -->
-              <div class="icons navbar">
-                <ul class="nav gap-3">
+              <!-- lg show setting -->
+              <div class="navbar font-size">
+                <ul class="nav text-capitalize gap-3 lg-display">
                   <li class="nav-item">
-                    <a href="">
-                      <i class="bi bi-bell text-gray"></i>
+                    <a href="" class="underline-none text-gray">
+                      dashboard
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="">
-                      <i class="bi bi-list-task text-gray"></i>
-                    </a>
+                    <a href="" class="underline-none text-gray">user</a>
                   </li>
                   <li class="nav-item">
-                    <a href="">
-                      <i class="bi bi-envelope-open text-gray"></i>
-                    </a>
+                    <a href="" class="underline-none text-gray"> settings </a>
                   </li>
                 </ul>
-                <!-- account info -->
-                <div class="avatar">
-                  <a
-                    href=""
-                    class="dropdown"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <img
-                      src="image/images.jpeg"
-                      class="rounded-circle profile-img"
-                    />
-                  </a>
-                  <ul
-                    class="dropdown-menu text-capitalize bg-secondary-subtle py-0"
-                  >
-                    <li class="account-info">
-                      <strong
-                        class="dropdown-item-text text-gray account-info-text-size"
-                      >
-                        account
-                      </strong>
-                    </li>
-                    <div class="bg-white hover-two">
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <i class="bi bi-bell"></i>
-                          updates
-                          <span class="badge badge-info bg-info">42</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <i class="bi bi-envelope-open"></i>
-                          messages
-                          <span class="badge badge-info bg-success">42</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <i class="bi bi-check-square"></i>
-                          tasks
-                          <span class="badge badge-info bg-danger">42</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <i class="bx bx-comment"></i>
-                          comments
-                          <span class="badge badge-info bg-warning">42</span>
-                        </a>
-                      </li>
-                    </div>
-                    <li class="setting-bg">
-                      <strong
-                        class="dropdown-item-text text-gray account-info-text-size"
-                      >
-                        settings
-                      </strong>
-                    </li>
-                    <div class="bg-white hover-two">
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <i class="bx bx-user"></i>
-                          profile
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <i class="bi bi-gear"></i>
-                          settings
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <i class="bi bi-credit-card"></i>
-                          payments
-                          <span class="badge badge-info bg-secondary">42</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <i class="bi bi-file-earmark"></i>
-                          project
-                          <span class="badge badge-info bg-primary">42</span>
-                        </a>
-                      </li>
-                      <hr class="mb-2 mt-2" />
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <i class="bi bi-lock"></i>
-                          lock account
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <i class="bi bi-box-arrow-left"></i>
-                          logout
-                        </a>
-                      </li>
-                    </div>
-                  </ul>
+              </div>
+              <!-- md show logo -->
+              <div class="md-show-logo">
+                <div class="d-flex align-items-center text-uppercase">
+                  <i class="pe-1 fs-5">c</i>
+                  <span class="d-flex logo-middle-word fw-bold text-gray">
+                    code
+                    <small class="logo-last-word">ui</small>
+                  </span>
                 </div>
               </div>
             </div>
-
-            <hr class="mt-0" />
-            <!-- navbar setting 2 -->
-            <div class="navbar-setting-two">
-              <ul class="d-flex gap-2 text-capitalize font-size">
+            <!-- icons nav -->
+            <div class="icons navbar">
+              <ul class="nav gap-3">
                 <li class="nav-item">
-                  <a href="index.html">home</a>
+                  <a href="">
+                    <i class="bi bi-bell text-gray"></i>
+                  </a>
                 </li>
-                <p>/</p>
-                <li class="nav-item text-gray">
-                  <a href="index.html">components</a>
+                <li class="nav-item">
+                  <a href="">
+                    <i class="bi bi-list-task text-gray"></i>
+                  </a>
                 </li>
-                <p>/</p>
-                <li class="nav-item text-gray">
-                  <a href="index.html">Base</a>
+                <li class="nav-item">
+                  <a href="">
+                    <i class="bi bi-envelope-open text-gray"></i>
+                  </a>
                 </li>
-                <p>/</p>
-                <div class="text-black-50">List groups</div>
               </ul>
+              <!-- account info -->
+              <div class="avatar">
+                <a href="" class="dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="image/images.jpeg" class="rounded-circle profile-img" />
+                </a>
+                <ul class="dropdown-menu text-capitalize bg-secondary-subtle py-0">
+                  <li class="account-info">
+                    <strong class="dropdown-item-text text-gray account-info-text-size">
+                      account
+                    </strong>
+                  </li>
+                  <div class="bg-white hover-two">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi bi-bell"></i>
+                        updates
+                        <span class="badge badge-info bg-info">42</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi bi-envelope-open"></i>
+                        messages
+                        <span class="badge badge-info bg-success">42</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi bi-check-square"></i>
+                        tasks
+                        <span class="badge badge-info bg-danger">42</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="bx bx-comment"></i>
+                        comments
+                        <span class="badge badge-info bg-warning">42</span>
+                      </a>
+                    </li>
+                  </div>
+                  <li class="setting-bg">
+                    <strong class="dropdown-item-text text-gray account-info-text-size">
+                      settings
+                    </strong>
+                  </li>
+                  <div class="bg-white hover-two">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="bx bx-user"></i>
+                        profile
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi bi-gear"></i>
+                        settings
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi bi-credit-card"></i>
+                        payments
+                        <span class="badge badge-info bg-secondary">42</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi bi-file-earmark"></i>
+                        project
+                        <span class="badge badge-info bg-primary">42</span>
+                      </a>
+                    </li>
+                    <hr class="mb-2 mt-2" />
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi bi-lock"></i>
+                        lock account
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi bi-box-arrow-left"></i>
+                        logout
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- middle bg size -->
-        <div class="mx-4">
-          <!-- cards -->
+          <!-- navbar setting 2 -->
+          <div class="navbar-setting-two border-top border-dark-subtle">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb ps-4 pt-2 pb-2">
+                <li class="breadcrumb-item">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="index.html">Components</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="index.html">Base</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  List groups
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <!-- middle bg size -->
+      <div class="mx-4">
+        <!-- cards -->
+        <div class="mt-4">
           <div class="card">
             <div class="card-header">
               <div>
@@ -1663,691 +1256,612 @@
               </div>
             </div>
           </div>
-
-          <div class="mt-4">
-            <div class="card">
-              <div class="card-header">
-                <div>
-                  <strong>List group</strong>
-                  <small class="text-black-50">active items</small>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="text-black-50 small">
-                  <p>
-                    Attach <code>.active</code> to a
-                    <code>.list-group-item</code> to show the current active
-                    selection.
-                  </p>
-                </div>
-                <ul class="nav nav-tabs mt-4">
-                  <li class="nav-item">
-                    <a href="" class="nav-link active text-black-50">
-                      <i class="bi bi-play"></i>
-                      Preview
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="bi-code-slash"></i>
-                      Code
-                    </a>
-                  </li>
-                </ul>
-                <div class="bg-body-secondary bg-opacity-25">
-                  <div class="p-3">
-                    <ul class="list-group">
-                      <li class="list-group-item active" aria-current="true">
-                        An active item
-                      </li>
-                      <li class="list-group-item">A second item</li>
-                      <li class="list-group-item">A third item</li>
-                      <li class="list-group-item">A fourth item</li>
-                      <li class="list-group-item">And a fifth one</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-4">
-            <div class="card">
-              <div class="card-header">
-                <div>
-                  <strong>List group</strong>
-                  <small class="text-black-50">disabled items</small>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="text-black-50 small">
-                  <p>
-                    Attach <code>.disabled</code> to a
-                    <code>.list-group-item</code> to make it appear disabled.
-                    Remark that some of the elements with
-                    <code>.disabled</code> will also require custom JavaScript
-                    to disable their click events (e.g., links).
-                  </p>
-                </div>
-                <ul class="nav nav-tabs mt-4">
-                  <li class="nav-item">
-                    <a href="" class="nav-link active text-black-50">
-                      <i class="bi bi-play"></i>
-                      Preview
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="bi-code-slash"></i>
-                      Code
-                    </a>
-                  </li>
-                </ul>
-                <div class="bg-body-secondary bg-opacity-25">
-                  <div class="p-3">
-                    <ul class="list-group">
-                      <li class="list-group-item disabled" aria-current="true">
-                        A disabled item
-                      </li>
-                      <li class="list-group-item">A second item</li>
-                      <li class="list-group-item">A third item</li>
-                      <li class="list-group-item">A fourth item</li>
-                      <li class="list-group-item">And a fifth one</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-4">
-            <div class="card">
-              <div class="card-header">
-                <div>
-                  <strong>List group</strong>
-                  <small class="text-black-50">disabled links</small>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="text-black-50 small">
-                  <p>
-                    Use <code>&lsaquo;a&rsaquo;</code>s or
-                    <code>&lsaquo;button&rsaquo;</code>s to create actionable
-                    list group items with hover, disabled, and active states by
-                    adding <code>.list-group-item-action</code>. We separate
-                    these pseudo-classes to ensure list groups made of
-                    non-interactive elements (like
-                    <code>&lsaquo;li&rsaquo;</code>s or
-                    <code>&lsaquo;div&rsaquo;</code>s) don't provide a click or
-                    tap affordance.
-                  </p>
-                  <p>
-                    Be sure to <strong>not use the standard</strong>
-                    <code>.btn</code> <strong>classes here</strong>.
-                  </p>
-                </div>
-                <ul class="nav nav-tabs mt-4">
-                  <li class="nav-item">
-                    <a href="" class="nav-link active text-black-50">
-                      <i class="bi bi-play"></i>
-                      Preview
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="bi-code-slash"></i>
-                      Code
-                    </a>
-                  </li>
-                </ul>
-                <div class="bg-body-secondary bg-opacity-25">
-                  <div class="p-3">
-                    <div class="list-group">
-                      <a
-                        href="#"
-                        class="list-group-item list-group-item-action active"
-                        aria-current="true"
-                      >
-                        The current link item
-                      </a>
-                      <a href="#" class="list-group-item list-group-item-action"
-                        >A second link item</a
-                      >
-                      <a href="#" class="list-group-item list-group-item-action"
-                        >A third link item</a
-                      >
-                      <a href="#" class="list-group-item list-group-item-action"
-                        >A fourth link item</a
-                      >
-                      <a class="list-group-item list-group-item-action disabled"
-                        >A disabled link item</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-4">
-            <div class="card">
-              <div class="card-header">
-                <div>
-                  <strong>List group</strong>
-                  <small class="text-black-50">disabled buttons</small>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="text-black-50 small">
-                  <p>
-                    With <code>&lsaquo;button&rsaquo;</code>s, you can also make
-                    use of the <code>disabled</code> attribute instead of the
-                    <code>.disabled</code> class. Sadly,
-                    <code>&lsaquo;a&rsaquo;</code>s don't support the disabled
-                    attribute.
-                  </p>
-                </div>
-                <ul class="nav nav-tabs mt-4">
-                  <li class="nav-item">
-                    <a href="" class="nav-link active text-black-50">
-                      <i class="bi bi-play"></i>
-                      Preview
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="bi-code-slash"></i>
-                      Code
-                    </a>
-                  </li>
-                </ul>
-                <div class="bg-body-secondary bg-opacity-25">
-                  <div class="p-3">
-                    <div class="list-group">
-                      <button
-                        type="button"
-                        class="list-group-item list-group-item-action active"
-                        aria-current="true"
-                      >
-                        The current button
-                      </button>
-                      <button
-                        type="button"
-                        class="list-group-item list-group-item-action"
-                      >
-                        A second button item
-                      </button>
-                      <button
-                        type="button"
-                        class="list-group-item list-group-item-action"
-                      >
-                        A third button item
-                      </button>
-                      <button
-                        type="button"
-                        class="list-group-item list-group-item-action"
-                      >
-                        A fourth button item
-                      </button>
-                      <button
-                        type="button"
-                        class="list-group-item list-group-item-action"
-                        disabled
-                      >
-                        A disabled button item
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-4">
-            <div class="card">
-              <div class="card-header">
-                <div>
-                  <strong>List group</strong>
-                  <small class="text-black-50">flush</small>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="text-black-50 small">
-                  <p>
-                    Add <code>.list-group-flush</code> to remove some borders
-                    and rounded corners to render list group items edge-to-edge
-                    in a parent container (e.g., cards).
-                  </p>
-                </div>
-                <ul class="nav nav-tabs mt-4">
-                  <li class="nav-item">
-                    <a href="" class="nav-link active text-black-50">
-                      <i class="bi bi-play"></i>
-                      Preview
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="bi-code-slash"></i>
-                      Code
-                    </a>
-                  </li>
-                </ul>
-                <div class="bg-body-secondary bg-opacity-25">
-                  <div class="p-3">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">An item</li>
-                      <li class="list-group-item">A second item</li>
-                      <li class="list-group-item">A third item</li>
-                      <li class="list-group-item">A fourth item</li>
-                      <li class="list-group-item">And a fifth one</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-4">
-            <div class="card">
-              <div class="card-header">
-                <div>
-                  <strong>List group</strong>
-                  <small class="text-black-50">horizontal</small>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="text-black-50 small">
-                  <p>
-                    Add <code>.list-group-horizontal</code> to change the layout
-                    of list group items from vertical to horizontal across all
-                    breakpoints. Alternatively, choose a responsive variant
-                    <code>.list-group-horizontal-{sm|md|lg|xl|xxl}</code> to
-                    make a list group horizontal starting at that breakpoint's
-                    <code>min-width</code>. Currently
-                    <strong
-                      >horizontal list groups cannot be combined with flush list
-                      groups</strong
-                    >.
-                  </p>
-                  <p>
-                    <strong>ProTip</strong>: Want equal-width list group items
-                    when horizontal? Add <code>.flex-fill</code> to each list
-                    group item.
-                  </p>
-                </div>
-                <ul class="nav nav-tabs mt-4">
-                  <li class="nav-item">
-                    <a href="" class="nav-link active text-black-50">
-                      <i class="bi bi-play"></i>
-                      Preview
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="bi-code-slash"></i>
-                      Code
-                    </a>
-                  </li>
-                </ul>
-                <div class="bg-body-secondary bg-opacity-25">
-                  <div class="p-3">
-                    <ul class="list-group list-group-horizontal">
-                      <li class="list-group-item">An item</li>
-                      <li class="list-group-item">A second item</li>
-                      <li class="list-group-item">A third item</li>
-                    </ul>
-                    <ul class="list-group list-group-horizontal-sm mt-1">
-                      <li class="list-group-item">An item</li>
-                      <li class="list-group-item">A second item</li>
-                      <li class="list-group-item">A third item</li>
-                    </ul>
-                    <ul class="list-group list-group-horizontal-md mt-1">
-                      <li class="list-group-item">An item</li>
-                      <li class="list-group-item">A second item</li>
-                      <li class="list-group-item">A third item</li>
-                    </ul>
-                    <ul class="list-group list-group-horizontal-lg mt-1">
-                      <li class="list-group-item">An item</li>
-                      <li class="list-group-item">A second item</li>
-                      <li class="list-group-item">A third item</li>
-                    </ul>
-                    <ul class="list-group list-group-horizontal-xl mt-1">
-                      <li class="list-group-item">An item</li>
-                      <li class="list-group-item">A second item</li>
-                      <li class="list-group-item">A third item</li>
-                    </ul>
-                    <ul class="list-group list-group-horizontal-xxl mt-1">
-                      <li class="list-group-item">An item</li>
-                      <li class="list-group-item">A second item</li>
-                      <li class="list-group-item">A third item</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-4">
-            <div class="card">
-              <div class="card-header">
-                <div>
-                  <strong>List group</strong>
-                  <small class="text-black-50">contextual classes</small>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="text-black-50 small">
-                  <p>
-                    Use contextual classes to style list items with a stateful
-                    background and color.
-                  </p>
-                </div>
-                <ul class="nav nav-tabs mt-4">
-                  <li class="nav-item">
-                    <a href="" class="nav-link active text-black-50">
-                      <i class="bi bi-play"></i>
-                      Preview
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="bi-code-slash"></i>
-                      Code
-                    </a>
-                  </li>
-                </ul>
-                <div class="bg-body-secondary bg-opacity-25">
-                  <div class="p-3">
-                    <ul class="list-group">
-                      <li class="list-group-item">
-                        A simple default list group item
-                      </li>
-
-                      <li class="list-group-item list-group-item-primary">
-                        A simple primary list group item
-                      </li>
-                      <li class="list-group-item list-group-item-secondary">
-                        A simple secondary list group item
-                      </li>
-                      <li class="list-group-item list-group-item-success">
-                        A simple success list group item
-                      </li>
-                      <li class="list-group-item list-group-item-danger">
-                        A simple danger list group item
-                      </li>
-                      <li class="list-group-item list-group-item-warning">
-                        A simple warning list group item
-                      </li>
-                      <li class="list-group-item list-group-item-info">
-                        A simple info list group item
-                      </li>
-                      <li class="list-group-item list-group-item-light">
-                        A simple light list group item
-                      </li>
-                      <li class="list-group-item list-group-item-dark">
-                        A simple dark list group item
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-4">
-            <div class="card">
-              <div class="card-header">
-                <div>
-                  <strong>List group</strong>
-                  <small class="text-black-50">contextual with</small>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="text-black-50 small">
-                  <p>
-                    Contextual classes also work with
-                    <code>.list-group-item-action</code>. Note the addition of
-                    the hover styles here not present in the previous example.
-                    Also supported is the <code>.active</code> state; apply it
-                    to indicate an active selection on a contextual list group
-                    item.
-                  </p>
-                </div>
-                <ul class="nav nav-tabs mt-4">
-                  <li class="nav-item">
-                    <a href="" class="nav-link active text-black-50">
-                      <i class="bi bi-play"></i>
-                      Preview
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="bi-code-slash"></i>
-                      Code
-                    </a>
-                  </li>
-                </ul>
-                <div class="bg-body-secondary bg-opacity-25">
-                  <div class="p-3">
-                    <div class="list-group">
-                      <a href="#" class="list-group-item list-group-item-action"
-                        >A simple default list group item</a
-                      >
-
-                      <a
-                        href="#"
-                        class="list-group-item list-group-item-action list-group-item-primary"
-                        >A simple primary list group item</a
-                      >
-                      <a
-                        href="#"
-                        class="list-group-item list-group-item-action list-group-item-secondary"
-                        >A simple secondary list group item</a
-                      >
-                      <a
-                        href="#"
-                        class="list-group-item list-group-item-action list-group-item-success"
-                        >A simple success list group item</a
-                      >
-                      <a
-                        href="#"
-                        class="list-group-item list-group-item-action list-group-item-danger"
-                        >A simple danger list group item</a
-                      >
-                      <a
-                        href="#"
-                        class="list-group-item list-group-item-action list-group-item-warning"
-                        >A simple warning list group item</a
-                      >
-                      <a
-                        href="#"
-                        class="list-group-item list-group-item-action list-group-item-info"
-                        >A simple info list group item</a
-                      >
-                      <a
-                        href="#"
-                        class="list-group-item list-group-item-action list-group-item-light"
-                        >A simple light list group item</a
-                      >
-                      <a
-                        href="#"
-                        class="list-group-item list-group-item-action list-group-item-dark"
-                        >A simple dark list group item</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-4">
-            <div class="card">
-              <div class="card-header">
-                <div>
-                  <strong>List group</strong>
-                  <small class="text-black-50">contextual badges</small>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="text-black-50 small">
-                  <p>
-                    Add badges to any list group item to show unread counts,
-                    activity, and more with the help of some<a href=""
-                      >utilities</a
-                    >.
-                  </p>
-                </div>
-                <ul class="nav nav-tabs mt-4">
-                  <li class="nav-item">
-                    <a href="" class="nav-link active text-black-50">
-                      <i class="bi bi-play"></i>
-                      Preview
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="bi-code-slash"></i>
-                      Code
-                    </a>
-                  </li>
-                </ul>
-                <div class="bg-body-secondary bg-opacity-25">
-                  <div class="p-3">
-                    <ul class="list-group">
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-center"
-                      >
-                        A list item
-                        <span class="badge bg-primary rounded-pill">14</span>
-                      </li>
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-center"
-                      >
-                        A second list item
-                        <span class="badge bg-primary rounded-pill">2</span>
-                      </li>
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-center"
-                      >
-                        A third list item
-                        <span class="badge bg-primary rounded-pill">1</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-4">
-            <div class="card">
-              <div class="card-header">
-                <div>
-                  <strong>List group</strong>
-                  <small class="text-black-50">custom content</small>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="text-black-50 small">
-                  <p>
-                    Add nearly any HTML within, even for linked list groups like
-                    the one below, with the help of<a href=""
-                      >flexbox utilities</a
-                    >.
-                  </p>
-                </div>
-                <ul class="nav nav-tabs mt-4">
-                  <li class="nav-item">
-                    <a href="" class="nav-link active text-black-50">
-                      <i class="bi bi-play"></i>
-                      Preview
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="bi-code-slash"></i>
-                      Code
-                    </a>
-                  </li>
-                </ul>
-                <div class="bg-body-secondary bg-opacity-25">
-                  <div class="p-3">
-                    <div class="list-group">
-                      <a
-                        href="#"
-                        class="list-group-item list-group-item-action active"
-                        aria-current="true"
-                      >
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">List group item heading</h5>
-                          <small>3 days ago</small>
-                        </div>
-                        <p class="mb-1">
-                          Some placeholder content in a paragraph.
-                        </p>
-                        <small>And some small print.</small>
-                      </a>
-                      <a
-                        href="#"
-                        class="list-group-item list-group-item-action"
-                      >
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">List group item heading</h5>
-                          <small class="text-body-secondary">3 days ago</small>
-                        </div>
-                        <p class="mb-1">
-                          Some placeholder content in a paragraph.
-                        </p>
-                        <small class="text-body-secondary"
-                          >And some muted small print.</small
-                        >
-                      </a>
-                      <a
-                        href="#"
-                        class="list-group-item list-group-item-action"
-                      >
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">List group item heading</h5>
-                          <small class="text-body-secondary">3 days ago</small>
-                        </div>
-                        <p class="mb-1">
-                          Some placeholder content in a paragraph.
-                        </p>
-                        <small class="text-body-secondary"
-                          >And some muted small print.</small
-                        >
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- end -->
         </div>
 
-        <hr />
-        <!-- footer -->
-        <footer class="container-fluid pb-2">
-          <div class="d-flex flex-wrap font-size">
-            <div>
-              <a class="text-capitalize" href="#"> coreUI </a>
-              <a href="#" class="text-capitalize"> bootstrap admin template </a>
-              &copy; 2023 creativeLabs.
+        <div class="mt-4">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <strong>List group</strong>
+                <small class="text-black-50">active items</small>
+              </div>
             </div>
-            <div class="text-capitalize ms-auto text-end">
-              powered by
-              <a href="#">coreUI components </a>
+            <div class="card-body">
+              <div class="text-black-50 small">
+                <p>
+                  Attach <code>.active</code> to a
+                  <code>.list-group-item</code> to show the current active
+                  selection.
+                </p>
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <ul class="list-group">
+                    <li class="list-group-item active" aria-current="true">
+                      An active item
+                    </li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">A fourth item</li>
+                    <li class="list-group-item">And a fifth one</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-        </footer>
-      </div>
-    </section>
+        </div>
 
-    <script src="bootstrap-5.3.0/script/bootstrap.bundle.min.js"></script>
-    <script src="script/index.js"></script>
-  </body>
+        <div class="mt-4">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <strong>List group</strong>
+                <small class="text-black-50">disabled items</small>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="text-black-50 small">
+                <p>
+                  Attach <code>.disabled</code> to a
+                  <code>.list-group-item</code> to make it appear disabled.
+                  Remark that some of the elements with
+                  <code>.disabled</code> will also require custom JavaScript
+                  to disable their click events (e.g., links).
+                </p>
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <ul class="list-group">
+                    <li class="list-group-item disabled" aria-current="true">
+                      A disabled item
+                    </li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">A fourth item</li>
+                    <li class="list-group-item">And a fifth one</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <strong>List group</strong>
+                <small class="text-black-50">disabled links</small>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="text-black-50 small">
+                <p>
+                  Use <code>&lsaquo;a&rsaquo;</code>s or
+                  <code>&lsaquo;button&rsaquo;</code>s to create actionable
+                  list group items with hover, disabled, and active states by
+                  adding <code>.list-group-item-action</code>. We separate
+                  these pseudo-classes to ensure list groups made of
+                  non-interactive elements (like
+                  <code>&lsaquo;li&rsaquo;</code>s or
+                  <code>&lsaquo;div&rsaquo;</code>s) don't provide a click or
+                  tap affordance.
+                </p>
+                <p>
+                  Be sure to <strong>not use the standard</strong>
+                  <code>.btn</code> <strong>classes here</strong>.
+                </p>
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                      The current link item
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+                    <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+                    <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+                    <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <strong>List group</strong>
+                <small class="text-black-50">disabled buttons</small>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="text-black-50 small">
+                <p>
+                  With <code>&lsaquo;button&rsaquo;</code>s, you can also make
+                  use of the <code>disabled</code> attribute instead of the
+                  <code>.disabled</code> class. Sadly,
+                  <code>&lsaquo;a&rsaquo;</code>s don't support the disabled
+                  attribute.
+                </p>
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <div class="list-group">
+                    <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
+                      The current button
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-action">
+                      A second button item
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-action">
+                      A third button item
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-action">
+                      A fourth button item
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-action" disabled>
+                      A disabled button item
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <strong>List group</strong>
+                <small class="text-black-50">flush</small>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="text-black-50 small">
+                <p>
+                  Add <code>.list-group-flush</code> to remove some borders
+                  and rounded corners to render list group items edge-to-edge
+                  in a parent container (e.g., cards).
+                </p>
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">A fourth item</li>
+                    <li class="list-group-item">And a fifth one</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <strong>List group</strong>
+                <small class="text-black-50">horizontal</small>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="text-black-50 small">
+                <p>
+                  Add <code>.list-group-horizontal</code> to change the layout
+                  of list group items from vertical to horizontal across all
+                  breakpoints. Alternatively, choose a responsive variant
+                  <code>.list-group-horizontal-{sm|md|lg|xl|xxl}</code> to
+                  make a list group horizontal starting at that breakpoint's
+                  <code>min-width</code>. Currently
+                  <strong>horizontal list groups cannot be combined with flush list
+                    groups</strong>.
+                </p>
+                <p>
+                  <strong>ProTip</strong>: Want equal-width list group items
+                  when horizontal? Add <code>.flex-fill</code> to each list
+                  group item.
+                </p>
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                  </ul>
+                  <ul class="list-group list-group-horizontal-sm mt-1">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                  </ul>
+                  <ul class="list-group list-group-horizontal-md mt-1">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                  </ul>
+                  <ul class="list-group list-group-horizontal-lg mt-1">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                  </ul>
+                  <ul class="list-group list-group-horizontal-xl mt-1">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                  </ul>
+                  <ul class="list-group list-group-horizontal-xxl mt-1">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <strong>List group</strong>
+                <small class="text-black-50">contextual classes</small>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="text-black-50 small">
+                <p>
+                  Use contextual classes to style list items with a stateful
+                  background and color.
+                </p>
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      A simple default list group item
+                    </li>
+
+                    <li class="list-group-item list-group-item-primary">
+                      A simple primary list group item
+                    </li>
+                    <li class="list-group-item list-group-item-secondary">
+                      A simple secondary list group item
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                      A simple success list group item
+                    </li>
+                    <li class="list-group-item list-group-item-danger">
+                      A simple danger list group item
+                    </li>
+                    <li class="list-group-item list-group-item-warning">
+                      A simple warning list group item
+                    </li>
+                    <li class="list-group-item list-group-item-info">
+                      A simple info list group item
+                    </li>
+                    <li class="list-group-item list-group-item-light">
+                      A simple light list group item
+                    </li>
+                    <li class="list-group-item list-group-item-dark">
+                      A simple dark list group item
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <strong>List group</strong>
+                <small class="text-black-50">contextual with</small>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="text-black-50 small">
+                <p>
+                  Contextual classes also work with
+                  <code>.list-group-item-action</code>. Note the addition of
+                  the hover styles here not present in the previous example.
+                  Also supported is the <code>.active</code> state; apply it
+                  to indicate an active selection on a contextual list group
+                  item.
+                </p>
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">A simple default list group item</a>
+
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary">A simple primary
+                      list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">A simple
+                      secondary list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-success">A simple success
+                      list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-danger">A simple danger
+                      list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-warning">A simple warning
+                      list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-info">A simple info list
+                      group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">A simple light list
+                      group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list
+                      group item</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <strong>List group</strong>
+                <small class="text-black-50">contextual badges</small>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="text-black-50 small">
+                <p>
+                  Add badges to any list group item to show unread counts,
+                  activity, and more with the help of some<a href="">utilities</a>.
+                </p>
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      A list item
+                      <span class="badge bg-primary rounded-pill">14</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      A second list item
+                      <span class="badge bg-primary rounded-pill">2</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      A third list item
+                      <span class="badge bg-primary rounded-pill">1</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <strong>List group</strong>
+                <small class="text-black-50">custom content</small>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="text-black-50 small">
+                <p>
+                  Add nearly any HTML within, even for linked list groups like
+                  the one below, with the help of<a href="">flexbox utilities</a>.
+                </p>
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">List group item heading</h5>
+                        <small>3 days ago</small>
+                      </div>
+                      <p class="mb-1">
+                        Some placeholder content in a paragraph.
+                      </p>
+                      <small>And some small print.</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">List group item heading</h5>
+                        <small class="text-body-secondary">3 days ago</small>
+                      </div>
+                      <p class="mb-1">
+                        Some placeholder content in a paragraph.
+                      </p>
+                      <small class="text-body-secondary">And some muted small print.</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">List group item heading</h5>
+                        <small class="text-body-secondary">3 days ago</small>
+                      </div>
+                      <p class="mb-1">
+                        Some placeholder content in a paragraph.
+                      </p>
+                      <small class="text-body-secondary">And some muted small print.</small>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- end -->
+      </div>
+
+      <hr />
+      <!-- footer -->
+      <footer class="container-fluid pb-2">
+        <div class="d-flex flex-wrap font-size">
+          <div>
+            <a class="text-capitalize" href="#"> coreUI </a>
+            <a href="#" class="text-capitalize"> bootstrap admin template </a>
+            &copy; 2023 creativeLabs.
+          </div>
+          <div class="text-capitalize ms-auto text-end">
+            powered by
+            <a href="#">coreUI components </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </section>
+
+  <script src="bootstrap-5.3.0/script/bootstrap.bundle.min.js"></script>
+  <script src="script/index.js"></script>
+</body>
+
 </html>

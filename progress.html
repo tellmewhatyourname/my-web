@@ -1188,24 +1188,24 @@
             </div>
           </div>
 
-          <hr class="mt-0" />
           <!-- navbar setting 2 -->
-          <div class="navbar-setting-two">
-            <ul class="d-flex gap-2 text-capitalize font-size">
-              <li class="nav-item">
-                <a href="index.html">home</a>
-              </li>
-              <p>/</p>
-              <li class="nav-item text-gray">
-                <a href="index.html">components</a>
-              </li>
-              <p>/</p>
-              <li class="nav-item text-gray">
-                <a href="index.html">Base</a>
-              </li>
-              <p>/</p>
-              <div class="text-black-50">progress</div>
-            </ul>
+          <div class="navbar-setting-two border-top border-dark-subtle">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb ps-4 pt-2 pb-2">
+                <li class="breadcrumb-item">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="index.html">Components</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="index.html">Base</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Progress
+                </li>
+              </ol>
+            </nav>
           </div>
         </div>
       </div>
@@ -1213,89 +1213,91 @@
       <!-- middle bg size -->
       <div class="mx-4">
         <!-- cards -->
-        <div class="card">
-          <div class="card-header">
-            <div>
-              <strong>Progress</strong>
-              <small class="text-black-50">Basic example</small>
-            </div>
-          </div>
-          <div class="card-body">
-            <div class="text-black-50 small">
-              <p>
-                Progress components are built with two HTML elements, some CSS to set the width, and a few attributes.
-                We don't use
-                <a href="">
-                  the HTML5 &lsaquo;progress&rsaquo; element
-                </a>, ensuring you can stack progress bars, animate them, and
-                place text labels over them.
-              </p>
-            </div>
-            <ul class="nav nav-tabs mt-4">
-              <li class="nav-item">
-                <a href="" class="nav-link active text-black-50">
-                  <i class="bi bi-play"></i>
-                  Preview
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="bi-code-slash"></i>
-                  Code
-                </a>
-              </li>
-            </ul>
-            <div class="bg-body-secondary bg-opacity-25">
-              <div class="p-3">
-                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
-                  aria-valuemax="100">
-                  <div class="progress-bar" style="width: 0%"></div>
-                </div>
-                <div class="progress mt-3" role="progressbar" aria-label="Basic example" aria-valuenow="25"
-                  aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 25%"></div>
-                </div>
-                <div class="progress mt-3" role="progressbar" aria-label="Basic example" aria-valuenow="50"
-                  aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 50%"></div>
-                </div>
-                <div class="progress mt-3" role="progressbar" aria-label="Basic example" aria-valuenow="75"
-                  aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 75%"></div>
-                </div>
-                <div class="progress mt-3" role="progressbar" aria-label="Basic example" aria-valuenow="100"
-                  aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 100%"></div>
-                </div>
+        <div class="mt-4">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <strong>Progress</strong>
+                <small class="text-black-50">Basic example</small>
               </div>
             </div>
+            <div class="card-body">
+              <div class="text-black-50 small">
+                <p>
+                  Progress components are built with two HTML elements, some CSS to set the width, and a few attributes.
+                  We don't use
+                  <a href="">
+                    the HTML5 &lsaquo;progress&rsaquo; element
+                  </a>, ensuring you can stack progress bars, animate them, and
+                  place text labels over them.
+                </p>
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 0%"></div>
+                  </div>
+                  <div class="progress mt-3" role="progressbar" aria-label="Basic example" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 25%"></div>
+                  </div>
+                  <div class="progress mt-3" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 50%"></div>
+                  </div>
+                  <div class="progress mt-3" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 75%"></div>
+                  </div>
+                  <div class="progress mt-3" role="progressbar" aria-label="Basic example" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 100%"></div>
+                  </div>
+                </div>
+              </div>
 
-            <div class="text-black-50 small mt-4">
-              <p>
-                Bootstrap provides a handful of <a href="">utilities for setting width</a>. Depending on your needs,
-                these may help with quickly
-                configuring progress.
-              </p>
-            </div>
-            <ul class="nav nav-tabs mt-4">
-              <li class="nav-item">
-                <a href="" class="nav-link active text-black-50">
-                  <i class="bi bi-play"></i>
-                  Preview
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="bi-code-slash"></i>
-                  Code
-                </a>
-              </li>
-            </ul>
-            <div class="bg-body-secondary bg-opacity-25">
-              <div class="p-3">
-                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0"
-                  aria-valuemax="100">
-                  <div class="progress-bar w-75"></div>
+              <div class="text-black-50 small mt-4">
+                <p>
+                  Bootstrap provides a handful of <a href="">utilities for setting width</a>. Depending on your needs,
+                  these may help with quickly
+                  configuring progress.
+                </p>
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar w-75"></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1313,7 +1315,7 @@
             <div class="card-body">
               <div class="text-black-50 small">
                 <p>
-                  Add labels to your progress bars by placing text within the .progress-bar.
+                  Add labels to your progress bars by placing text within the <code>.progress-bar</code>.
                 </p>
               </div>
               <ul class="nav nav-tabs mt-4">
@@ -1346,15 +1348,17 @@
           <div class="card">
             <div class="card-header">
               <div>
-                <strong>Popover</strong>
-                <small class="text-black-50">Dismiss on next click</small>
+                <strong>Progress</strong>
+                <small class="text-black-50">Height</small>
               </div>
             </div>
             <div class="card-body">
               <div class="text-black-50 small">
                 <p>
-                  Use the focus trigger to dismiss popovers on the user's next click of a different element than the
-                  toggle element.
+                  We only set a height value on the <code>.progress</code>, so if you change that value the inner
+                  <code>.progress-bar</code> will
+                  automatically
+                  resize accordingly.
                 </p>
               </div>
               <ul class="nav nav-tabs mt-4">
@@ -1373,10 +1377,14 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover"
-                    data-bs-trigger="focus" data-bs-title="Dismissible popover"
-                    data-bs-content="And here's some amazing content. It's very engaging. Right?">Dismissible
-                    popover</a>
+                  <div class="progress" role="progressbar" aria-label="Example 1px high" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100" style="height: 1px">
+                    <div class="progress-bar" style="width: 25%"></div>
+                  </div>
+                  <div class="progress mt-3" role="progressbar" aria-label="Example 20px high" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100" style="height: 20px">
+                    <div class="progress-bar" style="width: 25%"></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1387,23 +1395,14 @@
           <div class="card">
             <div class="card-header">
               <div>
-                <strong>Popover</strong>
-                <small class="text-black-50">Disabled elements</small>
+                <strong>Progress</strong>
+                <small class="text-black-50">Backgrounds</small>
               </div>
             </div>
             <div class="card-body">
               <div class="text-black-50 small">
                 <p>
-                  Elements with the disabled attribute aren't interactive, meaning users cannot hover or click them to
-                  trigger a popover
-                  (or tooltip). As a workaround, you'll want to trigger the popover from a wrapper
-                  <code>&lsaquo;div&rsaquo;</code> or <code>&lsaquo;span&rsaquo;</code>, ideally made
-                  keyboard-focusable using tabindex="0".
-                </p>
-                <p>
-                  For disabled popover triggers, you may also prefer <code>data-coreui-trigger="hover focus"</code> so
-                  that the popover appears as
-                  immediate visual feedback to your users as they may not expect to click on a disabled element.
+                  Use background utility classes to change the appearance of individual progress bars.
                 </p>
               </div>
               <ul class="nav nav-tabs mt-4">
@@ -1422,10 +1421,172 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
-                    data-bs-content="Disabled popover">
-                    <button class="btn btn-primary" type="button" disabled>Disabled button</button>
-                  </span>
+                  <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-success" style="width: 25%"></div>
+                  </div>
+                  <div class="progress mt-3" role="progressbar" aria-label="Info example" aria-valuenow="50"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-info" style="width: 50%"></div>
+                  </div>
+                  <div class="progress mt-3" role="progressbar" aria-label="Warning example" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-warning" style="width: 75%"></div>
+                  </div>
+                  <div class="progress mt-3" role="progressbar" aria-label="Danger example" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-danger" style="width: 100%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <strong>Progress</strong>
+                <small class="text-black-50">Multiple bars</small>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="text-black-50 small">
+                <p>
+                  Include multiple progress bars in a progress component if you need.
+                </p>
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <div class="progress-stacked">
+                    <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="15"
+                      aria-valuemin="0" aria-valuemax="100" style="width: 15%">
+                      <div class="progress-bar"></div>
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="30"
+                      aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+                      <div class="progress-bar bg-success"></div>
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="20"
+                      aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                      <div class="progress-bar bg-info"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <strong>Progress</strong>
+                <small class="text-black-50">Striped</small>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="text-black-50 small">
+                <p>
+                  Add <code>.progress-bar-striped</code> to any <code>.progress-bar</code> to apply a stripe via CSS
+                  gradient over the progress bar's background
+                  color.
+                </p>
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="10"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped" style="width: 10%"></div>
+                  </div>
+                  <div class="progress mt-3" role="progressbar" aria-label="Success striped example" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped bg-success" style="width: 25%"></div>
+                  </div>
+                  <div class="progress mt-3" role="progressbar" aria-label="Info striped example" aria-valuenow="50"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped bg-info" style="width: 50%"></div>
+                  </div>
+                  <div class="progress mt-3" role="progressbar" aria-label="Warning striped example" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped bg-warning" style="width: 75%"></div>
+                  </div>
+                  <div class="progress mt-3" role="progressbar" aria-label="Danger striped example" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped bg-danger" style="width: 100%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <strong>Progress</strong>
+                <small class="text-black-50">Animated stripes</small>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="text-black-50 small">
+                <p>
+                  The striped gradient can also be animated. Add .progress-bar-animated to .progress-bar to animate the
+                  stripes right to
+                  left via CSS3 animations.
+                </p>
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+                  </div>
                 </div>
               </div>
             </div>

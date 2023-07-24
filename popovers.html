@@ -533,7 +533,6 @@
         <i class="bx bx-chevron-left color float-end pe-3 py-2"></i>
       </div>
     </div>
-
     <!-- offcanvas -->
     <div class="sidebar-menu">
       <div class="sidebar sidebar-bg offcanvas" tabindex="-1" id="offcanvasExample">
@@ -1035,7 +1034,6 @@
         <!-- sidebar info end -->
       </div>
     </div>
-
     <!-- middle -->
     <div class="middle-navbar bg-body-secondary">
       <!-- navbar things -->
@@ -1188,24 +1186,24 @@
             </div>
           </div>
 
-          <hr class="mt-0" />
           <!-- navbar setting 2 -->
-          <div class="navbar-setting-two">
-            <ul class="d-flex gap-2 text-capitalize font-size">
-              <li class="nav-item">
-                <a href="">home</a>
-              </li>
-              <p>/</p>
-              <li class="nav-item text-gray">
-                <a href="">components</a>
-              </li>
-              <p>/</p>
-              <li class="nav-item text-gray">
-                <a href="">Base</a>
-              </li>
-              <p>/</p>
-              <div class="text-black-50">popovers</div>
-            </ul>
+          <div class="navbar-setting-two border-top border-dark-subtle">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb ps-4 pt-2 pb-2">
+                <li class="breadcrumb-item">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="index.html">Components</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="index.html">Base</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Popovers
+                </li>
+              </ol>
+            </nav>
           </div>
         </div>
       </div>
@@ -1213,35 +1211,37 @@
       <!-- middle bg size -->
       <div class="mx-4">
         <!-- cards -->
-        <div class="card">
-          <div class="card-header">
-            <div>
-              <strong>Popovers</strong>
-              <small class="text-black-50">Basic example</small>
+        <div class="mt-4">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <strong>Popovers</strong>
+                <small class="text-black-50">Basic example</small>
+              </div>
             </div>
-          </div>
-          <div class="card-body">
-            <ul class="nav nav-tabs mt-4">
-              <li class="nav-item">
-                <a href="" class="nav-link active text-black-50">
-                  <i class="bi bi-play"></i>
-                  Preview
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="bi-code-slash"></i>
-                  Code
-                </a>
-              </li>
-            </ul>
-            <div class="bg-body-secondary bg-opacity-25">
-              <div class="p-3">
-                <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title=""
-                  data-bs-content="And here's some amazing content. It's very engaging. Right?"
-                  data-bs-original-title="Popover title">
-                  Click to toggle popover
-                </button>
+            <div class="card-body">
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title=""
+                    data-bs-content="And here's some amazing content. It's very engaging. Right?"
+                    data-bs-original-title="Popover title">
+                    Click to toggle popover
+                  </button>
+                </div>
               </div>
             </div>
           </div>

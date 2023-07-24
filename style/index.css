@@ -1,5 +1,5 @@
 * {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -10,7 +10,7 @@ li {
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .sidebar {
@@ -196,9 +196,8 @@ body {
   z-index: 999;
 }
 
-.middle-navbar .navbar-things {
-  position: sticky;
-  top: 0;
+.middle-navbar .navbar-setting a {
+  text-decoration: none;
 }
 
 .middle-navbar .close-sidebar-icon {
@@ -220,6 +219,7 @@ body {
 
 .middle-navbar .md-show-logo {
   display: none;
+  cursor: pointer;
 }
 
 .middle-navbar .icons {

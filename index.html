@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>web</title>
-
   <link rel="stylesheet" href="bootstrap-5.3.0/style/bootstrap.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
 
@@ -1188,14 +1187,18 @@
             </div>
           </div>
 
-          <hr class="mt-0" />
           <!-- navbar setting 2 -->
-          <div class="navbar-setting-two">
-            <ul class="d-flex gap-2 text-capitalize font-size">
-              <div>home</div>
-              <p>/</p>
-              <div class="text-gray">dashboard</div>
-            </ul>
+          <div class="navbar-setting-two border-top border-dark-subtle">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb ps-4 pt-2 pb-2">
+                <li class="breadcrumb-item">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Dashboard
+                </li>
+              </ol>
+            </nav>
           </div>
         </div>
       </div>
