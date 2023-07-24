@@ -542,7 +542,7 @@
           <ul class="flex-column text-white-50 ps-0 mb-0 overflow">
             <!-- dashboard -->
             <li class="nav-item text-capitalize hover">
-              <a class="nav-link d-flex justify-content-between align-items-center h-100" href="">
+              <a class="nav-link d-flex justify-content-between align-items-center h-100" href="index.html">
                 <div class>
                   <i class="small-icon bi bi-speedometer2 px-3"></i>
                   <span class="d-min-sidebar">dashboard</span>
@@ -1193,18 +1193,18 @@
           <div class="navbar-setting-two">
             <ul class="d-flex gap-2 text-capitalize font-size">
               <li class="nav-item">
-                <a href="">home</a>
+                <a href="index.html">home</a>
               </li>
               <p>/</p>
               <li class="nav-item text-gray">
-                <a href="">components</a>
+                <a href="index.html">components</a>
               </li>
               <p>/</p>
               <li class="nav-item text-gray">
-                <a href="">Base</a>
+                <a href="index.html">Base</a>
               </li>
               <p>/</p>
-              <div class="text-black-50">popovers</div>
+              <div class="text-black-50">Collapse</div>
             </ul>
           </div>
         </div>
@@ -1216,11 +1216,18 @@
         <div class="card">
           <div class="card-header">
             <div>
-              <strong>Popovers</strong>
-              <small class="text-black-50">Basic example</small>
+              <strong>Collapse</strong>
             </div>
           </div>
           <div class="card-body">
+            <div class="text-black-50 small">
+              <p>
+                You can use a link with the <code>href</code> attribute, or a
+                button with the <code>data-bs-target</code> attribute. In both
+                samples, the <code>data-bs-toggle="collapse""</code> is
+                required.
+              </p>
+            </div>
             <ul class="nav nav-tabs mt-4">
               <li class="nav-item">
                 <a href="" class="nav-link active text-black-50">
@@ -1237,63 +1244,22 @@
             </ul>
             <div class="bg-body-secondary bg-opacity-25">
               <div class="p-3">
-                <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title=""
-                  data-bs-content="And here's some amazing content. It's very engaging. Right?"
-                  data-bs-original-title="Popover title">
-                  Click to toggle popover
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-4">
-          <div class="card">
-            <div class="card-header">
-              <div>
-                <strong>Popover</strong>
-                <small class="text-black-50">Four direction</small>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="text-black-50 small">
                 <p>
-                  Four options are available: top, right, bottom, and left aligned. Directions are mirrored when using
-                  Bootstrap in RTL.
+                  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse" role="button"
+                    aria-expanded="false" aria-controls="collapse">
+                    Link with href
+                  </a>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse"
+                    aria-expanded="false" aria-controls="collapse">
+                    Button with data-bs-target
+                  </button>
                 </p>
-              </div>
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
-                    data-bs-placement="top" data-bs-content="Top popover">
-                    Popover on top
-                  </button>
-                  <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
-                    data-bs-placement="right" data-bs-content="Right popover">
-                    Popover on right
-                  </button>
-                  <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
-                    data-bs-placement="bottom" data-bs-content="Bottom popover">
-                    Popover on bottom
-                  </button>
-                  <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
-                    data-bs-placement="left" data-bs-content="Left popover">
-                    Popover on left
-                  </button>
+                <div class="collapse" id="collapse">
+                  <div class="card card-body">
+                    Some placeholder content for the collapse component. This
+                    panel is hidden by default but revealed when the user
+                    activates the relevant trigger.
+                  </div>
                 </div>
               </div>
             </div>
@@ -1304,15 +1270,19 @@
           <div class="card">
             <div class="card-header">
               <div>
-                <strong>Popover</strong>
-                <small class="text-black-50">Dismiss on next click</small>
+                <strong>Collapse</strong>
+                <small class="text-black-50">Horizontal</small>
               </div>
             </div>
             <div class="card-body">
               <div class="text-black-50 small">
                 <p>
-                  Use the focus trigger to dismiss popovers on the user's next click of a different element than the
-                  toggle element.
+                  The collapse plugin also supports horizontal collapsing. Add
+                  the <code>.collapse-horizontal</code> modifier class to
+                  transition the width instead of height and set a width on
+                  the immediate child element. Feel free to write your own
+                  custom Sass, use inline styles, or use our
+                  <code>width utilities.</code>
                 </p>
               </div>
               <ul class="nav nav-tabs mt-4">
@@ -1331,10 +1301,21 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover"
-                    data-bs-trigger="focus" data-bs-title="Dismissible popover"
-                    data-bs-content="And here's some amazing content. It's very engaging. Right?">Dismissible
-                    popover</a>
+                  <p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseHorizontal" aria-expanded="false" aria-controls="collapseHorizontal">
+                      Toggle width collapse
+                    </button>
+                  </p>
+                  <div style="min-height: 120px">
+                    <div class="collapse collapse-horizontal" id="collapseHorizontal">
+                      <div class="card card-body" style="width: 300px">
+                        This is some placeholder content for a horizontal
+                        collapse. It's hidden by default and shown when
+                        triggered.
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1345,23 +1326,21 @@
           <div class="card">
             <div class="card-header">
               <div>
-                <strong>Popover</strong>
-                <small class="text-black-50">Disabled elements</small>
+                <strong>Collapse</strong>
+                <small class="text-black-50">multiplae targets</small>
               </div>
             </div>
             <div class="card-body">
               <div class="text-black-50 small">
                 <p>
-                  Elements with the disabled attribute aren't interactive, meaning users cannot hover or click them to
-                  trigger a popover
-                  (or tooltip). As a workaround, you'll want to trigger the popover from a wrapper
-                  <code>&lsaquo;div&rsaquo;</code> or <code>&lsaquo;span&rsaquo;</code>, ideally made
-                  keyboard-focusable using tabindex="0".
-                </p>
-                <p>
-                  For disabled popover triggers, you may also prefer <code>data-coreui-trigger="hover focus"</code> so
-                  that the popover appears as
-                  immediate visual feedback to your users as they may not expect to click on a disabled element.
+                  A <code>&lsaquo;button&rsaquo;</code> or
+                  <code>&lsaquo;a&rsaquo;</code> can show and hide multiple
+                  elements by referencing them with a selector in its
+                  <code>href</code> or <code>data-bs-target</code> attribute.
+                  Multiple <code>&lsaquo;button&rsaquo;</code> or
+                  <code>&lsaquo;a&rsaquo;</code> can show and hide an element
+                  if they each reference it with their <code>href</code> or
+                  <code>data-bs-target</code> attribute
                 </p>
               </div>
               <ul class="nav nav-tabs mt-4">
@@ -1380,10 +1359,41 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
-                    data-bs-content="Disabled popover">
-                    <button class="btn btn-primary" type="button" disabled>Disabled button</button>
-                  </span>
+                  <p>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapse1" role="button"
+                      aria-expanded="false" aria-controls="multiCollapse1">Toggle first element</a>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#multiCollapse2" aria-expanded="false" aria-controls="multiCollapse2">
+                      Toggle second element
+                    </button>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                      data-bs-target=".multi-collapse" aria-expanded="false"
+                      aria-controls="multiCollapse1 multiCollapse2">
+                      Toggle both elements
+                    </button>
+                  </p>
+                  <div class="row">
+                    <div class="col">
+                      <div class="collapse multi-collapse" id="multiCollapse1">
+                        <div class="card card-body">
+                          Some placeholder content for the first collapse
+                          component of this multi-collapse example. This panel
+                          is hidden by default but revealed when the user
+                          activates the relevant trigger.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="collapse multi-collapse" id="multiCollapse2">
+                        <div class="card card-body">
+                          Some placeholder content for the second collapse
+                          component of this multi-collapse example. This panel
+                          is hidden by default but revealed when the user
+                          activates the relevant trigger.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1412,7 +1422,6 @@
   </section>
 
   <script src="bootstrap-5.3.0/script/bootstrap.bundle.min.js"></script>
-  <script src="script/popover.js"></script>
   <script src="script/index.js"></script>
 </body>
 
