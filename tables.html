@@ -190,14 +190,14 @@
               </a>
             </li>
 
-            <li class="nav-item text-capitalize hover">
+            <lihtml class="nav-item text-capitalize hover">
               <a class="nav-link d-flex align-items-center h-100" href="tables.html">
                 <div>
                   <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                   tables
                 </div>
               </a>
-            </li>
+            </lihtml>
 
             <li class="nav-item text-capitalize hover">
               <a class="nav-link d-flex align-items-center h-100" href="tabs.html">
@@ -542,7 +542,7 @@
           <ul class="flex-column text-white-50 ps-0 mb-0 overflow">
             <!-- dashboard -->
             <li class="nav-item text-capitalize hover">
-              <a class="nav-link d-flex justify-content-between align-items-center h-100" href="indx">
+              <a class="nav-link d-flex justify-content-between align-items-center h-100" href="index.html">
                 <div class>
                   <i class="small-icon bi bi-speedometer2 px-3"></i>
                   <span class="d-min-sidebar">dashboard</span>
@@ -726,7 +726,7 @@
             <li class="nav-item text-capitalize hover" data-bs-toggle="collapse" href="#buttonsCollapse" role="button"
               aria-expanded="false" aria-controls="buttonsCollapse">
               <a class="nav-link d-flex justify-content-between align-items-center h-100">
-                <div>
+buttons.html                <div>
                   <i class="small-icon bi bi-cursor px-3"></i>
                   <span class="d-min-sidebar">buttons</span>
                 </div>
@@ -1188,7 +1188,6 @@
             </div>
           </div>
 
-          <hr class="mt-0" />
           <!-- navbar setting 2 -->
           <div class="navbar-setting-two border-top border-dark-subtle">
             <nav aria-label="breadcrumb">
@@ -1203,12 +1202,11 @@
                   <a href="index.html">Base</a>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">
-                  Cards
+                  Tables
                 </li>
               </ol>
             </nav>
           </div>
-
         </div>
       </div>
 
@@ -1219,27 +1217,14 @@
           <div class="card">
             <div class="card-header">
               <div>
-                <strong>Card</strong>
-                <small class="text-black-50">Example</small>
+                <strong>Table</strong>
+                <small class="text-black-50">Basic example</small>
               </div>
             </div>
             <div class="card-body">
               <div class="text-black-50 small">
                 <p>
-                  Cards are built with as little markup and styles as possible
-                  but still manage to deliver a bunch of control and
-                  customization. Built with flexbox, they offer easy alignment
-                  and mix well with other Bootstrap components. Cards have no
-                  top, left, and right margins by default, so use
-                  <a href="">spacing utilities</a> as needed. They have no fixed
-                  width to start, so they'll fill the full width of its parent.
-                </p>
-                <p>
-                  Below is an example of a basic card with mixed content and a
-                  fixed width. Cards have no fixed width to start, so they'll
-                  naturally fill the full width of its parent element. This is
-                  easily customized with our various
-                  <a href="">sizing options.</a>
+                  Using the most basic table markup, here's how <code>.table</code>-based tables look in Bootstrap.
                 </p>
               </div>
               <ul class="nav nav-tabs mt-4">
@@ -1258,17 +1243,35 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <div class="card" style="width: 18rem">
-                    <img src="image/full.jpg" class="card-img-top" />
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
@@ -1279,15 +1282,14 @@
           <div class="card">
             <div class="card-header">
               <div>
-                <strong>Card</strong>
-                <small class="text-black-50">body</small>
+                <strong>Tables</strong>
+                <small class="text-black-50">Variants</small>
               </div>
             </div>
             <div class="card-body">
               <div class="text-black-50 small">
                 <p>
-                  The main block of a card is the .card-body. Use it whenever
-                  you need a padded section within a card.
+                  Use contextual classes to color tables, table rows or individual cells.
                 </p>
               </div>
               <ul class="nav nav-tabs mt-4">
@@ -1306,11 +1308,62 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <div class="card">
-                    <div class="card-body">
-                      This is some text within a card body.
-                    </div>
-                  </div>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Class</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Default</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      <tr class="table-primary">
+                        <th scope="row">Primary</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      <tr class="table-secondary">
+                        <th scope="row">secondary</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      <tr class="table-success">
+                        <th scope="row">Success</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      <tr class="table-danger">
+                        <th scope="row">Danger</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      <tr class="table-warning">
+                        <th scope="row">Warning</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      <tr class="table-info">
+                        <th scope="row">Info</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      <tr class="table-light">
+                        <th scope="row">Light</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      <tr class="table-dark">
+                        <th scope="row">Dark</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
@@ -1321,26 +1374,15 @@
           <div class="card">
             <div class="card-header">
               <div>
-                <strong>Card</strong>
-                <span class="text-black-50"> Title, text, and links </span>
+                <strong>Tables</strong>
+                <small class="text-black-50">Striped rows</small>
               </div>
             </div>
             <div class="card-body">
               <div class="text-black-50 small">
                 <p>
-                  Card titles are managed by adding
-                  <code> .card-title </code> to a
-                  <code> &lsaquo;h*&rsaquo; </code>tag. Identically, links are
-                  attached and collected next to each other by adding
-                  <code>.card-link</code> to an
-                  <code>&lsaquo;a&rsaquo;</code> tag.
-                </p>
-                <p>
-                  Subtitles are managed by adding a .card-subtitle to a
-                  <code> &lsaquo;h*&rsaquo; </code> tag. If the
-                  <code> .card-title </code> also, the .card-subtitle items
-                  are stored in a <code>.card-body</code> item, the card
-                  title, and subtitle are arranged rightly.
+                  Use <code>.table-striped</code> to add zebra-striping to any table row within the
+                  <code>&lsaquo;tbody&rsaquo;</code>.
                 </p>
               </div>
               <ul class="nav nav-tabs mt-4">
@@ -1359,20 +1401,304 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <div class="card" style="width: 18rem">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <h6 class="card-subtitle mb-2 text-body-secondary">
-                        Card subtitle
-                      </h6>
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
-                    </div>
-                  </div>
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="text-black-50 small mt-3">
+                <p>
+                  These classes can also be added to table variants:
+                </p>
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <table class="table table-striped table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <table class="table table-striped table-success">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <strong>Tables</strong>
+                <small class="text-black-50">Hoverable rows</small>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="text-black-50 small">
+                <p>
+                  Add <code>.table-hover</code> to enable a hover state on table rows within a
+                  <code>&lsaquo;tbody&rsaquo;</code>.
+                </p>
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <table class="table table-hover table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="text-black-50 small mt-3">
+                <p>
+                  These classes can also be added to table variants:
+                </p>
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <table class="table table-striped table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
@@ -1383,17 +1709,14 @@
           <div class="card">
             <div class="card-header">
               <div>
-                <strong>Card</strong>
-                <small class="text-black-50"> Images </small>
+                <strong>Tables</strong>
+                <small class="text-black-50">Active tables</small>
               </div>
             </div>
             <div class="card-body">
               <div class="text-black-50 small">
                 <p>
-                  <code>.card-img</code>-top places a picture to the top of
-                  the card. With <code>.card-text</code>, text can be added to
-                  the card. Text within <code>.card-text</code> can
-                  additionally be styled with the regular HTML tags.
+                  Highlight a table row or cell by adding a <code>.table-active</code> class.
                 </p>
               </div>
               <ul class="nav nav-tabs mt-4">
@@ -1412,17 +1735,86 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <div class="card" style="width: 18rem">
-                    <img src="image/full.jpg" class="card-img-top" />
-                    <div class="card-body">
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
-                    </div>
-                  </div>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="table-active">
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2" class="table-active">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
+
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <table class="table table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="table-active">
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2" class="table-active">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -1431,17 +1823,14 @@
           <div class="card">
             <div class="card-header">
               <div>
-                <strong>Card</strong>
-                <small class="text-black-50"> List groups </small>
+                <strong>Tables</strong>
+                <small class="text-black-50">Bordered tables</small>
               </div>
             </div>
             <div class="card-body">
               <div class="text-black-50 small">
                 <p>
-                  <code>.card-img</code>-top places a picture to the top of
-                  the card. With <code>.card-text</code>, text can be added to
-                  the card. Text within <code>.card-text</code> can
-                  additionally be styled with the regular HTML tags.
+                  Add <code>.table-bordered</code> for borders on all sides of the table and cells.
                 </p>
               </div>
               <ul class="nav nav-tabs mt-4">
@@ -1460,142 +1849,41 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <div class="card w-100" style="width: 18rem">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">An item</li>
-                      <li class="list-group-item">A second item</li>
-                      <li class="list-group-item">A third item</li>
-                    </ul>
-                  </div>
-
-                  <div class="card w-100" style="width: 18rem">
-                    <div class="card-header">Featured</div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">An item</li>
-                      <li class="list-group-item">A second item</li>
-                      <li class="list-group-item">A third item</li>
-                    </ul>
-                  </div>
-
-                  <div class="card w-100" style="width: 18rem">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">An item</li>
-                      <li class="list-group-item">A second item</li>
-                      <li class="list-group-item">A third item</li>
-                    </ul>
-                    <div class="card-footer">Card footer</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-4">
-          <div class="card">
-            <div class="card-header">
-              <div>
-                <strong>Card</strong>
-                <small class="text-black-50">Kitchen sink</small>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="text-black-50 small">
-                <p>
-                  Combine and match many content types to build the card you
-                  need, or throw everything in there. Shown below are image
-                  styles, blocks, text styles, and a list group—all wrapped in
-                  a fixed-width card.
-                </p>
-              </div>
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <div class="card" style="width: 18rem">
-                    <img src="image/full.jpg" class="card-img-top" />
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">An item</li>
-                      <li class="list-group-item">A second item</li>
-                      <li class="list-group-item">A third item</li>
-                    </ul>
-                    <div class="card-body">
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-4">
-          <div class="card">
-            <div class="card-header">
-              <div>
-                <strong>Card</strong>
-                <small class="text-black-50">Header and footer</small>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="text-black-50 small">
-                <p>Add an optional header and/or footer within a card.</p>
-              </div>
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <div class="card">
-                    <div class="card-header">Featured</div>
-                    <div class="card-body">
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">
-                        With supporting text below as a natural lead-in to
-                        additional content.
-                      </p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
 
               <div class="text-black-50 small mt-4">
                 <p>
-                  Card headers can be styled by adding .card-header to
-                  <code>&lsaquo;h*&rsaquo;</code> elements.
+                  <a href="">Border color utilities</a> can be added to change colors:
                 </p>
               </div>
               <ul class="nav nav-tabs mt-4">
@@ -1612,93 +1900,40 @@
                   </a>
                 </li>
               </ul>
-
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <div class="card">
-                    <h5 class="card-header">Featured</h5>
-                    <div class="card-body">
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">
-                        With supporting text below as a natural lead-in to
-                        additional content.
-                      </p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
+                  <table class="table table-bordered border-primary">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
 
-              <div class="text-black-50 small mt-4"></div>
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <div class="card">
-                    <div class="card-header">Quote</div>
-                    <div class="card-body">
-                      <blockquote class="blockquote mb-0">
-                        <p>
-                          A well-known quote, contained in a blockquote
-                          element.
-                        </p>
-                        <footer class="blockquote-footer">
-                          Someone famous in
-                          <cite title="Source Title">Source Title</cite>
-                        </footer>
-                      </blockquote>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="text-black-50 small mt-4"></div>
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <div class="card text-center">
-                    <div class="card-header">Featured</div>
-                    <div class="card-body">
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">
-                        With supporting text below as a natural lead-in to
-                        additional content.
-                      </p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                    <div class="card-footer text-body-secondary">
-                      2 days ago
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -1707,75 +1942,14 @@
           <div class="card">
             <div class="card-header">
               <div>
-                <strong>Card</strong>
-                <small class="text-black-50">Sizing - Using grid markup</small>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="text-black-50 small">
-                <p>Using the grid wrap cards in columms and rows as needed</p>
-              </div>
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <div class="row">
-                    <div class="col-sm-6 mb-3 mb-sm-0">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text">
-                            With supporting text below as a natural lead-in to
-                            additional content.
-                          </p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text">
-                            With supporting text below as a natural lead-in to
-                            additional content.
-                          </p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-4">
-          <div class="card">
-            <div class="card-header">
-              <div>
-                <strong>Card</strong>
-                <small class="text-black-50">Sizing - Using utilities</small>
+                <strong>Tables</strong>
+                <small class="text-black-50">Tables without borders</small>
               </div>
             </div>
             <div class="card-body">
               <div class="text-black-50 small">
                 <p>
-                  Use some of <a href="">available sizing utilities</a> to
-                  rapidly set a card's width
+                  Add <code>.table-borderless</code> for a table without borders.
                 </p>
               </div>
               <ul class="nav nav-tabs mt-4">
@@ -1794,27 +1968,203 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <div class="card w-75 mb-3">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        With supporting text below as a natural lead-in to
-                        additional content.
-                      </p>
-                      <a href="#" class="btn btn-primary">Button</a>
-                    </div>
-                  </div>
+                  <table class="table table-borderless">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
 
-                  <div class="card w-50">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        With supporting text below as a natural lead-in to
-                        additional content.
-                      </p>
-                      <a href="#" class="btn btn-primary">Button</a>
-                    </div>
-                  </div>
+              <div class="text-black-50 small mt-4">
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <table class="table table-borderless table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mt-4">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <strong>Tables</strong>
+                <small class="text-black-50">Small tables</small>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="text-black-50 small">
+                <p>
+                  Add <code>.table-sm</code> to make any <code>.table</code> more compact by cutting all cell padding
+                  in
+                  half.
+                </p>
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <table class="table table-sm">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="text-black-50 small mt-4">
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <table class="table table-sm table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
@@ -1825,15 +2175,19 @@
           <div class="card">
             <div class="card-header">
               <div>
-                <strong>Card</strong>
-                <small class="text-black-50">Sizing - Using custom CSS</small>
+                <strong>Tables</strong>
+                <small class="text-black-50">Vertical alignment</small>
               </div>
             </div>
             <div class="card-body">
               <div class="text-black-50 small">
                 <p>
-                  Use custom CSS in your stylesheets or as inline styles to
-                  set a width
+                  Table cells of <code>&lsaquo;thead&rsaquo;</code> are always vertical aligned to the bottom. Table
+                  cells in
+                  <code>&lsaquo;tbody&rsaquo;</code> inherit their alignment from <code>&lsaquo;table&rsaquo;</code>
+                  and
+                  are aligned to the the top by default. Use the <a href="">vertical align</a> classes
+                  to re-align where needed.
                 </p>
               </div>
               <ul class="nav nav-tabs mt-4">
@@ -1852,36 +2206,81 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <div class="card" style="width: 18rem">
-                    <div class="card-body">
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">
-                        With supporting text below as a natural lead-in to
-                        additional content.
-                      </p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
+                  <table class="table align-middle">
+                    <thead>
+                      <tr>
+                        <th class="w-25" scope="col">Heading 1</th>
+                        <th class="w-25" scope="col">Heading 2</th>
+                        <th class="w-25" scope="col">Heading 3</th>
+                        <th class="w-25" scope="col">Heading 4</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          "This cell inherits "
+                          <code>vertical-align: middle;</code>
+                          " from the table"
+                        </td>
+                        <td>
+                          "This cell inherits "
+                          <code>vertical-align: middle;</code>
+                          " from the table"
+                        </td>
+                        <td>
+                          "This cell inherits "
+                          <code>vertical-align: middle;</code>
+                          " from the table"
+                        </td>
+                        <td>
+                          "This here is some placeholder text, intended to take up quite a bit of vertical space, to
+                          demonstrate how the vertical
+                          alignment works in the preceding cells."
+                        </td>
+                      </tr>
+                      <tr class="align-bottom">
+                        <td>
+                          "This cell inherits "
+                          <code>vertical-align: bottom;</code>
+                          " from the table row"
+                        </td>
+                        <td>
+                          "This cell inherits "
+                          <code>vertical-align: bottom;</code>
+                          " from the table row"
+                        </td>
+                        <td class="align-top">
+                          This cell is aligned to the top
+                        </td>
+                        <td>
+                          "This here is some placeholder text, intended to take up quite a bit of vertical space, to
+                          demonstrate how the vertical
+                          alignment works in the preceding cells."
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
+
             </div>
           </div>
+
+          <!-- end -->
         </div>
 
         <div class="mt-4">
           <div class="card">
             <div class="card-header">
               <div>
-                <strong>Card</strong>
-                <small class="text-black-50">Sizing Text alignment</small>
+                <strong>Tables</strong>
+                <small class="text-black-50">Nesting</small>
               </div>
             </div>
             <div class="card-body">
               <div class="text-black-50 small">
                 <p>
-                  You can instantly change the text arrangement of any card—in
-                  its whole or specific parts—with
-                  <a href="">text align classes</a>.
+                  Border styles, active styles, and table variants are not inherited by nested tables.
                 </p>
               </div>
               <ul class="nav nav-tabs mt-4">
@@ -1900,57 +2299,83 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <div class="card mb-3" style="width: 18rem">
-                    <div class="card-body">
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">
-                        With supporting text below as a natural lead-in to
-                        additional content.
-                      </p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-
-                  <div class="card text-center mb-3" style="width: 18rem">
-                    <div class="card-body">
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">
-                        With supporting text below as a natural lead-in to
-                        additional content.
-                      </p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-
-                  <div class="card text-end" style="width: 18rem">
-                    <div class="card-body">
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">
-                        With supporting text below as a natural lead-in to
-                        additional content.
-                      </p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
+                  <table class="table align-middle">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td> Otto </td>
+                        <td> @mdo </td>
+                      </tr>
+                      <tr>
+                        <td colspan="4">
+                          <table class="table mb-0">
+                            <thead>
+                              <tr>
+                                <th scope="col">Header</th>
+                                <th scope="col">Header</th>
+                                <th scope="col">Header</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">A</th>
+                                <td>First</td>
+                                <td>Last</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">B</th>
+                                <td>First</td>
+                                <td>Last</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">C</th>
+                                <td>First</td>
+                                <td>Last</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
+
             </div>
           </div>
+
+          <!-- end -->
         </div>
 
         <div class="mt-4">
           <div class="card">
             <div class="card-header">
               <div>
-                <strong>Card</strong>
-                <small class="text-black-50">Navigation</small>
+                <strong>Tables</strong>
+                <small class="text-black-50">Table head</small>
               </div>
             </div>
             <div class="card-body">
               <div class="text-black-50 small">
                 <p>
-                  Add some navigation to a card's header (or block) with
-                  Bootstrap's <a href="">nav components</a>.
+                  Similar to tables and dark tables, use the modifier classes .table-light or .table-dark to make
+                  <code>&lsaquo;thead&rsaquo;</code>s appear light or
+                  dark gray.
                 </p>
               </div>
               <ul class="nav nav-tabs mt-4">
@@ -1969,29 +2394,36 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <div class="card text-center">
-                    <div class="card-header">
-                      <ul class="nav nav-tabs card-header-tabs">
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="true" href="#">Active</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link disabled">Disabled</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">
-                        With supporting text below as a natural lead-in to
-                        additional content.
-                      </p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
+                  <table class="table">
+                    <thead class="table-light">
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
 
@@ -2011,51 +2443,104 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <div class="card text-center">
-                    <div class="card-header">
-                      <ul class="nav nav-pills card-header-pills">
-                        <li class="nav-item">
-                          <a class="nav-link active" href="#">Active</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link disabled">Disabled</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">
-                        With supporting text below as a natural lead-in to
-                        additional content.
-                      </p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
+                  <table class="table">
+                    <thead class="table-light">
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
+
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <table class="table">
+                    <thead class="table-dark">
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
             </div>
           </div>
+
+          <!-- end -->
         </div>
 
         <div class="mt-4">
           <div class="card">
             <div class="card-header">
               <div>
-                <strong>Card</strong>
-                <small class="text-black-50">Image caps</small>
+                <strong>Tables</strong>
+                <small class="text-black-50">Table foot</small>
               </div>
             </div>
             <div class="card-body">
-              <div class="text-black-50 small">
-                <p>
-                  Similar to headers and footers, cards can include top and
-                  bottom “image caps”—images at the top or bottom of a card.
-                </p>
-              </div>
-              <ul class="nav nav-tabs mt-4">
+              <ul class="nav nav-tabs">
                 <li class="nav-item">
                   <a href="" class="nav-link active text-black-50">
                     <i class="bi bi-play"></i>
@@ -2071,57 +2556,71 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <div class="card mb-3">
-                    <img src="image/full.jpg" class="card-img-top" />
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        This is a wider card with supporting text below as a
-                        natural lead-in to additional content. This content is
-                        a little bit longer.
-                      </p>
-                      <p class="card-text">
-                        <small class="text-body-secondary">Last updated 3 mins ago</small>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        This is a wider card with supporting text below as a
-                        natural lead-in to additional content. This content is
-                        a little bit longer.
-                      </p>
-                      <p class="card-text">
-                        <small class="text-body-secondary">Last updated 3 mins ago</small>
-                      </p>
-                    </div>
-                    <img src="image/full.jpg" class="card-img-bottom" />
-                  </div>
+                  <table class="table">
+                    <thead class="table-light">
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td>Footer</td>
+                        <td>Footer</td>
+                        <td>Footer</td>
+                        <td>Footer</td>
+                      </tr>
+                    </tfoot>
+                  </table>
                 </div>
               </div>
+
             </div>
           </div>
+
+          <!-- end -->
         </div>
 
         <div class="mt-4">
           <div class="card">
             <div class="card-header">
               <div>
-                <strong>Card</strong>
-                <small class="text-black-50">Image overlays</small>
+                <strong>Tables</strong>
+                <small class="text-black-50">Table foot</small>
               </div>
             </div>
             <div class="card-body">
               <div class="text-black-50 small">
                 <p>
-                  Adapt an image into a background and overlay your text.
-                  Depending on the image, you may need additional styles or
-                  utilities.
+                  A <code>&lsaquo;caption&rsaquo;</code> functions like a heading for a table. It helps users with
+                  screen readers to find a table
+                  and understand what
+                  it's about and decide if they want to read it.
                 </p>
               </div>
-              <ul class="nav nav-tabs mt-4">
+              <ul class="nav nav-tabs">
                 <li class="nav-item">
                   <a href="" class="nav-link active text-black-50">
                     <i class="bi bi-play"></i>
@@ -2137,527 +2636,46 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <div class="card text-bg-dark">
-                    <img src="image/full.jpg" class="card-img" />
-                    <div class="card-img-overlay">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        This is a wider card with supporting text below as a
-                        natural lead-in to additional content. This content is
-                        a little bit longer.
-                      </p>
-                      <p class="card-text">
-                        <small>Last updated 3 mins ago</small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-4">
-          <div class="card">
-            <div class="card-header">
-              <div>
-                <strong>Card</strong>
-                <small class="text-black-50">Image Horizontal</small>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="text-black-50 small">
-                <p>
-                  Using a combination of grid and utility classes, cards can
-                  be made horizontal in a mobile-friendly and responsive way.
-                  In the example below, we remove the grid gutters with .g-0
-                  and use .col-md-* classes to make the card horizontal at the
-                  md breakpoint. Further adjustments may be needed depending
-                  on your card content.
-                </p>
-              </div>
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <div class="card mb-3">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="image/full.jpg" class="img-fluid rounded-start" />
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">
-                            This is a wider card with supporting text below as
-                            a natural lead-in to additional content. This
-                            content is a little bit longer.
-                          </p>
-                          <p class="card-text">
-                            <small class="text-body-secondary">Last updated 3 mins ago</small>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-4">
-          <div class="card">
-            <div class="card-header">
-              <div>
-                <strong>Card</strong>
-                <small class="text-black-50">Card styles - Background and color</small>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="text-black-50 small">
-                <p>
-                  Cards include various options for customizing their
-                  backgrounds, borders, and color. Use
-                  <a href="">text color</a> and
-                  <a href="">background utilities</a> to change the appearance
-                  of a card.
-                </p>
-              </div>
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3 bg-opacity-100">
-                  <div class="row row-cols-1 row-cols-lg-3">
-                    <div class="col">
-                      <div class="card text-bg-primary mb-3">
-                        <div class="card-header">Header</div>
-                        <div class="card-body">
-                          <h5 class="card-title">Primary card title</h5>
-                          <p class="card-text">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="card text-bg-secondary mb-3">
-                        <div class="card-header">Header</div>
-                        <div class="card-body">
-                          <h5 class="card-title">Secondary card title</h5>
-                          <p class="card-text">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="card text-bg-success mb-3">
-                        <div class="card-header">Header</div>
-                        <div class="card-body">
-                          <h5 class="card-title">Success card title</h5>
-                          <p class="card-text">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="card text-bg-danger mb-3">
-                        <div class="card-header">Header</div>
-                        <div class="card-body">
-                          <h5 class="card-title">Danger card title</h5>
-                          <p class="card-text">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="card text-bg-warning mb-3">
-                        <div class="card-header">Header</div>
-                        <div class="card-body">
-                          <h5 class="card-title">Warning card title</h5>
-                          <p class="card-text">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="card text-bg-info mb-3">
-                        <div class="card-header">Header</div>
-                        <div class="card-body">
-                          <h5 class="card-title">Info card title</h5>
-                          <p class="card-text">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="card text-bg-light mb-3">
-                        <div class="card-header">Header</div>
-                        <div class="card-body">
-                          <h5 class="card-title">Light card title</h5>
-                          <p class="card-text">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="card text-bg-dark mb-3">
-                        <div class="card-header">Header</div>
-                        <div class="card-body">
-                          <h5 class="card-title">Dark card title</h5>
-                          <p class="card-text">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-4">
-          <div class="card">
-            <div class="card-header">
-              <div>
-                <strong>Card</strong>
-                <small class="text-black-50">Card style - Border</small>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="text-black-50 small">
-                <p>
-                  Use <a href="">border utilities</a> to change just the
-                  <code>border-color</code> of a card. Note that you can put
-                  <code>.text -</code>x{<code>color</code>} classes on the
-                  parent <code>.card</code> or a subset of the card's contents
-                  as shown below.
-                </p>
-              </div>
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <div class="row row-cols-1 row-cols-lg-3">
-                    <div class="col">
-                      <div class="card border-primary mb-3">
-                        <div class="card-header">Header</div>
-                        <div class="card-body text-primary">
-                          <h5 class="card-title">Primary card title</h5>
-                          <p class="card-text">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="card border-secondeary mb-3">
-                        <div class="card-header">Header</div>
-                        <div class="card-body text-secondeary">
-                          <h5 class="card-title">Secondeary card title</h5>
-                          <p class="card-text">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="card border-success mb-3">
-                        <div class="card-header">Header</div>
-                        <div class="card-body text-success">
-                          <h5 class="card-title">Success card title</h5>
-                          <p class="card-text">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="card border-danger mb-3">
-                        <div class="card-header">Header</div>
-                        <div class="card-body text-danger">
-                          <h5 class="card-title">Danger card title</h5>
-                          <p class="card-text">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="card border-warning mb-3">
-                        <div class="card-header">Header</div>
-                        <div class="card-body text-warning">
-                          <h5 class="card-title">Warning card title</h5>
-                          <p class="card-text">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="card border-info mb-3">
-                        <div class="card-header">Header</div>
-                        <div class="card-body text-info">
-                          <h5 class="card-title">Info card title</h5>
-                          <p class="card-text">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="card border-light mb-3">
-                        <div class="card-header">Header</div>
-                        <div class="card-body">
-                          <h5 class="card-title">Light card title</h5>
-                          <p class="card-text">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="card border-dark mb-3">
-                        <div class="card-header">Header</div>
-                        <div class="card-body text-dark">
-                          <h5 class="card-title">Dark card title</h5>
-                          <p class="card-text">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-4">
-          <div class="card">
-            <div class="card-header">
-              <div>
-                <strong>Card</strong>
-                <small class="text-black-50">Mixins utilities</small>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="text-black-50 small">
-                <p>
-                  You are able to adjust the borders on the card elements as
-                  needed, and even exclude their
-                  <code>background-color</code> with
-                  <code>.bg-transparent</code>.
-                </p>
-              </div>
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <div class="row row-cols-1 row-cols-lg-3">
-                    <div class="col">
-                      <div class="card border-success mb-3" style="max-width: 18rem">
-                        <div class="card-header bg-transparent border-success">
-                          Header
-                        </div>
-                        <div class="card-body text-success">
-                          <h5 class="card-title">Success card title</h5>
-                          <p class="card-text">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                          </p>
-                        </div>
-                        <div class="card-footer bg-transparent border-success">
-                          Footer
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-4">
-          <div class="card">
-            <div class="card-header">
-              <div>
-                <strong>Card</strong>
-                <small class="text-black-50">Cards groups</small>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="text-black-50 small">
-                <p>
-                  Use card groups to render cards as a single, attached
-                  element with equal width and height columns. Card groups
-                  start off stacked and use <code>display: flex;</code> to
-                  become attached with uniform dimensions starting at the sm
-                  breakpoint.
-                </p>
-              </div>
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <div class="row row-cols-1 row-cols-lg-3">
-                    <div class="col">
-                      <div class="card-group">
-                        <div class="card">
-                          <img src="image/full.jpg" class="card-img-top" />
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                              This is a wider card with supporting text below
-                              as a natural lead-in to additional content. This
-                              content is a little bit longer.
-                            </p>
-                            <p class="card-text">
-                              <small class="text-body-secondary">Last updated 3 mins ago</small>
-                            </p>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <img src="image/full.jpg" class="card-img-top" />
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                              This card has supporting text below as a natural
-                              lead-in to additional content.
-                            </p>
-                            <p class="card-text">
-                              <small class="text-body-secondary">Last updated 3 mins ago</small>
-                            </p>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <img src="image/full.jpg" class="card-img-top" />
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                              This is a wider card with supporting text below
-                              as a natural lead-in to additional content. This
-                              card has even longer content than the first to
-                              show that equal height action.
-                            </p>
-                            <p class="card-text">
-                              <small class="text-body-secondary">Last updated 3 mins ago</small>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <table class="table">
+                    <caption>List of users</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
 
               <div class="text-black-50 small mt-4">
                 <p>
-                  When using card groups with footers, their content will
-                  automatically line up.
+                  You can also put the <code>&lsaquo;caption&rsaquo;</code> on the top of the table with
+                  <code>.caption-top</code>.
                 </p>
               </div>
-              <ul class="nav nav-tabs mt-4">
+              <ul class="nav nav-tabs">
                 <li class="nav-item">
                   <a href="" class="nav-link active text-black-50">
                     <i class="bi bi-play"></i>
@@ -2673,379 +2691,40 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <div class="row row-cols-1 row-cols-lg-3">
-                    <div class="col">
-                      <div class="card-group">
-                        <div class="card">
-                          <img src="image/full.jpg" class="card-img-top" />
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                              This is a wider card with supporting text below
-                              as a natural lead-in to additional content. This
-                              content is a little bit longer.
-                            </p>
-                          </div>
-                          <div class="card-footer">
-                            <small class="text-body-secondary">Last updated 3 mins ago</small>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <img src="image/full.jpg" class="card-img-top" />
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                              This card has supporting text below as a natural
-                              lead-in to additional content.
-                            </p>
-                          </div>
-                          <div class="card-footer">
-                            <small class="text-body-secondary">Last updated 3 mins ago</small>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <img src="image/full.jpg" class="card-img-top" />
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                              This is a wider card with supporting text below
-                              as a natural lead-in to additional content. This
-                              card has even longer content than the first to
-                              show that equal height action.
-                            </p>
-                          </div>
-                          <div class="card-footer">
-                            <small class="text-body-secondary">Last updated 3 mins ago</small>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-4">
-          <div class="card">
-            <div class="card-header">
-              <div>
-                <strong>Card</strong>
-                <small class="text-black-50">Grid cards</small>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="text-black-50 small">
-                <p>
-                  Use the Bootstrap grid system and its
-                  <a href="">.row-cols classes</a> to control how many grid
-                  columns (wrapped around your cards) you show per row. For
-                  example, here's <code>.row-cols-1</code> laying out the
-                  cards on one column, and
-                  <code>.row-cols-md-2</code> splitting four cards to equal
-                  width across multiple rows, from the medium breakpoint up.
-                </p>
-              </div>
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <div class="row row-cols-1 row-cols-md-2 g-4">
-                    <div class="col">
-                      <div class="card">
-                        <img src="image/full.jpg" class="card-img-top" />
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">
-                            This is a longer card with supporting text below
-                            as a natural lead-in to additional content. This
-                            content is a little bit longer.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card">
-                        <img src="image/full.jpg" class="card-img-top" />
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">
-                            This is a longer card with supporting text below
-                            as a natural lead-in to additional content. This
-                            content is a little bit longer.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card">
-                        <img src="image/full.jpg" class="card-img-top" />
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">
-                            This is a longer card with supporting text below
-                            as a natural lead-in to additional content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card">
-                        <img src="image/full.jpg" class="card-img-top" />
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">
-                            This is a longer card with supporting text below
-                            as a natural lead-in to additional content. This
-                            content is a little bit longer.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <table class="table caption-top">
+                    <caption>List of users</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
 
-              <div class="text-black-50 small mt-4">
-                <p>
-                  Change it to <code>.row-cols-3</code> and you'll see the
-                  fourth card wrap.
-                </p>
-              </div>
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                      <div class="card">
-                        <img src="image/full.jpg" class="card-img-top" />
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">
-                            This is a longer card with supporting text below
-                            as a natural lead-in to additional content. This
-                            content is a little bit longer.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card">
-                        <img src="image/full.jpg" class="card-img-top" />
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">
-                            This is a longer card with supporting text below
-                            as a natural lead-in to additional content. This
-                            content is a little bit longer.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card">
-                        <img src="image/full.jpg" class="card-img-top" />
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">
-                            This is a longer card with supporting text below
-                            as a natural lead-in to additional content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card">
-                        <img src="image/full.jpg" class="card-img-top" />
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">
-                            This is a longer card with supporting text below
-                            as a natural lead-in to additional content. This
-                            content is a little bit longer.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="text-black-50 small mt-4">
-                <p>
-                  When you need equal height, add <code>.h-100</code> to the
-                  cards. If you want equal heights by default, you can set
-                  <code>$card-height: 100%</code> in Sass.
-                </p>
-              </div>
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                      <div class="card h-100">
-                        <img src="image/full.jpg" class="card-img-top" />
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">
-                            This is a longer card with supporting text below
-                            as a natural lead-in to additional content. This
-                            content is a little bit longer.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card h-100">
-                        <img src="image/full.jpg" class="card-img-top" />
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a short card.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card h-100">
-                        <img src="image/full.jpg" class="card-img-top" />
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">
-                            This is a longer card with supporting text below
-                            as a natural lead-in to additional content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card h-100">
-                        <img src="image/full.jpg" class="card-img-top" />
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">
-                            This is a longer card with supporting text below
-                            as a natural lead-in to additional content. This
-                            content is a little bit longer.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="text-black-50 small mt-4">
-                <p>
-                  Just like with card groups, card footers will automatically
-                  line up.
-                </p>
-              </div>
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                      <div class="card h-100">
-                        <img src="image/full.jpg" class="card-img-top" />
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">
-                            This is a wider card with supporting text below as
-                            a natural lead-in to additional content. This
-                            content is a little bit longer.
-                          </p>
-                        </div>
-                        <div class="card-footer">
-                          <small class="text-body-secondary">Last updated 3 mins ago</small>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card h-100">
-                        <img src="image/full.jpg" class="card-img-top" />
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">
-                            This card has supporting text below as a natural
-                            lead-in to additional content.
-                          </p>
-                        </div>
-                        <div class="card-footer">
-                          <small class="text-body-secondary">Last updated 3 mins ago</small>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card h-100">
-                        <img src="image/full.jpg" class="card-img-top" />
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">
-                            This is a wider card with supporting text below as
-                            a natural lead-in to additional content. This card
-                            has even longer content than the first to show
-                            that equal height action.
-                          </p>
-                        </div>
-                        <div class="card-footer">
-                          <small class="text-body-secondary">Last updated 3 mins ago</small>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
