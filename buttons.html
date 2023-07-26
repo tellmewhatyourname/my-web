@@ -718,7 +718,7 @@
             <!-- buttons -->
             <li class="nav-item text-capitalize hover" data-bs-toggle="collapse" href="#buttonsCollapse" role="button" aria-expanded="false" aria-controls="buttonsCollapse">
               <a class="nav-link d-flex justify-content-between align-items-center h-100">
-                buttons.html <div>
+                <div>
                   <i class="small-icon bi bi-cursor px-3"></i>
                   <span class="d-min-sidebar">buttons</span>
                 </div>
@@ -1499,136 +1499,11 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <table class="table table-striped">
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-
-              <div class="text-black-50 small mt-3">
-                <p>
-                  These classes can also be added to table variants:
-                </p>
-              </div>
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <table class="table table-striped table-dark">
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <table class="table table-striped table-success">
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <a class="btn btn-primary" href="#" role="button">Link</a>
+                  <button class="btn btn-primary" type="submit">Button</button>
+                  <input class="btn btn-primary" type="button" value="Input">
+                  <input class="btn btn-primary" type="submit" value="Submit">
+                  <input class="btn btn-primary" type="reset" value="Reset">
                 </div>
               </div>
 
@@ -1640,15 +1515,14 @@
           <div class="card">
             <div class="card-header">
               <div>
-                <strong>Tables</strong>
-                <small class="text-black-50">Hoverable rows</small>
+                <strong>Buttons</strong>
+                <small class="text-black-50">outline</small>
               </div>
             </div>
             <div class="card-body">
               <div class="text-black-50 small">
                 <p>
-                  Add <code>.table-hover</code> to enable a hover state on table rows within a
-                  <code>&lsaquo;tbody&rsaquo;</code>.
+                  If you need a button, but without the strong background colors. Replace the default modifier classes with the <code>.btn-outline-*</code> ones to remove all background colors on any element with <code>.btn</code> class.
                 </p>
               </div>
               <ul class="nav nav-tabs mt-4">
@@ -1667,136 +1541,91 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <table class="table table-hover">
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <p>Normal</p>
+                  <button type="button" class="btn btn-outline-primary">
+                    Primary
+                  </button>
+                  <button type="button" class="btn btn-outline-secondary">
+                    Secondary
+                  </button>
+                  <button type="button" class="btn btn-outline-success">
+                    Success
+                  </button>
+                  <button type="button" class="btn btn-outline-danger">
+                    Danger
+                  </button>
+                  <button type="button" class="btn btn-outline-warning">
+                    Warning
+                  </button>
+                  <button type="button" class="btn btn-outline-info">
+                    Info
+                  </button>
+                  <button type="button" class="btn btn-outline-light">
+                    Light
+                  </button>
+                  <button type="button" class="btn btn-outline-dark">
+                    Dark
+                  </button>
                 </div>
               </div>
 
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <table class="table table-hover table-dark">
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <p>Active</p>
+                  <button type="button" class="active btn btn-outline-primary">
+                    Primary
+                  </button>
+                  <button type="button" class="active btn btn-outline-secondary">
+                    Secondary
+                  </button>
+                  <button type="button" class="active btn btn-outline-success">
+                    Success
+                  </button>
+                  <button type="button" class="active btn btn-outline-danger">
+                    Danger
+                  </button>
+                  <button type="button" class="active btn btn-outline-warning">
+                    Warning
+                  </button>
+                  <button type="button" class="active btn btn-outline-info">
+                    Info
+                  </button>
+                  <button type="button" class="active btn btn-outline-light">
+                    Light
+                  </button>
+                  <button type="button" class="active btn btn-outline-dark">
+                    Dark
+                  </button>
                 </div>
               </div>
 
-              <div class="text-black-50 small mt-3">
-                <p>
-                  These classes can also be added to table variants:
-                </p>
-              </div>
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <table class="table table-striped table-hover">
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <p>Active</p>
+                  <button type="button" class="disabled btn btn-outline-primary">
+                    Primary
+                  </button>
+                  <button type="button" class="disabled btn btn-outline-secondary">
+                    Secondary
+                  </button>
+                  <button type="button" class="disabled btn btn-outline-success">
+                    Success
+                  </button>
+                  <button type="button" class="disabled btn btn-outline-danger">
+                    Danger
+                  </button>
+                  <button type="button" class="disabled btn btn-outline-warning">
+                    Warning
+                  </button>
+                  <button type="button" class="disabled btn btn-outline-info">
+                    Info
+                  </button>
+                  <button type="button" class="disabled btn btn-outline-light">
+                    Light
+                  </button>
+                  <button type="button" class="disabled btn btn-outline-dark">
+                    Dark
+                  </button>
                 </div>
               </div>
             </div>
@@ -1807,14 +1636,14 @@
           <div class="card">
             <div class="card-header">
               <div>
-                <strong>Tables</strong>
-                <small class="text-black-50">Active tables</small>
+                <strong>Buttons</strong>
+                <small class="text-black-50">sizes</small>
               </div>
             </div>
             <div class="card-body">
               <div class="text-black-50 small">
                 <p>
-                  Highlight a table row or cell by adding a <code>.table-active</code> class.
+                  Use <code>.btn-ghost-*</code> class for ghost buttons.
                 </p>
               </div>
               <ul class="nav nav-tabs mt-4">
@@ -1833,35 +1662,8 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr class="table-active">
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2" class="table-active">Larry the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                  <button type="button" class="btn btn-secondary btn-lg">Large button</button>
                 </div>
               </div>
 
@@ -1881,35 +1683,8 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <table class="table table-dark">
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr class="table-active">
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2" class="table-active">Larry the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <button type="button" class="btn btn-primary btn-sm">Large button</button>
+                  <button type="button" class="btn btn-secondary btn-sm">Large button</button>
                 </div>
               </div>
 
@@ -1921,720 +1696,8 @@
           <div class="card">
             <div class="card-header">
               <div>
-                <strong>Tables</strong>
-                <small class="text-black-50">Bordered tables</small>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="text-black-50 small">
-                <p>
-                  Add <code>.table-bordered</code> for borders on all sides of the table and cells.
-                </p>
-              </div>
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <table class="table table-bordered">
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-
-              <div class="text-black-50 small mt-4">
-                <p>
-                  <a href="">Border color utilities</a> can be added to change colors:
-                </p>
-              </div>
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <table class="table table-bordered border-primary">
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-4">
-          <div class="card">
-            <div class="card-header">
-              <div>
-                <strong>Tables</strong>
-                <small class="text-black-50">Tables without borders</small>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="text-black-50 small">
-                <p>
-                  Add <code>.table-borderless</code> for a table without borders.
-                </p>
-              </div>
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <table class="table table-borderless">
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-
-              <div class="text-black-50 small mt-4">
-              </div>
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <table class="table table-borderless table-dark">
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="mt-4">
-          <div class="card">
-            <div class="card-header">
-              <div>
-                <strong>Tables</strong>
-                <small class="text-black-50">Small tables</small>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="text-black-50 small">
-                <p>
-                  Add <code>.table-sm</code> to make any <code>.table</code> more compact by cutting all cell padding
-                  in
-                  half.
-                </p>
-              </div>
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <table class="table table-sm">
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-
-              <div class="text-black-50 small mt-4">
-              </div>
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <table class="table table-sm table-dark">
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-4">
-          <div class="card">
-            <div class="card-header">
-              <div>
-                <strong>Tables</strong>
-                <small class="text-black-50">Vertical alignment</small>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="text-black-50 small">
-                <p>
-                  Table cells of <code>&lsaquo;thead&rsaquo;</code> are always vertical aligned to the bottom. Table
-                  cells in
-                  <code>&lsaquo;tbody&rsaquo;</code> inherit their alignment from <code>&lsaquo;table&rsaquo;</code>
-                  and
-                  are aligned to the the top by default. Use the <a href="">vertical align</a> classes
-                  to re-align where needed.
-                </p>
-              </div>
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <table class="table align-middle">
-                    <thead>
-                      <tr>
-                        <th class="w-25" scope="col">Heading 1</th>
-                        <th class="w-25" scope="col">Heading 2</th>
-                        <th class="w-25" scope="col">Heading 3</th>
-                        <th class="w-25" scope="col">Heading 4</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          "This cell inherits "
-                          <code>vertical-align: middle;</code>
-                          " from the table"
-                        </td>
-                        <td>
-                          "This cell inherits "
-                          <code>vertical-align: middle;</code>
-                          " from the table"
-                        </td>
-                        <td>
-                          "This cell inherits "
-                          <code>vertical-align: middle;</code>
-                          " from the table"
-                        </td>
-                        <td>
-                          "This here is some placeholder text, intended to take up quite a bit of vertical space, to
-                          demonstrate how the vertical
-                          alignment works in the preceding cells."
-                        </td>
-                      </tr>
-                      <tr class="align-bottom">
-                        <td>
-                          "This cell inherits "
-                          <code>vertical-align: bottom;</code>
-                          " from the table row"
-                        </td>
-                        <td>
-                          "This cell inherits "
-                          <code>vertical-align: bottom;</code>
-                          " from the table row"
-                        </td>
-                        <td class="align-top">
-                          This cell is aligned to the top
-                        </td>
-                        <td>
-                          "This here is some placeholder text, intended to take up quite a bit of vertical space, to
-                          demonstrate how the vertical
-                          alignment works in the preceding cells."
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- end -->
-        </div>
-
-        <div class="mt-4">
-          <div class="card">
-            <div class="card-header">
-              <div>
-                <strong>Tables</strong>
-                <small class="text-black-50">Nesting</small>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="text-black-50 small">
-                <p>
-                  Border styles, active styles, and table variants are not inherited by nested tables.
-                </p>
-              </div>
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <table class="table align-middle">
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td> Otto </td>
-                        <td> @mdo </td>
-                      </tr>
-                      <tr>
-                        <td colspan="4">
-                          <table class="table mb-0">
-                            <thead>
-                              <tr>
-                                <th scope="col">Header</th>
-                                <th scope="col">Header</th>
-                                <th scope="col">Header</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row">A</th>
-                                <td>First</td>
-                                <td>Last</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">B</th>
-                                <td>First</td>
-                                <td>Last</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">C</th>
-                                <td>First</td>
-                                <td>Last</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- end -->
-        </div>
-
-        <div class="mt-4">
-          <div class="card">
-            <div class="card-header">
-              <div>
-                <strong>Tables</strong>
-                <small class="text-black-50">Table head</small>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="text-black-50 small">
-                <p>
-                  Similar to tables and dark tables, use the modifier classes .table-light or .table-dark to make
-                  <code>&lsaquo;thead&rsaquo;</code>s appear light or
-                  dark gray.
-                </p>
-              </div>
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <table class="table">
-                    <thead class="table-light">
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <table class="table">
-                    <thead class="table-light">
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <table class="table">
-                    <thead class="table-dark">
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- end -->
-        </div>
-
-        <div class="mt-4">
-          <div class="card">
-            <div class="card-header">
-              <div>
-                <strong>Tables</strong>
-                <small class="text-black-50">Table foot</small>
+                <strong>Button</strong>
+                <small class="text-black-50">pill</small>
               </div>
             </div>
             <div class="card-body">
@@ -2654,70 +1717,46 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <table class="table">
-                    <thead class="table-light">
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                    <tfoot>
-                      <tr>
-                        <td>Footer</td>
-                        <td>Footer</td>
-                        <td>Footer</td>
-                        <td>Footer</td>
-                      </tr>
-                    </tfoot>
-                  </table>
+                  <button type="button" class="rounded-pill btn btn-primary">
+                    Primary
+                  </button>
+                  <button type="button" class="rounded-pill btn btn-secondary">
+                    Secondary
+                  </button>
+                  <button type="button" class="rounded-pill btn btn-success">
+                    Success
+                  </button>
+                  <button type="button" class="rounded-pill btn btn-danger">
+                    Danger
+                  </button>
+                  <button type="button" class="rounded-pill btn btn-warning">
+                    Warning
+                  </button>
+                  <button type="button" class="rounded-pill btn btn-info">
+                    Info
+                  </button>
+                  <button type="button" class="rounded-pill btn btn-light">
+                    Light
+                  </button>
+                  <button type="button" class="rounded-pill btn btn-dark">
+                    Dark
+                  </button>
                 </div>
               </div>
 
             </div>
           </div>
-
-          <!-- end -->
         </div>
 
         <div class="mt-4">
           <div class="card">
             <div class="card-header">
               <div>
-                <strong>Tables</strong>
-                <small class="text-black-50">Table foot</small>
+                <strong>Button</strong>
+                <small class="text-black-50">square</small>
               </div>
             </div>
             <div class="card-body">
-              <div class="text-black-50 small">
-                <p>
-                  A <code>&lsaquo;caption&rsaquo;</code> functions like a heading for a table. It helps users with
-                  screen readers to find a table
-                  and understand what
-                  it's about and decide if they want to read it.
-                </p>
-              </div>
               <ul class="nav nav-tabs">
                 <li class="nav-item">
                   <a href="" class="nav-link active text-black-50">
@@ -2734,97 +1773,229 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <table class="table">
-                    <caption>List of users</caption>
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-
-              <div class="text-black-50 small mt-4">
-                <p>
-                  You can also put the <code>&lsaquo;caption&rsaquo;</code> on the top of the table with
-                  <code>.caption-top</code>.
-                </p>
-              </div>
-              <ul class="nav nav-tabs">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <table class="table caption-top">
-                    <caption>List of users</caption>
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <button type="button" class="rounded-0 btn btn-primary">
+                    Primary
+                  </button>
+                  <button type="button" class="rounded-0 btn btn-secondary">
+                    Secondary
+                  </button>
+                  <button type="button" class="rounded-0 btn btn-success">
+                    Success
+                  </button>
+                  <button type="button" class="rounded-0 btn btn-danger">
+                    Danger
+                  </button>
+                  <button type="button" class="rounded-0 btn btn-warning">
+                    Warning
+                  </button>
+                  <button type="button" class="rounded-0 btn btn-info">
+                    Info
+                  </button>
+                  <button type="button" class="rounded-0 btn btn-light">
+                    Light
+                  </button>
+                  <button type="button" class="rounded-0 btn btn-dark">
+                    Dark
+                  </button>
                 </div>
               </div>
 
             </div>
           </div>
+
+        </div>
+
+        <div class="mt-4">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <strong>Button</strong>
+                <small class="text-black-50">disabled state</small>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="text-black-50 small">
+                <p>
+                  Add the <code>disabled</code> boolean attribute to any <code>&lsaquo;button&rsaquo;</code> element to make buttons look inactive. Disabled button has <code>pointer-events:</code> none applied to, disabling hover and active states from triggering.
+                </p>
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <button type="button" class="btn btn-primary" disabled>Primary button</button>
+                  <button type="button" class="btn btn-secondary" disabled>Button</button>
+                </div>
+              </div>
+
+              <div class="text-black-50 small mt-4">
+                <p>
+                  Disabled buttons using the <code>&lsaquo;a&rsaquo;></code> element act a little different:
+                </p>
+                <p>
+                  <code>&lsaquo;a&rsaquo;</code>s don't support the disabled attribute, so you have to add <code>.disabled</code> class to make buttons look inactive. The disabled bootstrap button must have the <code>aria-disabled="true"</code> attribute to show the state of the element to assistive technologies.
+                </p>
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <a class="btn btn-primary disabled" role="button" aria-disabled="true">Primary link</a>
+                  <a class="btn btn-secondary disabled" role="button" aria-disabled="true">Link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <strong>Button</strong>
+                <small class="text-black-50">block</small>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="text-black-50 small">
+                <p>
+                  Create buttons that span the full width of a parent—by using utilities.
+                </p>
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-primary" type="button">Button</button>
+                    <button class="btn btn-primary" type="button">Button</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-black-50 small mt-4">
+                <p>
+                  Here we create a responsive variation, starting with vertically stacked buttons until the md breakpoint, where <code>.d-md-block</code> replaces the <code>.d-grid</code> class, thus nullifying the <code>gap-2</code> utility. Resize your browser to see them change.
+                </p>
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <div class="d-grid gap-2 d-md-block">
+                    <button class="btn btn-primary" type="button">Button</button>
+                    <button class="btn btn-primary" type="button">Button</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-black-50 small mt-4">
+                <p>
+                  You can adjust the width of your block buttons with grid column width classes. For example, for a half-width “block button”, use <code>.col-6</code>. Center it horizontally with <code>.mx-auto</code>, too.
+                </p>
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-primary" type="button">Button</button>
+                    <button class="btn btn-primary" type="button">Button</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-black-50 small mt-4">
+                <p>
+                  Additional utilities can be used to adjust the alignment of buttons when horizontal. Here we’ve taken our previous responsive example and added some flex utilities and a margin utility on the button to right align the buttons when they're no longer stacked.
+                </p>
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-primary me-md-2" type="button">Button</button>
+                    <button class="btn btn-primary" type="button">Button</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
         </div>
         <!-- end -->
       </div>
