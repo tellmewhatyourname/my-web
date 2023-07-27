@@ -533,7 +533,6 @@
         <i class="bx bx-chevron-left color float-end pe-3 py-2"></i>
       </div>
     </div>
-
     <!-- offcanvas -->
     <div class="sidebar-menu">
       <div class="sidebar sidebar-bg offcanvas" tabindex="-1" id="offcanvasExample">
@@ -1035,7 +1034,6 @@
         <!-- sidebar info end -->
       </div>
     </div>
-
     <!-- middle -->
     <div class="middle-navbar bg-body-secondary">
       <!-- navbar things -->
@@ -1202,7 +1200,7 @@
                   <a href="index.html">Buttons</a>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">
-                  Buttons group
+                  Loading buttons
                 </li>
               </ol>
             </nav>
@@ -1217,19 +1215,16 @@
           <div class="card">
             <div class="card-header">
               <div>
-                <strong>Button group</strong>
-                <small class="text-black-50">Basic example</small>
+                <strong>Dropdown</strong>
+                <small class="text-black-50">Single button </small>
               </div>
             </div>
             <div class="card-body">
               <div class="text-black-50 small">
                 <p>
-                  Wrap a series of buttons with
-                  <code>.btn</code>
-                  in
-                  <code>.btn-group</code>. Add on optional JavaScript radio
-                  and checkbox style behavior with
-                  <a href="">our buttons plugin</a>.
+                  Each single <code>.btn</code> can be changed into a dropdown toggle with small changes. Here's how you
+                  can put them to work with
+                  either <code>&lsaquo;button&rsaquo;</code> elements:
                 </p>
               </div>
               <ul class="nav nav-tabs mt-4">
@@ -1248,25 +1243,59 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <div class="btn-group" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-primary">
-                      Left
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Dropdown button
                     </button>
-                    <button type="button" class="btn btn-primary">
-                      Middle
-                    </button>
-                    <button type="button" class="btn btn-primary">
-                      Right
-                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
                   </div>
                 </div>
               </div>
 
               <div class="text-black-50 small mt-4">
                 <p>
-                  These classes can also be added to groups of links, as an
-                  alternative to the
-                  <a href="">.nav navigation components.</a>
+                  And with <code>&lsaquo;a&rsaquo;</code> elements:
+                </p>
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Dropdown link
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-black-50 small mt-4">
+                <p>
+                  The best part is you can do this with any button variant, too:
                 </p>
               </div>
               <ul class="nav nav-tabs mt-4">
@@ -1286,9 +1315,99 @@
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
                   <div class="btn-group">
-                    <a href="#" class="btn btn-primary active" aria-current="page">Active link</a>
-                    <a href="#" class="btn btn-primary">Link</a>
-                    <a href="#" class="btn btn-primary">Link</a>
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Primary
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Secondary
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Success
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Info
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Warning
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      danger
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -1300,15 +1419,23 @@
           <div class="card">
             <div class="card-header">
               <div>
-                <strong>Button</strong>
-                <small class="text-black-50">Mixed styles</small>
+                <strong>Dropdown</strong>
+                <small class="text-black-50">Split button</small>
               </div>
             </div>
             <div class="card-body">
               <div class="text-black-50 small">
                 <p>
-                  You can combine button with our
-                  <a href="">Bootstrap Icons</a>.
+                  Similarly, create split button dropdowns with virtually the same markup as single button dropdowns,
+                  but with the
+                  addition of .dropdown-toggle-split for proper spacing around the dropdown caret.
+                </p>
+                <p>
+                  We use this extra class to reduce the horizontal padding on either side of the caret by 25% and remove
+                  the margin-left
+                  that's attached for normal button dropdowns. Those additional changes hold the caret centered in the
+                  split button and
+                  implement a more properly sized hit area next to the main button.
                 </p>
               </div>
               <ul class="nav nav-tabs mt-4">
@@ -1327,14 +1454,106 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                    <button type="button" class="btn btn-danger">Left</button>
-                    <button type="button" class="btn btn-warning">
-                      Middle
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropdown</span>
                     </button>
-                    <button type="button" class="btn btn-success">
-                      Right
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-secondary">Secondary</button>
+                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropdown</span>
                     </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-success">Success</button>
+                    <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-info">Info</button>
+                    <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-warning">Warning</button>
+                    <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-danger">Danger</button>
+                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -1346,10 +1565,16 @@
           <div class="card">
             <div class="card-header">
               <div>
-                <small class="text-black-50">Outlined styles</small>
+                <strong>Dropdown</strong>
+                <small class="text-black-50">Sizing</small>
               </div>
             </div>
             <div class="card-body">
+              <div class="text-black-50 small">
+                <p>
+                  Button dropdowns work with buttons of all sizes, including default and split dropdown buttons.
+                </p>
+              </div>
               <ul class="nav nav-tabs">
                 <li class="nav-item">
                   <a href="" class="nav-link active text-black-50">
@@ -1366,16 +1591,90 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <div class="btn-group" role="group" aria-label="Basic outlined example">
-                    <button type="button" class="btn btn-outline-primary">
-                      Left
+                  <div class="btn-group">
+                    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Large button
                     </button>
-                    <button type="button" class="btn btn-outline-primary">
-                      Middle
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+                  <div class="btn-group">
+                    <button class="btn btn-secondary btn-lg" type="button">
+                      Large split button
                     </button>
-                    <button type="button" class="btn btn-outline-primary">
-                      Right
+                    <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropdown</span>
                     </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <div class="btn-group">
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      small button
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+                  <div class="btn-group">
+                    <button class="btn btn-secondary btn-sm" type="button">
+                      small split button
+                    </button>
+                    <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -1387,18 +1686,19 @@
           <div class="card">
             <div class="card-header">
               <div>
-                <strong>Button group</strong>
+                <strong>Dropdown</strong>
                 <small class="text-black-50">
-                  Checkbox and radio button groups
+                  Dark dropdown
                 </small>
               </div>
             </div>
             <div class="card-body">
               <div class="text-black-50 small">
                 <p>
-                  Combine button-like checkbox and radio
-                  <a href="">toggle buttons</a>
-                  into a seamless looking button group.
+                  Opt into darker dropdowns to match a dark navbar or custom style by adding
+                  <code>.dropdown-menu-dark</code> onto an
+                  existing
+                  <code>.dropdown-menu</code>. No changes are required to the dropdown items.
                 </p>
               </div>
               <ul class="nav nav-tabs mt-4">
@@ -1417,116 +1717,30 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" />
-                    <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
-
-                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off" />
-                    <label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>
-
-                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off" />
-                    <label class="btn btn-outline-primary" for="btncheck3">Checkbox 3</label>
-                  </div>
-                </div>
-              </div>
-
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked />
-                    <label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>
-
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" />
-                    <label class="btn btn-outline-primary" for="btnradio2">Radio 2</label>
-
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" />
-                    <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-4">
-          <div class="card">
-            <div class="card-header">
-              <div>
-                <strong>Button group</strong>
-                <small class="text-black-50">Button toolbar</small>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="text-black-50 small">
-                <p>
-                  Join sets of button groups into button toolbars for more
-                  complicated components. Use utility classes as needed to
-                  space out groups, buttons, and more.
-                </p>
-              </div>
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                    <div class="btn-group me-2" role="group" aria-label="First group">
-                      <button type="button" class="btn btn-primary">1</button>
-                      <button type="button" class="btn btn-primary">2</button>
-                      <button type="button" class="btn btn-primary">3</button>
-                      <button type="button" class="btn btn-primary">4</button>
-                    </div>
-                    <div class="btn-group me-2" role="group" aria-label="Second group">
-                      <button type="button" class="btn btn-secondary">
-                        5
-                      </button>
-                      <button type="button" class="btn btn-secondary">
-                        6
-                      </button>
-                      <button type="button" class="btn btn-secondary">
-                        7
-                      </button>
-                    </div>
-                    <div class="btn-group" role="group" aria-label="Third group">
-                      <button type="button" class="btn btn-info">8</button>
-                    </div>
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Dropdown button
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item active" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
                   </div>
                 </div>
               </div>
 
               <div class="text-black-50 small mt-4">
                 <p>
-                  Feel free to combine input groups with button groups in your
-                  toolbars. Similar to the example above, you'll likely need
-                  some utilities through to space items correctly.
+                  And putting it to use in a navbar:
                 </p>
               </div>
-              <ul class="nav nav-tabs mt-4">
+              <ul class="nav nav-tabs ">
                 <li class="nav-item">
                   <a href="" class="nav-link active text-black-50">
                     <i class="bi bi-play"></i>
@@ -1542,52 +1756,31 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
-                    <div class="btn-group me-2" role="group" aria-label="First group">
-                      <button type="button" class="btn btn-outline-secondary">
-                        1
+                  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">Navbar</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
                       </button>
-                      <button type="button" class="btn btn-outline-secondary">
-                        2
-                      </button>
-                      <button type="button" class="btn btn-outline-secondary">
-                        3
-                      </button>
-                      <button type="button" class="btn btn-outline-secondary">
-                        4
-                      </button>
-                    </div>
-                    <div class="input-group">
-                      <div class="input-group-text" id="btnGroupAddon">@</div>
-                      <input type="text" class="form-control" placeholder="Input group example"
-                        aria-label="Input group example" aria-describedby="btnGroupAddon" />
-                    </div>
-                  </div>
-
-                  <div class="btn-toolbar justify-content-between" role="toolbar"
-                    aria-label="Toolbar with button groups">
-                    <div class="btn-group" role="group" aria-label="First group">
-                      <button type="button" class="btn btn-outline-secondary">
-                        1
-                      </button>
-                      <button type="button" class="btn btn-outline-secondary">
-                        2
-                      </button>
-                      <button type="button" class="btn btn-outline-secondary">
-                        3
-                      </button>
-                      <button type="button" class="btn btn-outline-secondary">
-                        4
-                      </button>
-                    </div>
-                    <div class="input-group">
-                      <div class="input-group-text" id="btnGroupAddon2">
-                        @
+                      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav">
+                          <li class="nav-item dropdown">
+                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              Dropdown
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                        </ul>
                       </div>
-                      <input type="text" class="form-control" placeholder="Input group example"
-                        aria-label="Input group example" aria-describedby="btnGroupAddon2" />
                     </div>
-                  </div>
+                  </nav>
                 </div>
               </div>
             </div>
@@ -1598,143 +1791,14 @@
           <div class="card">
             <div class="card-header">
               <div>
-                <strong>Button group</strong>
-                <small class="text-black-50">Sizing</small>
-              </div>
-            </div>
-            <div class="card-body">
-              <ul class="nav nav-tabs">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
-                    <button type="button" class="btn btn-outline-secondary">
-                      Left
-                    </button>
-                    <button type="button" class="btn btn-outline-secondary">
-                      Middle
-                    </button>
-                    <button type="button" class="btn btn-outline-secondary">
-                      Right
-                    </button>
-                  </div>
-                  <br />
-                  <div class="btn-group mt-1" role="group" aria-label="Default button group">
-                    <button type="button" class="btn btn-outline-secondary">
-                      Left
-                    </button>
-                    <button type="button" class="btn btn-outline-secondary">
-                      Middle
-                    </button>
-                    <button type="button" class="btn btn-outline-secondary">
-                      Right
-                    </button>
-                  </div>
-                  <br />
-                  <div class="btn-group btn-group-sm mt-1" role="group" aria-label="Small button group">
-                    <button type="button" class="btn btn-outline-secondary">
-                      Left
-                    </button>
-                    <button type="button" class="btn btn-outline-secondary">
-                      Middle
-                    </button>
-                    <button type="button" class="btn btn-outline-secondary">
-                      Right
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-4">
-          <div class="card">
-            <div class="card-header">
-              <div>
-                <strong>Button group</strong>
-                <small class="text-black-50">Nesting</small>
+                <strong>Dropdown</strong>
+                <small class="text-black-50">Dropup</small>
               </div>
             </div>
             <div class="card-body">
               <div class="text-black-50 small">
                 <p>
-                  Put a
-                  <code>.btn-group</code>
-                  inside another
-                  <code>.btn-group</code>
-                  when you need dropdown menus combined with a series of
-                  buttons.
-                </p>
-              </div>
-              <ul class="nav nav-tabs">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                    <button type="button" class="btn btn-primary">1</button>
-                    <button type="button" class="btn btn-primary">2</button>
-
-                    <div class="btn-group" role="group">
-                      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Dropdown
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a class="dropdown-item" href="#">Dropdown link</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">Dropdown link</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-4">
-          <div class="card">
-            <div class="card-header">
-              <div>
-                <strong>Button group</strong>
-                <small class="text-black-50">Vertical variation</small>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="text-black-50 small">
-                <p>
-                  Create a set of buttons that appear vertically stacked rather than horizontally.
-                  <strong>
-                    Split button dropdowns are not supported here
-                  </strong>.
+                  Trigger dropdown menus above elements by adding <code>.dropup</code> to the parent element.
                 </p>
               </div>
               <ul class="nav nav-tabs mt-4">
@@ -1753,162 +1817,95 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-                    <button type="button" class="btn btn-dark">
-                      Button
+                  <div class="btn-group dropup">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Dropup
                     </button>
-                    <button type="button" class="btn btn-dark">
-                      Button
-                    </button>
-                    <button type="button" class="btn btn-dark">
-                      Button
-                    </button>
-                    <button type="button" class="btn btn-dark">
-                      Button
-                    </button>
-                    <button type="button" class="btn btn-dark">
-                      Button
-                    </button>
-                    <button type="button" class="btn btn-dark">
-                      Button
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <ul class="nav nav-tabs mt-4">
-                <li class="nav-item">
-                  <a href="" class="nav-link active text-black-50">
-                    <i class="bi bi-play"></i>
-                    Preview
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="bi-code-slash"></i>
-                    Code
-                  </a>
-                </li>
-              </ul>
-              <div class="bg-body-secondary bg-opacity-25">
-                <div class="p-3">
-                  <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-                    <button type="button" class="btn btn-primary">
-                      Button
-                    </button>
-                    <button type="button" class="btn btn-primary">
-                      Button
-                    </button>
-                    <div class="btn-group" role="group">
-                      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Dropdown
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a class="dropdown-item" href="#">
-                            Dropdown link
-                          </a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">
-                            Dropdown link
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <button type="button" class="btn btn-primary">
-                      Button
-                    </button>
-                    <button type="button" class="btn btn-primary">
-                      Button
-                    </button>
-                    <div class="btn-group" role="group">
-                      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Dropdown
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a class="dropdown-item" href="#">
-                            Dropdown link
-                          </a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">
-                            Dropdown link
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="btn-group" role="group">
-                      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Dropdown
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a class="dropdown-item" href="#">
-                            Dropdown link
-                          </a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">
-                            Dropdown link
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="btn-group" role="group">
-                      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Dropdown
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a class="dropdown-item" href="#">
-                            Dropdown link
-                          </a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">
-                            Dropdown link
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <ul class="nav nav-tabs mt-4">
-                      <li class="nav-item">
-                        <a href="" class="nav-link active text-black-50">
-                          <i class="bi bi-play"></i>
-                          Preview
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="#" class="nav-link">
-                          <i class="bi-code-slash"></i>
-                          Code
-                        </a>
-                      </li>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
-                    <div class="bg-body-secondary bg-opacity-25">
-                      <div class="p-3">
-                        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-                          <div class="btn-group-vertical" role="group" aria-label="Vertical radio toggle button group">
-                            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off"
-                              checked />
-                            <label class="btn btn-outline-danger" for="vbtn-radio1">Radio 1</label>
-                            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2"
-                              autocomplete="off" />
-                            <label class="btn btn-outline-danger" for="vbtn-radio2">Radio 2</label>
-                            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3"
-                              autocomplete="off" />
-                            <label class="btn btn-outline-danger" for="vbtn-radio3">Radio 3</label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  </div>
+
+                  <div class="btn-group dropup">
+                    <button type="button" class="btn btn-secondary">
+                      Split dropup
+                    </button>
+                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <strong>Dropdown</strong>
+                <small class="text-black-50">Dropright</small>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="text-black-50 small">
+                <p>
+                  Trigger dropdown menus at the right of the elements by adding <code>.dropend</code> to the parent
+                  element.
+                </p>
+              </div>
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <div class="btn-group dropend">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Dropend
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="btn-group dropend">
+                    <button type="button" class="btn btn-secondary">
+                      Split dropend
+                    </button>
+                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropend</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -1916,6 +1913,243 @@
           </div>
         </div>
 
+        <div class="mt-4">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <strong>Dropdown</strong>
+                <small class="text-black-50">Dropleft</small>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="text-black-50 small">
+                <p>
+                  Trigger dropdown menus at the left of the elements by adding <code>.dropstart</code> to the parent
+                  element.
+                </p>
+              </div>
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <div class="btn-group dropstart">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Dropstart
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="btn-group dropstart">
+                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropstart</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                    <button type="button" class="btn btn-secondary">
+                      Split dropstart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <strong>Dropdown</strong>
+                <small class="text-black-50">Menu items</small>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="text-black-50 small">
+                <p>
+                  Historically dropdown menu contents had to be links, but that's no longer the case with v4. Now you
+                  can optionally use
+                  <code>&lsaquo;button&rsaquo;</code> elements in your dropdowns instead of just
+                  <code>&lsaquo;a&rsaquo;</code>s.
+                </p>
+              </div>
+              <ul class="nav nav-tabs mt-4">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Dropdown
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><button class="dropdown-item" type="button">Action</button></li>
+                      <li><button class="dropdown-item" type="button">Another action</button></li>
+                      <li><button class="dropdown-item" type="button">Something else here</button></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-black-50 small mt-4">
+                <p>
+                  You can also create non-interactive dropdown items with <code>.dropdown-item-text</code>. Feel free to
+                  style further with custom CSS
+                  or text utilities.
+                </p>
+              </div>
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <ul class="dropdown-menu">
+                    <li>
+                      <span class="dropdown-item-text">Dropdown item text</span>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <strong>Dropdown</strong>
+                <small class="text-black-50">Active</small>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="text-black-50 small">
+                <p>
+                  Add <code>.active</code> to items in the dropdown to <strong>style them as active</strong>. To convey the active
+                  state to assistive technologies, use
+                  the aria-current attribute — using the page value for the current <code>page</code>, or true for the current item
+                  in a set.
+                </p>
+              </div>
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Regular link</a></li>
+                    <li><a class="dropdown-item active" href="#" aria-current="true">Active link</a></li>
+                    <li><a class="dropdown-item" href="#">Another link</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <strong>Dropdown</strong>
+                <small class="text-black-50">Disabled</small>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="text-black-50 small">
+                <p>
+                  Add <code>.disabled</code> to items in the dropdown to <strong>style them as disabled</strong>.
+                </p>
+              </div>
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Regular link</a></li>
+                    <li><a class="dropdown-item active" href="#" aria-current="true">Active link</a></li>
+                    <li><a class="dropdown-item" href="#">Another link</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- end -->
       </div>
 
