@@ -1,0 +1,8 @@
+.middle-navbar .input-group-text {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.middle-navbar .input-group-text,
+.middle-navbar input[type="text"] {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}

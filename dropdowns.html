@@ -191,14 +191,14 @@
               </a>
             </li>
 
-            <lihtml class="nav-item text-capitalize hover">
+            <li class="nav-item text-capitalize hover">
               <a class="nav-link d-flex align-items-center h-100" href="tables.html">
                 <div>
                   <i class="small-icon bi bi-cursor px-3 opacity-0"></i>
                   tables
                 </div>
               </a>
-            </lihtml>
+            </li>
 
             <li class="nav-item text-capitalize hover">
               <a class="nav-link d-flex align-items-center h-100" href="tabs.html">
@@ -258,6 +258,16 @@
               </a>
             </li>
           </ul>
+
+          <!-- charts -->
+          <li class="nav-item text-capitalize hover">
+            <a class="nav-link d-flex align-items-center h-100" href="charts.html">
+              <div>
+                <i class="small-icon bi bi-pie-chart px-3"></i>
+                <span class="d-min-sidebar">charts</span>
+              </div>
+            </a>
+          </li>
           <!-- forms -->
           <li class="nav-item text-capitalize hover" data-bs-toggle="collapse" href="#formsCollapse" role="button"
             aria-expanded="false" aria-controls="formsCollapse">
@@ -343,15 +353,6 @@
               </a>
             </li>
           </ul>
-          <!-- charts -->
-          <li class="nav-item text-capitalize hover">
-            <a class="nav-link d-flex align-items-center h-100" href="charts.html">
-              <div>
-                <i class="small-icon bi bi-pie-chart px-3"></i>
-                <span class="d-min-sidebar">charts</span>
-              </div>
-            </a>
-          </li>
           <!-- icons -->
           <li class="nav-item text-capitalize hover" data-bs-toggle="collapse" href="#iconsCollapse" role="button"
             aria-expanded="false" aria-controls="iconsCollapse">
@@ -762,6 +763,16 @@
                 </a>
               </li>
             </ul>
+
+            <!-- charts -->
+            <li class="nav-item text-capitalize hover">
+              <a class="nav-link d-flex align-items-center h-100" href="charts.html">
+                <div>
+                  <i class="small-icon bi bi-pie-chart px-3"></i>
+                  <span class="d-min-sidebar">charts</span>
+                </div>
+              </a>
+            </li>
             <!-- forms -->
             <li class="nav-item text-capitalize hover" data-bs-toggle="collapse" href="#formsCollapse" role="button"
               aria-expanded="false" aria-controls="formsCollapse">
@@ -847,15 +858,6 @@
                 </a>
               </li>
             </ul>
-            <!-- charts -->
-            <li class="nav-item text-capitalize d-flex align-items-center justify-content-between hover">
-              <a class="nav-link d-flex align-items-center h-100" href="charts.html">
-                <div>
-                  <i class="small-icon bi bi-pie-chart px-3"></i>
-                  <span class="d-min-sidebar">charts</span>
-                </div>
-              </a>
-            </li>
             <!-- icons -->
             <li class="nav-item text-capitalize align-items-center hover" data-bs-toggle="collapse"
               href="#iconsCollapse" role="button" aria-expanded="false" aria-controls="iconsCollapse">
@@ -2573,13 +2575,77 @@
               </ul>
               <div class="bg-body-secondary bg-opacity-25">
                 <div class="p-3">
-                  <div class="css-dropdown-menu p-4 text-body-secondary" style="max-width: 200px;">
-                    <p>
-                      Some example text that's free-flowing within the dropdown menu.
-                    </p>
-                    <p class="mb-0">
-                      And this is more example text.
-                    </p>
+                  <div class="css-dropdown-menu">
+                    <form class="px-4 py-3">
+                      <div class="mb-3">
+                        <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleDropdownFormEmail1"
+                          placeholder="email@example.com">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleDropdownFormPassword1"
+                          placeholder="Password">
+                      </div>
+                      <div class="mb-3">
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                          <label class="form-check-label" for="dropdownCheck">
+                            Remember me
+                          </label>
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
+                    <hr class="mt-2">
+                    <li>
+                      <a class="dropdown-item" href="#">New around here? Sign up</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Forgot password?</a>
+                    </li>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a href="" class="nav-link active text-black-50">
+                    <i class="bi bi-play"></i>
+                    Preview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="bi-code-slash"></i>
+                    Code
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-body-secondary bg-opacity-25">
+                <div class="p-3">
+                  <div class="css-dropdown-menu">
+                    <form class="px-4 py-3">
+                      <div class="mb-3">
+                        <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleDropdownFormEmail1"
+                          placeholder="email@example.com">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleDropdownFormPassword1"
+                          placeholder="Password">
+                      </div>
+                      <div class="mb-3">
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                          <label class="form-check-label" for="dropdownCheck">
+                            Remember me
+                          </label>
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
                   </div>
                 </div>
               </div>

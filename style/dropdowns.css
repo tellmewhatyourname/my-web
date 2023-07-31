@@ -1,0 +1,53 @@
+.css-dropdown-menu {
+  background-color: white;
+  margin: 0;
+  padding: 6px 0;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.css-dropdown-menu li {
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.css-dropdown-menu li span {
+  color: gray;
+}
+
+.css-dropdown-menu li span {
+  padding: 0 15px;
+}
+
+.css-dropdown-menu li a {
+  text-decoration: none;
+  color: gray;
+  padding: 0 15px;
+}
+
+.css-dropdown-menu li:hover {
+  background-color: rgba(128, 128, 128, 0.2);
+}
+
+.css-dropdown-menu .css-dropdown-item-text,
+.css-dropdown-menu:nth-child(1) .disable,
+.css-dropdown-menu:nth-child(1) .disable a {
+  cursor: default;
+}
+
+.css-dropdown-menu .css-dropdown-item-text:hover,
+.css-dropdown-menu:nth-child(1) .disable:hover {
+  background-color: transparent;
+}
+
+.css-dropdown-menu:nth-child(1) .active {
+  background: blue;
+}
+
+.css-dropdown-menu .active a {
+  color: white;
+}
+
+.css-dropdown-menu .disable a {
+  color: rgba(128, 128, 128, 0.5);
+}
